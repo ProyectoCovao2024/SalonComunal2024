@@ -1,1 +1,1 @@
-//Contenido para la carpeta includes
+//Contenido para la carpeta includes (Como el header y footer)
