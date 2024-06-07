@@ -48,6 +48,10 @@ header .menu{
 .accordion-body {
     background: white !important; 
     border-radius: 5px;
+    height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /*TODO: Ponerle un height y un overflow para que no se salga de la pantalla*/
 }
 
 #accordion-button-one{
