@@ -11,9 +11,9 @@
 </head>
 <body>
     
-    <header>
-       <?php require("../../../includes/header.php"); ?>
-    </header>
+    <?php
+        require("../../../includes/header.php");
+    ?> 
 
     <div class="container mt-5">
         <div class="row">
