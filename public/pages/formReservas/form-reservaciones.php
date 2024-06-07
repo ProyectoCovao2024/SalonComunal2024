@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/formReservas/form-reservaciones.css">
-    <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/header/headerStyle.cs">
+    <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/header/headerStyle.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/footer/footerStyle.cs">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
@@ -15,9 +15,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Formulario de Reservas</title>
 </head>
-<!-- <?php
+ <?php
 require("../../../includes/header.php");
-?> -->
+?>
 <body>
     <div class="container-fluid mt-3">
         <div class="row d-flex justify-content-center align-items-center ">
