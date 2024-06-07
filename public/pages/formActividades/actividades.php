@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividades</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../../build/css/formActividades/actividades.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/header/headerStyle.css">
+    <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/footer/footerStyle.css">
+    <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/formActividades/actividades.css">
 </head>
 <body>
-    
-    <header>
-       <?php require("../../../includes/header.php"); ?>
-    </header>
 
+    <header>
+        <?php 
+            require("../../../includes/header.php");
+        ?> 
+    </header>
+    
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6">
