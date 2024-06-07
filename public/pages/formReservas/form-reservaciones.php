@@ -15,10 +15,12 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Formulario de Reservas</title>
 </head>
- <?php
+<body>
+    <header>
+    <?php
 require("../../../includes/header.php");
 ?>
-<body>
+</header>
     <div class="container-fluid mt-3">
         <div class="row d-flex justify-content-center align-items-center ">
             <div class="col-sm-10 col-md-11 col-lg-11 col-xl-12 col-xxl-12  ">
@@ -202,9 +204,11 @@ require("../../../includes/header.php");
                 </div>
             </div>
         </div>
-       <?php
+        <footer>
+        <?php
         require("../../../includes/footer.php");
         ?>
+        </footer>
 </body>
 
 
