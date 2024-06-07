@@ -4,7 +4,7 @@
             <a href="" class="logo"><img src="http://localhost/SalonComunal2024/public/build/assets/image/logo.png" alt=""></a>
             <input type="checkbox" id="menu">
             <label for="menu">
-                <img src="../public/build/assets/image/menu.png" class="menu-icono" alt="">
+                <img src="http://localhost/SalonComunal2024/public/build/assets/image/menu.png" class="menu-icono" alt="">
             </label>
             <nav class="navbar">
                 <ul>
