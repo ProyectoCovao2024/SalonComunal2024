@@ -8,16 +8,17 @@
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/header/headerStyle.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/footer/footerStyle.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/formActividades/actividades.css">
-    <link rel="stylesheet" href="../../../build/css/formActividades/actividades.css">
+    <link rel="stylesheet" href="..">
 </head>
-<body>
-    <header>
-    <?php
-        require("../../../includes/header.php");
-    ?> 
+<header>
+        <?php
+            require("../../../includes/header.php");
+        ?> 
     </header>
-    
+<body>
 
+    
+    
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-6">
