@@ -2,18 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
     font-family: sans-serif;
 }
 
 body {
-    position: relative;
-    justify-content: center;
-    align-items: flex-end;
     min-height: 150vh;
+    justify-content: center;
+    align-items: center;
     background: #fff;
 }
 
@@ -112,6 +107,7 @@ span {
 .explora {
     padding: 100px 0;
     text-align: center;
+    min-height: 0;
 }
 
 .explora .btn {
@@ -200,8 +196,98 @@ span {
     height: 450px;
 }
 
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: grey;
+    padding:  100px 160px;
+}
+
+ .slide-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-content{
+    margin: 0 40px;
+}
+
+.card{
+    border-radius: 25px;
+    background-color: #e7e7e7;
+}
+
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.image-content{
+    position: relative;
+    row-gap: 5px;
+}
+
+
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 25px 25px 0 25px;
+}
+
+.overlay::before,
+.overlay::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+}
+
+.overlay::after{
+    border-radius: 0 25px 0 0;
+    background-color: #e7e7e7;
+}
+
+.card-image{
+    position: relative;
+    height: 280px;
+    width: 280px;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #06617A;
+}
+
+h2 .name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+}
+
+.card-content .description{
+    font-size: 18px;
+    color: #707070;
+    text-align: center;
+}
+
 .about {
-    margin-top: -100px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,10 +295,12 @@ span {
     background: rgb(255, 255, 255);
     border: 0.5rem solid #7abfc45d;
     border-radius: 15%;
+    
 }
 
 .about-img img {
     width: 35vw;
+    animation: scaleInOut 5s ease-in-out infinite;
 }
 
 .heading {
@@ -236,22 +324,63 @@ span {
 
 /*Responsive Desing*/
 
-@media screen and (max-width: 1052px){
+@media screen and (max-width: 1200px){
 
+    html{
+        font-size: 55%;
+    }
+  
+}
+  
+  
+@media screen and (max-width: 991px){
+   
+    section{
+        padding: 10rem 3% 2rem;
+    }
+
+}
+
+@media screen and (max-width: 763px){
+  
+   .home{
+    flex-direction: column;
+   }
+
+   .home-content h3{
+    font-size: 2.6rem;
+   }
+
+   .home-content h1{
+    font-size: 5rem;
+   }
+
+   .home-img img{
+    width: 70vw;
+    margin-top: 4rem;
+   }
+
+   .about{
+    flex-direction: column;
+   }
+
+   .about img{
+    width: 40vw;
+    margin-top: 2rem;
+   }
+  
+}
+
+@media screen and (max-width: 365px){
     
-  
-  }
-  
-  
-  @media screen and (max-width: 599px){
-   
-  
-  }
-  
-  @media screen and (max-width: 360px){
-  
-   
-  
-  }
+    .home-img img{
+        width: 70vw;
+    }
+
+    .about img{
+        width: 50vw;
+    }
+
+}
   
 

@@ -9,21 +9,23 @@
     <link rel="stylesheet" href="../public/build/css/index/indexStyle.css">
     <link rel="stylesheet" href="../public/build/css/header/headerStyle.css">
     <link rel="stylesheet" href="../public/build/css/footer/footerStyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Inicio</title>
 </head>
+
 <body>
-    
+
     <?php
     require(__DIR__."../../includes/header.php");
     ?>
     a
-    
+
     <section class="home" id="home" style="background:url(../public/build/assets/image/backgroundgif.gif)">
         <div class="home-content">
             <h3>¡Bienvenido!</h3>
             <h1>Salon Comunal</h1>
-            <h3>Desarrollo <span>Integral</span></h3>
+            <h3>Desarrollo <span class="infinite-text"></span></h3>
             <p>Nos complace recibir su visita a nuestra página web. Aquí podrá conocer más sobre nuestras instalaciones
                 y servicios, así como realizar reservas de manera fácil y rápida. Nuestro salón está diseñado para
                 satisfacer sus necesidades y ofrecerle un espacio ideal para sus eventos y actividades.</p>
@@ -63,25 +65,62 @@
         </div>
     </section>
 
-    <section class="fundadores container">
-        <div class="fund-content">
-        <div class="fund-1">
-                <img src="" alt="">
-                <h3>Fundador <span>Name</span></h3>
-                <p>Detalles del fundador</p>
-        </div>
-        <div class="fund-1">
-                <img src="" alt="">
-                <h3></h3>
-                <p></p>
-        </div>
-        <div class="fund-1">
-                <img src="" alt="">
-                <h3></h3>
-                <p></p>
-        </div>
-        </div>
+    <section>
+    <section class="about" id="about" style ="background:url(../public/build/assets/image/backgroundgif.gif)">
+
+        <div class="about-content">
+        <h2 class="heading">Funda<span>dores</span></h2>
+        <h2>Beneficios revelantes</h2>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut illum repellendus excepturi <br>
+        error omnis commodi blanditiis voluptatum numquam eos fugiat aut dicta, saepe sed iure <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut illum repellendus excepturi <br>
+        error omnis commodi blanditiis voluptatum numquam eos fugiat aut dicta, saepe sed iure <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut illum repellendus excepturi <br>
+        error omnis commodi blanditiis voluptatum numquam eos fugiat aut dicta, saepe sed iure <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut illum repellendus excepturi <br>
+        error omnis commodi blanditiis voluptatum numquam eos fugiat aut dicta, saepe sed iure <br>
+        <!-- 5. Ejerce una función de cooperación que contribuye a que las Municipalidades se mantengan trabajando 
+        por el beneficio de la comunidad en situaciones muy específicas.<br>
+        6. La Junta directiva cuenta con un plan de trabajo para cada período que incluye un fondo de
+        solidaridad en caso de emergencias o ayuda comunal a los vecinos.<br>
+        7. En casos específicos y siempre que lo permita la agenda y los compromisos adquiridos, se facilitan
+        las instalaciones para te de canastilla o novenarios.<br>
+        8. También en caso de reuniones comunitarias con el cuerpo de policía se cuenta con la disponibilidad de
+        espacio.-->
+    </p>
+    <a href="" class="btn">Saber más</a>
+</div>
+<div class="about-img">
+    <img src="../public/build/assets/image/Background2.jpeg" alt="">
+</div>
+</section>
     </section>
+
+    <!-- <section class="slide-container" style="background:url(../public/build/assets/image/backgroundgif.gif)">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="../public/build/assets/image/fundadores/fundador1.png" alt=""
+                                    class="card-img">
+                            </div>
+                        </div>
+                        <card class="card-content">
+                            <h2 class="name">Nombre<span>Fundador</span></h2>
+                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                                quia delectus quis magni architecto, eius illum earum minus cum reprehenderit sequi
+                                excepturi. Quibusdam ad, soluta alias repellendus possimus voluptas perspiciatis!</p>
+                        </card>
+                    </div>
+                </div>
+            </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </section> -->
 
 
     <section class="about" id="about">
@@ -96,15 +135,16 @@
                 3. Ofrece espacio para grupos de capacitación: odontología, computo, acondicionamiento físico, etc.<br>
                 4. Se hace responsable del mantenimiento de las zonas verdes y áreas comunitarias como lo son el parque
                 infantil, la cancha multiusos, salón comunal, área de máquinas, etc.<br>
-                5. Ejerce una función de cooperación que contribuye a que las Municipalidades se mantengan trabajando
+                <!-- 5. Ejerce una función de cooperación que contribuye a que las Municipalidades se mantengan trabajando 
                 por el beneficio de la comunidad en situaciones muy específicas.<br>
                 6. La Junta directiva cuenta con un plan de trabajo para cada período que incluye un fondo de
                 solidaridad en caso de emergencias o ayuda comunal a los vecinos.<br>
                 7. En casos específicos y siempre que lo permita la agenda y los compromisos adquiridos, se facilitan
                 las instalaciones para te de canastilla o novenarios.<br>
                 8. También en caso de reuniones comunitarias con el cuerpo de policía se cuenta con la disponibilidad de
-                espacio.
+                espacio.-->
             </p>
+            <a href="" class="btn">Saber más</a>
         </div>
         <div class="about-img">
             <img src="../public/build/assets/image/Benef.png" alt="">
@@ -112,13 +152,17 @@
     </section>
 
     <footer class="footer">
-    <?php
+        <?php
     require(__DIR__."../../includes/footer.php")
     ?>
     </footer>
 
-    <script src="../public/build/JavaScript/indexscript.js"></script>
- 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="http://localhost/SalonComunal2024/public/build/JavaScript/indexscript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.js"></script>
+
+
 </body>
 
 </html>

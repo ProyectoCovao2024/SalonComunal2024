@@ -125,3 +125,28 @@ footer {
         background-position-x: 0px;
     }
 }
+
+/*Responsive Desing*/
+
+@media screen and (max-width: 1052px){
+
+    html{
+        font-size: 55%;
+    }
+  
+  }
+  
+  
+  @media screen and (max-width: 991px){
+   
+    .footer{
+        padding: 2rem 3%;
+    }
+
+  }
+  
+  @media screen and (max-width: 360px){
+  
+   
+  
+  }
