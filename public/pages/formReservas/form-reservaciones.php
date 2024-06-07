@@ -202,9 +202,9 @@ require("../../../includes/header.php");
                 </div>
             </div>
         </div>
-       <!--   <?php
+       <?php
         require("../../../includes/footer.php");
-        ?> -->
+        ?>
 </body>
 
 
