@@ -15,9 +15,9 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Formulario de Reservas</title>
 </head>
-<!-- <?php
+ <?php
 require("../../../includes/header.php");
-?> -->
+?>
 <body>
     <div class="container-fluid mt-3">
         <div class="row d-flex justify-content-center align-items-center ">
