@@ -6,20 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://localhost/SALONCOMUNAL2024-MAIN/public/build/css/index/indexStyle.css">
-    <link rel="stylesheet" href="http://localhost/SALONCOMUNAL2024-MAIN/public/build/css/header/headerStyle.css">
-    <link rel="stylesheet" href="http://localhost/SALONCOMUNAL2024-MAIN/public/build/css/footer/footerStyle.css">
+    <link rel="stylesheet" href="../public/build/css/index/indexStyle.css">
+    <link rel="stylesheet" href="../public/build/css/header/headerStyle.css">
+    <link rel="stylesheet" href="../public/build/css/footer/footerStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Inicio</title>
 </head>
-
 <body>
-
-    <?php
-    require('./includes/header.php')
-    ?>
     
-    <section class="home" id="home" style="background:url(./public/build/assets/image/backgroundgif.gif)">
+    <?php
+    require(__DIR__."../../includes/header.php");
+    ?>
+    a
+    
+    <section class="home" id="home" style="background:url(../public/build/assets/image/backgroundgif.gif)">
         <div class="home-content">
             <h3>¡Bienvenido!</h3>
             <h1>Salon Comunal</h1>
@@ -35,7 +36,7 @@
             <a href="" class="btn">Historia</a>
         </div>
         <div class="home-img">
-            <img src="./public/build/assets/image/background1.jpeg" alt="">
+            <img src="../public/build/assets/image/background1.jpeg" alt="">
         </div>
     </section>
 
@@ -43,19 +44,19 @@
         <h2>NUESTRO <span>PROPÓSITO</span></h2>
         <div class="explor-content">
             <div class="explor-1 bg-1">
-                <img src="img/" alt="">
+                <img src="" alt="">
                 <h3>Misión</h3>
                 <p>Conozca nuestra misión y el propósito que nos impulsa.</p>
                 <a class="btn" href="#">Saber más</a>
             </div>
             <div class="explor-1 bg-2">
-                <img src="img/" alt="">
+                <img src="" alt="">
                 <h3>Valores</h3>
                 <p>Conozca nuestros valores y los principios que nos guían.</p>
                 <a class="btn" href="#">Saber más</a>
             </div>
             <div class="explor-1 bg-3">
-                <img src="img/" alt="">
+                <img src="" alt="">
                 <h3>Objetivos</h3>
                 <p>Conozca nuestros objetivos y nuestras metas a futuro.</p>
                 <a class="btn" href="#">Saber más</a>
@@ -107,17 +108,17 @@
             </p>
         </div>
         <div class="about-img">
-            <img src="./public/build/assets/image/Benef.png" alt="">
+            <img src="../public/build/assets/image/Benef.png" alt="">
         </div>
     </section>
 
     <footer class="footer">
     <?php
-    require("./includes/footer.php")
+    require(__DIR__."../../includes/footer.php")
     ?>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="../public/build/JavaScript/indexscript.js"></script>
  
 </body>
 
