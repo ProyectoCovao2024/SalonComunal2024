@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+body {
+    position: relative;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 150vh;
+    background: #fff;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img {
+    width: 35vw;
+    border: 0.5rem solid #788E9F;
+    border-radius: 15%;
+    animation: scaleInOut 5s ease-in-out infinite;
+}
+
+@keyframes scaleInOut {
+
+    0%,
+    100% {
+        transform: translateY(30px);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+.home-content h3 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+span {
+    color: #06617A;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: #06617A;
+    border: .2rem solid;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #FFF;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.5s all;
+}
+
+.social-media a:hover {
+    background: #7ABFC4;
+    box-shadow: 0 0 1rem #FFF;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: #06617A;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #FFF;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    background: #0a94ba;
+    color: white;
+    box-shadow: 0 0 1rem #FFF;
+}
+
+.explora {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.explora .btn {
+    display: inline-block;
+    padding: 1rem 1.4rem;
+    background: #06617A;
+    border-radius: 3rem;
+    font-size: 1.2rem;
+    color: #FFF;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.explora .btn:hover {
+    background: #0a94ba;
+    color: white;
+    box-shadow: 0 0 1rem #FFF;
+}
+
+.explor-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.explora h2 {
+    margin-top: -50px;
+    font-size: 70px;
+    line-height: 70px;
+    margin-bottom: 35px;
+}
+
+.explor-1 {
+    padding: 100px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explor-1 img {
+    width: 170px;
+    margin: 0 0 170px;
+}
+
+.explor-1 h3 {
+    color: whitesmoke;
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 0;
+}
+
+.explor-1 p {
+    color: whitesmoke;
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.bg-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url();
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28%;
+    height: 450px;
+}
+
+.bg-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url();
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28%;
+    height: 450px;
+}
+
+.bg-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url();
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28%;
+    height: 450px;
+}
+
+.about {
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: rgb(255, 255, 255);
+    border: 0.5rem solid #7abfc45d;
+    border-radius: 15%;
+}
+
+.about-img img {
+    width: 35vw;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+/*Responsive Desing*/
+
+@media screen and (max-width: 1052px){
+
+    
+  
+  }
+  
+  
+  @media screen and (max-width: 599px){
+   
+  
+  }
+  
+  @media screen and (max-width: 360px){
+  
+   
+  
+  }
+  
+

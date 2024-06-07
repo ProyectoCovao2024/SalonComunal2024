@@ -13,7 +13,7 @@ footer {
 }
 
 .social-icon,
-.menu {
+.menuL {
     position: relative;
     display: flex;
     justify-content: center;
@@ -62,7 +62,7 @@ footer {
     text-align: center;
 }
 
-.footer .menu {
+.footer .menuL {
     margin-bottom: 0;
 }
 
@@ -72,7 +72,11 @@ footer {
     left: 0;
     width: 100%;
     height: 90px;
+<<<<<<< HEAD
+    background: url("../../assets/image/wave.png");
+=======
     background: url("./public/build/assets/image/wave.png");
+>>>>>>> c259f184d6d76b889b7c710aa58b97e773f598a7
     background-size: 1000px 90px;
 }
 

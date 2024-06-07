@@ -1,3 +1,4 @@
+
 <div class="waves">
     <div class="wave" id="wave1"></div>
     <div class="wave" id="wave2"></div>
@@ -15,7 +16,7 @@
             <ion-icon name="logo-whatsapp"></ion-icon>
         </a></li>
 </ul>
-<ul class="menu">
+<ul class="menuL">
     <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
     <li class="menu__item"><a class="menu__link" href="#">About</a></li>
     <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
