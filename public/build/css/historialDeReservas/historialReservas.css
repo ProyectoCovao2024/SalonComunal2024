@@ -5,33 +5,35 @@
 }
 
 body{
-    position: relative;
-    background: pink;
+    position: absolute;
+    background: url(../../assets/image/backgroundgif.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100vw;
     min-height: 100vh;
     box-sizing: border-box;
 }
 
+header .menu{
+    position: relative !important;
+}
+
 .container{
     position: relative;
     min-width: 100%;
-    min-height: 100vh;
-    background: #999999;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 10% ;
     padding-right: 10% ;
-    margin: 0;
 }
 
 .row{
     min-width: 100%;
-    min-height: 80%;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
