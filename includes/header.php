@@ -16,4 +16,4 @@
         </div>
 </header>
 
-<script src="../public/build/JavaScript/headerscript.js"></script>
+<script defer src="http://localhost/SalonComunal2024/public/build/JavaScript/headerscript.js"></script>
