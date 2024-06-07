@@ -44,7 +44,7 @@
 }
 
 body {
-    background-image: url('http://localhost/FormularioReservacionesV/assets/img/background2.gif');
+    background-image: url('http://localhost/SalonComunal2024/public/build/assets/image/backgroundgif.gif');
     display: flex;
     justify-content: center;
     align-items: center;

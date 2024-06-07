@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <?php
-        require('../../../includes/header.php')
-    ?>
+        <?php
+            require('../../../includes/header.php')
+        ?>
     <div class="container">
         <div class="row">
             <div class="col-12">
