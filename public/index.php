@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../public/build/css/index/indexStyle.css">
     <link rel="stylesheet" href="../public/build/css/header/headerStyle.css">
     <link rel="stylesheet" href="../public/build/css/footer/footerStyle.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Inicio</title>
 </head>
@@ -66,21 +65,21 @@
 
     <section class="fundadores container">
         <div class="fund-content">
-            <div class="fund-1">
+        <div class="fund-1">
                 <img src="" alt="">
                 <h3>Fundador <span>Name</span></h3>
                 <p>Detalles del fundador</p>
-            </div>
-            <div class="fund-1">
+        </div>
+        <div class="fund-1">
                 <img src="" alt="">
                 <h3></h3>
                 <p></p>
-            </div>
-            <div class="fund-1">
+        </div>
+        <div class="fund-1">
                 <img src="" alt="">
                 <h3></h3>
                 <p></p>
-            </div>
+        </div>
         </div>
     </section>
 
