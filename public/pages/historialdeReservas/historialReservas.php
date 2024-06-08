@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/historialDeReservas/historialReservas.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/header/headerStyle.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/footer/footerStyle.css">
+    <script defer src="http://localhost/SalonComunal2024/public/build/JavaScript/headerscript.js"></script>
     <title>Historial Reservas</title>
 </head>
 
@@ -19,6 +20,7 @@
         <?php
             require('../../../includes/header.php')
         ?>
+    <div class="box">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -158,6 +160,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <footer>
     <?php
