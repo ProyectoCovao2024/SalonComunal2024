@@ -11,8 +11,9 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Acividades</title>
+    <title>Actividades</title>
 </head>
 
 <body>
@@ -22,35 +23,57 @@
             require("../../../includes/header.php");
         ?> 
     </header>
-    
-    <div class="container mt-5">
+
+
+
+
+<section class="activities-section">
+    <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                <div class="p-3 bg-primary text-white rounded">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quam perferendis deserunt tempore. Rerum dignissimos necessitatibus tenetur nesciunt id alias iure aspernatur sint? Dolore doloribus maxime harum, ullam obcaecati facere. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur voluptatem est culpa sint numquam, enim adipisci alias. Nulla, nihil totam, atque, aliquam optio officiis error laboriosam dicta repellat possimus consequuntur.</p>
+            <div class="col-md-4">
+                <div class="text-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellendus accusantium quidem natus, maxime voluptatem. Adipisci dignissimos, facilis, animi maxime sit, aut vero omnis numquam ex corporis voluptatibus accusamus neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsa quaerat cumque dolore, fuga cupiditate est minima excepturi. Nesciunt dicta est odio inventore provident odit mollitia magni sapiente quo at?</p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <form action="php/handle_form.php" method="post">
-                    <div class="form-group">
-                        <label for="codigoActividad">Codigo Actividad</label>
-                        <input type="text" class="form-control" id="codigoActividad" name="codigoActividad">
-                    </div>
-                    <div class="form-group">
-                        <label for="nombreActividad">Nombre Actividad</label>
-                        <input type="text" class="form-control" id="nombreActividad" name="nombreActividad">
-                    </div>
-                    <div class="form-group">
-                        <label for="tipoActividad">Tipo Actividad</label>
-                        <input type="text" class="form-control" id="tipoActividad" name="tipoActividad">
-                    </div>
-                    <button type="submit" name="action" value="Agregar" class="btn btn-primary">Agregar</button>
-                    <button type="submit" name="action" value="Actualizar" class="btn btn-secondary">Actualizar</button>
-                    <button type="submit" name="action" value="Eliminar" class="btn btn-danger">Eliminar</button>
-                </form>
+            <div class="col-md-8">
+                <div class="activity-form">
+                    <h2 class="text-center">Actividades</h2>
+                    <form>
+                        <div class="form-group">
+                            <label for="codigo_actividad">Código de Actividad</label>
+                            <input type="text" class="form-control" id="codigo_actividad">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre_actividad">Nombre de la Actividad</label>
+                            <input type="text" class="form-control" id="nombre_actividad">
+                        </div>
+                        <div class="form-group">
+                            <label for="tipo_actividad">Tipo de Actividad</label>
+                            <input type="text" class="form-control" id="tipo_actividad">
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-light">Agregar</button>
+                            <button type="submit" class="btn btn-light">Actualizar</button>
+                            <button type="submit" class="btn btn-light">Eliminar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    
+    
 
     <footer>
         <?php require("../../../includes/footer.php"); ?>
