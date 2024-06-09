@@ -22,8 +22,8 @@
         ?>
     </header>
     <div class="container-fluid mt-5">
-        <div class="row d-flex justify-content-center align-items-center ">
-            <div class="col-sm-10 col-md-11 col-lg-11 col-xl-12 col-xxl-12  ">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-sm-10 col-md-11 col-lg-11 col-xl-12 col-xxl-12">
                 <div class="formBox">
                     <form>
                         <div class="titulo">
@@ -204,11 +204,12 @@
                 </div>
             </div>
         </div>
-        <footer>
+    </div>
+    <footer>
         <?php
         require("../../../includes/footer.php");
         ?>
-        </footer>
+    </footer>    
 </body>
 
 

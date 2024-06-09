@@ -45,17 +45,13 @@
 
 body {
     background-image: url('http://localhost/SalonComunal2024/public/build/assets/image/backgroundgif.gif');
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
-    min-height: 100vh;
     animation: animateBackground 20s infinite linear;
 }
 
 .form-check-input{
   margin-left: 50px;
 }
+
 
 @keyframes animateBackground {
     0% {
