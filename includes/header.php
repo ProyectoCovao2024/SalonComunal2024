@@ -9,8 +9,8 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="#">Inicio</a></li>
-                    <li><a href="#">menu</a></li>
-                    <li><a href="#">menu</a></li>
+                    <li><a href="#">menú</a></li>
+                    <li><a href="#">menú</a></li>
                 </ul>
             </nav>
         </div>
