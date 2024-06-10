@@ -135,7 +135,10 @@
                                     <option>San José</option>
                                 </select>
                             </div>
-                            <div id="beneficios" class="col-6">
+
+                        </div>
+                        <div class="row">
+                              <div id="beneficios" class="col-12 mb-3">
                                 <h3>Beneficios del Salón</h3>
                                 <ul>
                                     <li>1. La Asociación vela por los intereses y los derechos de la comunidad.</li>
@@ -145,8 +148,7 @@
                                     <li> 4. Se hace responsable del mantenimiento de las zonas verdes y áreas comunitarias como lo son el parque
                                     infantil, la cancha multiusos, salón comunal, área de máquinas, etc.</li>
                                 </ul>
-                            </div>
-
+                            </div>  
                         </div>
                         <div class="row">
                             <div class="col-6">
