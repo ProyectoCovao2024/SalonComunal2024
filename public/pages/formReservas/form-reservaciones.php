@@ -17,13 +17,13 @@
 </head>
 <body>
     <header>
-    <?php
-require("../../../includes/header.php");
-?>
-</header>
+     <?php
+        require("../../../includes/header.php");
+        ?>
+    </header>
     <div class="container-fluid mt-5">
-        <div class="row d-flex justify-content-center align-items-center ">
-            <div class="col-sm-10 col-md-11 col-lg-11 col-xl-12 col-xxl-12  ">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-sm-10 col-md-11 col-lg-11 col-xl-12 col-xxl-12">
                 <div class="formBox">
                     <form>
                         <div class="titulo">
@@ -135,18 +135,20 @@ require("../../../includes/header.php");
                                     <option>San José</option>
                                 </select>
                             </div>
-                            <div id="beneficios" class="col-6">
+
+                        </div>
+                        <div class="row">
+                              <div id="beneficios" class="col-12 mb-3">
                                 <h3>Beneficios del Salón</h3>
                                 <ul>
-                                    <li>Ambiente climatizado</li>
-                                    <li>Capacidad para 200 personas</li>
-                                    <li>Equipo de sonido e iluminación profesional</li>
-                                    <li>Estacionamiento privado</li>
-                                    <li>Acceso para personas con discapacidad</li>
-                                    <li>Servicio de catering disponible</li>
+                                    <li>1. La Asociación vela por los intereses y los derechos de la comunidad.</li>
+                                    <li>2. Ofrece un espacio para grupos de interés social como lo son: INAMU, alcohólicos Anónimos, Grupos de
+                                    Adulto mayor, Alanón, Scouts, etc.</li>
+                                    <li>3. Ofrece espacio para grupos de capacitación: odontología, computo, acondicionamiento físico, etc.</li>
+                                    <li> 4. Se hace responsable del mantenimiento de las zonas verdes y áreas comunitarias como lo son el parque
+                                    infantil, la cancha multiusos, salón comunal, área de máquinas, etc.</li>
                                 </ul>
-                            </div>
-
+                            </div>  
                         </div>
                         <div class="row">
                             <div class="col-6">
@@ -204,11 +206,12 @@ require("../../../includes/header.php");
                 </div>
             </div>
         </div>
-        <footer>
+    </div>
+    <footer>
         <?php
         require("../../../includes/footer.php");
         ?>
-        </footer>
+    </footer>    
 </body>
 
 

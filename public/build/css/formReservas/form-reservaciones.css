@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
+#menu:checked~.navbar {
+    display: initial;
+    z-index: 1000;
+}
+
 .text-center {
     text-align: center;
 }
@@ -9,7 +14,6 @@
 }
 
 #beneficios {
-    float: right;
     background-color: #7ABFC4;
     min-width: 300px;
     min-height: fit-content;
@@ -45,17 +49,13 @@
 
 body {
     background-image: url('http://localhost/SalonComunal2024/public/build/assets/image/backgroundgif.gif');
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: auto;
-    min-height: 100vh;
     animation: animateBackground 20s infinite linear;
 }
 
 .form-check-input{
   margin-left: 50px;
 }
+
 
 @keyframes animateBackground {
     0% {
@@ -114,7 +114,7 @@ body {
 
 @media (max-width: 1400px) {
     .formBox {
-        width: 85%;
+        width: 60%;
         height: auto;
         padding: 5%;
         border-color: rgb(0, 81, 255);
@@ -127,7 +127,7 @@ body {
 
 @media (max-width: 1200px) {
     .formBox {
-        width: 100%;
+        width: 60%;
         height: auto;
         padding: 10%;
         border-color: rgb(178, 253, 3);
@@ -140,14 +140,14 @@ body {
 
 @media (max-width: 992px) {
     .formBox {
-        width: 100%;
+        width: 75%;
         height: auto;
         padding: 10%;
         border-color: rgb(51, 6, 51);
     }
 
     .formBox form {
-        font-size: 0.8em;
+        font-size: 0.9em;
     }
 }
 
@@ -160,20 +160,20 @@ body {
     }
 
     .formBox form {
-        font-size: 1em;
+        font-size: 0.9em;
     }
 }
 
 @media (max-width: 576px) {
     .formBox {
-        width: 95%;
+        width: 100%;
         height: auto;
         padding: 10%;
         border-color: rgb(253, 3, 3);
     }
 
     .formBox form {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 }
 
