@@ -14,11 +14,13 @@
 }
 
 #beneficios {
-    background-color: #7ABFC4;
-    min-width: 300px;
-    min-height: fit-content;
-    padding: 15px;
-    border-radius: 10px;
+    background: rgb(255,255,255);
+    background: linear-gradient(27deg, rgba(255,255,255,1) 76%, rgba(6,97,122,1) 100%);
+    margin: 8% auto; 
+    padding: 35px;
+    width: 100%;
+    border: 0.5rem solid #7abfc45d;
+    border-radius: 20%; 
   }
   
   #beneficios h3 {
@@ -127,7 +129,7 @@ body {
 
 @media (max-width: 1200px) {
     .formBox {
-        width: 60%;
+        width: 70%;
         height: auto;
         padding: 10%;
         border-color: rgb(178, 253, 3);
@@ -180,4 +182,22 @@ body {
 .row.justify-content-center {
     display: flex;
     justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: #06617A !important;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #FFF !important;
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.btn:hover {
+    background: #0a94ba !important;
+    color: white;
+    box-shadow: 0 0 1rem #FFF;
 }
