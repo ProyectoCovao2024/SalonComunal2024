@@ -19,7 +19,6 @@
     <?php
     require(__DIR__."../../includes/header.php");
     ?>
-    a
 
     <section class="home" id="home" style="background:url(../public/build/assets/image/backgroundgif.gif)">
         <div class="home-content">
