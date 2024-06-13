@@ -210,7 +210,7 @@
                     </form>
                 </div>
                 <div class="text-center mb-5">
-                <a href="" class="btn">Enviar</a>
+                <button id="button" class="btn btn-primary btn-lg">Enviar</button>
                 </div>
             </div>
         </div>
@@ -219,7 +219,8 @@
         <?php
         require("../../../includes/footer.php");
         ?>
-    </footer>    
+    </footer>  
+    <script src="http://localhost/SalonComunal2024/public/build/JavaScript/animacionbotonformreservas.js"></script>  
 </body>
 
 
