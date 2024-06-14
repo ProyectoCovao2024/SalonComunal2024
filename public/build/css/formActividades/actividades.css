@@ -6,7 +6,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 } */
 .row{
-    height: 500px;
+    height: fit-content;
 }
 .activities-section {
     padding: 100px 0;
@@ -29,6 +29,7 @@
     border-radius: 30px;
     color: #fff;
     position: relative;
+    backdrop-filter: brightness(0.1);
 }
 
 .activity-form::before {
@@ -38,7 +39,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Opacidad del fondo */
+    background-color: rgba(0, 0, 0, 0.3); /* Opacidad del fondo */
     border-radius: 30px;
     z-index: -1;
 }
@@ -69,4 +70,42 @@
 
 .activity-form .btn {
     margin-right: 10px;
+}
+
+
+/*****/
+.row > *{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+
+
+#info {
+    align-content: end;
+    min-height: 100% !important;
+}
+
+.text-content{
+    height: 270px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+/*********/
+
+@media(max-width:767px){
+    .text-content{
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #menu:checked~.navbar {
+        display: initial;
+        z-index: 1000;
+    }
 }

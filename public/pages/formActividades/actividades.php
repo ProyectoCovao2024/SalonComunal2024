@@ -11,7 +11,6 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
-     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Actividades</title>
 </head>
@@ -27,16 +26,16 @@
 
 
 
-<section class="activities-section">
+<section class="activities-section m-0">
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <div class="text-content">
+            <div id="info" class="col-md-4">
+                <div class="text-content m-0 ">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellendus accusantium quidem natus, maxime voluptatem. Adipisci dignissimos, facilis, animi maxime sit, aut vero omnis numquam ex corporis voluptatibus accusamus neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsa quaerat cumque dolore, fuga cupiditate est minima excepturi. Nesciunt dicta est odio inventore provident odit mollitia magni sapiente quo at?</p>
                 </div>
             </div>
             <div class="col-md-8">
-                <div class="activity-form">
+                <div class="activity-form m-0">
                     <h2 class="text-center">Actividades</h2>
                     <form>
                         <div class="form-group">
