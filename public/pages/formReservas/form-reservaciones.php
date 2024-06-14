@@ -30,31 +30,31 @@
                             <h1>Reservaciones</h1>
                         </div>
                         <div class="row mt-3">
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="ced" class="form-label">Cédula</label>
                                 <input type="number" class="form-control form-control-sm mb-3 mt-3" id="ced" name="ced">
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="nom" class="form-label">Nombre</label>
                                 <input type="text" class="form-control form-control-sm mb-3 mt-3" id="nom" name="nom">
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="ape" class="form-label">Apellidos</label>
                                 <input type="text" class="form-control form-control-sm mb-3 mt-3" id="ape" name="ape">
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="mail" class="form-label">Correo Electrónico</label>
                                 <input type="email" class="form-control form-control-sm mb-3 mt-3" id="mail"
                                     name="mail">
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="tel" class="form-label">Teléfono</label>
                                 <input type="number" class="form-control form-control-sm mb-3 mt-3" id="tel" name="tel">
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="eda" class="form-label">Edad</label>
                                 <input type="number" class="form-control form-control-sm mb-3 mt-3" id="eda" name="eda">
                             </div>
@@ -109,15 +109,15 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="fec" class="form-label">Fecha de la Reservación</label>
                                 <input type="date" class="form-control form-control-sm mb-3 mt-3" id="fec" name="fec">
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="hoi" class="form-label">Hora de Inicio</label>
                                 <input type="time" class="form-control form-control-sm mb-3 mt-3" id="hoi" name="hoi">
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="hof" class="form-label">Hora Final</label>
                                 <input type="time" class="form-control form-control-sm mb-3 mt-3" id="hof" name="hof">
                             </div>
@@ -176,7 +176,7 @@
 
                         </div>
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <fieldset disabled>
                                     <label for="cos" class="form-label">Costo de la Renta</label>
                                     <input type="number" class="form-control form-control-sm mb-3 mt-3" id="cos"
@@ -184,14 +184,14 @@
                                 </fieldset>
 
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <fieldset disabled>
                                     <label for="cosD" class="form-label">Costo del Deposito</label>
                                     <input type="number" class="form-control form-control-sm mb-3 mt-3" id="cosD"
                                         name="cosD">
                                 </fieldset>
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <fieldset disabled>
                                     <label for="cosL" class="form-label">Costo de Limpieza</label>
                                     <input type="number" class="form-control form-control-sm mb-3 mt-3" id="cosL"
