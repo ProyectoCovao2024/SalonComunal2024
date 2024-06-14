@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/formReservas/form-reservaciones.css">
+    <link rel="stylesheet"
+        href="http://localhost/SalonComunal2024/public/build/css/formReservas/form-reservaciones.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/header/headerStyle.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/footer/footerStyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,9 +16,10 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Formulario de Reservas</title>
 </head>
+
 <body>
     <header>
-     <?php
+        <?php
         require("../../../includes/header.php");
         ?>
     </header>
@@ -138,25 +140,51 @@
 
                         </div>
                         <div class="row">
-                              <div id="beneficios" class="col-12 mb-6">
+                            <div id="beneficios" class="col-12 mb-6">
                                 <h3>Beneficios del Salón</h3>
                                 <ul>
                                     <li>1. La Asociación vela por los intereses y los derechos de la comunidad.</li>
-                                    <li>2. Ofrece un espacio para grupos de interés social como lo son: INAMU, alcohólicos Anónimos, Grupos de
-                                    Adulto mayor, Alanón, Scouts, etc.</li>
-                                    <li>3. Ofrece espacio para grupos de capacitación: odontología, computo, acondicionamiento físico, etc.</li>
-                                    <li> 4. Se hace responsable del mantenimiento de las zonas verdes y áreas comunitarias como lo son el parque
-                                    infantil, la cancha multiusos, salón comunal, área de máquinas, etc.</li>
-                                    <li> 5. Ejerce una función de cooperación que contribuye a que las Municipalidades se mantengan trabajando 
-                                    por el beneficio de la comunidad en situaciones muy específicas.</li>
-                                    <li> 6. La Junta directiva cuenta con un plan de trabajo para cada período que incluye un fondo de
-                                    solidaridad en caso de emergencias o ayuda comunal a los vecinos.</li>
-                                    <li> 7. En casos específicos y siempre que lo permita la agenda y los compromisos adquiridos, se facilitan
-                                    las instalaciones para te de canastilla o novenarios.</li>
-                                    <li> 8. También en caso de reuniones comunitarias con el cuerpo de policía se cuenta con la disponibilidad de
-                                    espacio.</li>
+                                    <li>2. Ofrece un espacio para grupos de interés social como lo son: INAMU,
+                                        alcohólicos Anónimos, Grupos de
+                                        Adulto mayor, Alanón, Scouts, etc.</li>
+                                    <li>3. Ofrece espacio para grupos de capacitación: odontología, computo,
+                                        acondicionamiento físico, etc.</li>
+                                    <li> 4. Se hace responsable del mantenimiento de las zonas verdes y áreas
+                                        comunitarias como lo son el parque
+                                        infantil, la cancha multiusos, salón comunal, área de máquinas, etc.</li>
+                                    <a href="#" class="btn" id="openModalBtn">Saber más</a>
                                 </ul>
-                            </div>  
+                                <div id="BenefModal" class="modal">
+                                    <div class="modal-content">
+                                        <span class="close">&times;</span>
+                                        <h2>Bene<span>ficios</span></h2>
+                                        <h2>Información adicional</h2>
+                                        <p>
+                                            1. La Asociación vela por los intereses y los derechos de la comunidad.<br>
+                                            2. Ofrece un espacio para grupos de interés social como lo son: INAMU,
+                                            alcohólicos Anónimos, Grupos de
+                                            Adulto mayor, Alanón, Scouts, etc.<br>
+                                            3. Ofrece espacio para grupos de capacitación: odontología, computo,
+                                            acondicionamiento físico, etc.<br>
+                                            4. Se hace responsable del mantenimiento de las zonas verdes y áreas
+                                            comunitarias como lo son el parque
+                                            infantil, la cancha multiusos, salón comunal, área de máquinas, etc.<br>
+                                            5. Ejerce una función de cooperación que contribuye a que las
+                                            Municipalidades se mantengan trabajando
+                                            por el beneficio de la comunidad en situaciones muy específicas.<br>
+                                            6. La Junta directiva cuenta con un plan de trabajo para cada período que
+                                            incluye un fondo de
+                                            solidaridad en caso de emergencias o ayuda comunal a los vecinos.<br>
+                                            7. En casos específicos y siempre que lo permita la agenda y los compromisos
+                                            adquiridos, se facilitan
+                                            las instalaciones para te de canastilla o novenarios.<br>
+                                            8. También en caso de reuniones comunitarias con el cuerpo de policía se
+                                            cuenta con la disponibilidad de
+                                            espacio.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-6">
@@ -210,7 +238,7 @@
                     </form>
                 </div>
                 <div class="text-center mb-5">
-                <button id="button" class="btn btn-primary btn-lg">Enviar</button>
+                    <button id="button" class="btn btn-primary btn-lg">Enviar</button>
                 </div>
             </div>
         </div>
@@ -219,8 +247,9 @@
         <?php
         require("../../../includes/footer.php");
         ?>
-    </footer>  
-    <script src="http://localhost/SalonComunal2024/public/build/JavaScript/animacionbotonformreservas.js"></script>  
+    </footer>
+    <script src="http://localhost/SalonComunal2024/public/build/JavaScript/animacionbotonformreservas.js"></script>
+    <script src="http://localhost/SalonComunal2024/public/build/JavaScript/modalformreservas.js"></script>
 </body>
 
 
