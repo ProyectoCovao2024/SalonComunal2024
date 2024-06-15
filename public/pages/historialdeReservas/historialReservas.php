@@ -10,7 +10,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet"
-        href="http://localhost/SalonComunal2024/public/build/css/historialDeReservas/historialReservas.css">
+        href="css/historialReservas.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/header/headerStyle.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/footer/footerStyle.css">
     <script defer src="http://localhost/SalonComunal2024/public/build/JavaScript/headerscript.js"></script>
@@ -18,9 +18,7 @@
 </head>
 
 <body>
-    <?php
-    require ('../../../includes/header.php')
-        ?>
+
     <div class="box">
         <div class="container">
             <div class="row">
