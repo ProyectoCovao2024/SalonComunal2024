@@ -152,7 +152,8 @@
                                     <li> 4. Se hace responsable del mantenimiento de las zonas verdes y áreas
                                         comunitarias como lo son el parque
                                         infantil, la cancha multiusos, salón comunal, área de máquinas, etc.</li>
-                                    <a href="#" class="btn" id="openModalBtn">Saber más</a>
+                                        <a href="#" class="btn" id="openModalBtn">Saber más</a>
+                               
                                 </ul>
                                 <div id="BenefModal" class="modal">
                                     <div class="modal-content">
