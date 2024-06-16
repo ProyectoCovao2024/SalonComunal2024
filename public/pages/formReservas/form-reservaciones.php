@@ -152,39 +152,47 @@
                                     <li> 4. Se hace responsable del mantenimiento de las zonas verdes y áreas
                                         comunitarias como lo son el parque
                                         infantil, la cancha multiusos, salón comunal, área de máquinas, etc.</li>
-                                        <a href="#" class="btn" id="openModalBtn">Saber más</a>
-                               
-                                </ul>
-                                <div id="BenefModal" class="modal">
-                                    <div class="modal-content">
-                                        <span class="close">&times;</span>
-                                        <h2>Bene<span>ficios</span></h2>
-                                        <h2>Información adicional</h2>
-                                        <p>
-                                            1. La Asociación vela por los intereses y los derechos de la comunidad.<br>
-                                            2. Ofrece un espacio para grupos de interés social como lo son: INAMU,
-                                            alcohólicos Anónimos, Grupos de
-                                            Adulto mayor, Alanón, Scouts, etc.<br>
-                                            3. Ofrece espacio para grupos de capacitación: odontología, computo,
-                                            acondicionamiento físico, etc.<br>
-                                            4. Se hace responsable del mantenimiento de las zonas verdes y áreas
-                                            comunitarias como lo son el parque
-                                            infantil, la cancha multiusos, salón comunal, área de máquinas, etc.<br>
-                                            5. Ejerce una función de cooperación que contribuye a que las
-                                            Municipalidades se mantengan trabajando
-                                            por el beneficio de la comunidad en situaciones muy específicas.<br>
-                                            6. La Junta directiva cuenta con un plan de trabajo para cada período que
-                                            incluye un fondo de
-                                            solidaridad en caso de emergencias o ayuda comunal a los vecinos.<br>
-                                            7. En casos específicos y siempre que lo permita la agenda y los compromisos
-                                            adquiridos, se facilitan
-                                            las instalaciones para te de canastilla o novenarios.<br>
-                                            8. También en caso de reuniones comunitarias con el cuerpo de policía se
-                                            cuenta con la disponibilidad de
-                                            espacio.
-                                        </p>
+                                    <a href="#openModal" class="btn">Saber más</a>
+                                    <div id="openModal" class="modalDialog">
+                                        <div>
+                                            <a href="#close" title="Close" class="close">X</a>
+                                            <h2>Bene<span>ficios</span></h2>
+                                            <h2>Información adicional</h2>
+                                            <ul>
+                                                <li>1. La Asociación vela por los intereses y los derechos de la
+                                                    comunidad</li>
+                                                <li>2. Ofrece un espacio para grupos de interés social como lo son:
+                                                    INAMU,
+                                                    alcohólicos Anónimos, Grupos de
+                                                    Adulto mayor, Alanón, Scouts, etc.</li>
+                                                <li>3. Ofrece espacio para grupos de capacitación: odontología, computo,
+                                                    acondicionamiento físico, etc.</li>
+                                                <li>4. Se hace responsable del mantenimiento de las zonas verdes y áreas
+                                                    comunitarias como lo son el parque
+                                                    infantil, la cancha multiusos, salón comunal, área de máquinas, etc.
+                                                </li>
+                                                <li>5. Ejerce una función de cooperación que contribuye a que las
+                                                    Municipalidades se mantengan trabajando
+                                                    por el beneficio de la comunidad en situaciones muy específicas.
+                                                </li>
+                                                <li>6. La Junta directiva cuenta con un plan de trabajo para cada
+                                                    período que
+                                                    incluye un fondo de
+                                                    solidaridad en caso de emergencias o ayuda comunal a los vecinos.
+                                                </li>
+                                                <li>7. En casos específicos y siempre que lo permita la agenda y los
+                                                    compromisos
+                                                    adquiridos, se facilitan
+                                                    las instalaciones para te de canastilla o novenarios.</li>
+                                                <li>8. También en caso de reuniones comunitarias con el cuerpo de
+                                                    policía se
+                                                    cuenta con la disponibilidad de
+                                                    espacio.</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
+
+                                </ul>
                             </div>
                         </div>
                         <div class="row">
