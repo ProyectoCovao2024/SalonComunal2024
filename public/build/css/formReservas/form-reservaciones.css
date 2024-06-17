@@ -211,7 +211,7 @@ body {
 
 @media (max-width: 1400px) {
     .formBox {
-        width: 60%;
+        width: 70%;
         height: auto;
         padding: 5%;
         border-color: rgb(0, 81, 255);
