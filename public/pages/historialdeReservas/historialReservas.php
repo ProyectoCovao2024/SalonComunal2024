@@ -168,8 +168,33 @@
                         <form action="#">
                             <fieldset>
                                 <legend>Informacion</legend>
-                                <label for="cedulaInfo">Cedula</label>
-                                <input type="number" value="111111111">
+                                <div class="group1">
+                                    <div class="spaceForm">
+                                    <label for="">Cedula</label>
+                                    </div>
+                                    <div class="spaceForm">
+
+                                    </div>
+                                    <div class="spaceForm">
+                                        
+                                    </div>
+                                    
+                                    <label for="">Nombre</label><br>
+                                    <label for="">Apellidos</label>
+                                    <label for="">Correo Electronico</label><br>
+                                    <label for="">Telefono</label><br>
+                                    <br>
+                                </div>
+                                <div class="group2">
+
+                                </div>
+                                <div class="group3">
+
+                                </div>
+                                <div class="group4">
+
+                                </div>
+                                <div class="buttoms"></div>
                             </fieldset>
                         </form>
                     </div>

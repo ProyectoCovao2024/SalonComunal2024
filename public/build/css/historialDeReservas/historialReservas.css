@@ -306,6 +306,26 @@ header .menu{
 	z-index: 5 !important;
 }
 .close:hover { background: #ff0000; }
+/**************************************/
+.formContainer{
+    position: relative;
+    background: #83FF2C;
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+
+.group1{
+    background:#ff0000;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: (3, 33%);
+}
+/**************************************/
+
+
 
 @media (max-width: 197px){
 	.modalDialog > div{
