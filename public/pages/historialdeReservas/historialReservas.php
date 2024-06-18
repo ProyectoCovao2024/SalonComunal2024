@@ -168,25 +168,31 @@
                         <form action="#">
                             <fieldset>
                                 <legend>Informacion</legend>
-                                <div class="group1">
-                                    <div class="spaceForm">
+                                <div class="groupInfo">
                                     <label for="">Cedula</label>
-                                    </div>
-                                    <div class="spaceForm">
-
-                                    </div>
-                                    <div class="spaceForm">
-                                        
-                                    </div>
-                                    
-                                    <label for="">Nombre</label><br>
+                                    <label for="">Nombre</label>
+                                    <input type="text">
+                                    <input type="text">
                                     <label for="">Apellidos</label>
-                                    <label for="">Correo Electronico</label><br>
+                                    <label for="">Correo Electronico</label>
+                                    <input type="text">
+                                    <input type="text">
                                     <label for="">Telefono</label><br>
+                                    <input type="text">
                                     <br>
                                 </div>
-                                <div class="group2">
-
+                                <div class="groupInfo">
+                                <label for="">Cedula</label>
+                                    <label for="">Nombre</label>
+                                    <input type="text">
+                                    <input type="text">
+                                    <label for="">Apellidos</label>
+                                    <label for="">Correo Electronico</label>
+                                    <input type="text">
+                                    <input type="text">
+                                    <label for="">Telefono</label><br>
+                                    <input type="text">
+                                    <br>
                                 </div>
                                 <div class="group3">
 
