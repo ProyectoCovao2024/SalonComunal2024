@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="../public/build/css/index/indexStyle.css">
     <link rel="stylesheet" href="../public/build/css/header/headerStyle.css">
     <link rel="stylesheet" href="../public/build/css/footer/footerStyle.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Inicio</title>
 </head>
@@ -68,7 +69,7 @@
         
     </section> -->
 
-        <section class="about" id="about" style ="background:url(../public/build/assets/image/backgroundgif.gif)">
+    <!-- <section class="aboutt" id="about" style ="background:url(../public/build/assets/image/backgroundgif.gif)">
 
             <div class="about-content">
             <h2 class="heading">Funda<span>dores</span></h2>
@@ -87,29 +88,69 @@
     <div class="about-img">
         <img src="../public/build/assets/image/Background2.jpeg" alt="" style="border-radius: 15%;">
     </div>
-    </section>  
+    </section>   -->
 
-     <!-- ` <section class="slide-container" style="background:url(../public/build/assets/image/backgroundgif.gif)">
-            <div class="slide-content">
-                <div class="card-wrapper swiper-wrapper">
-                    <div class="card swiper-slide">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="../public/build/assets/image/fundadores/fundador1.png" alt=""
-                                    class="card-img">
-                            </div>
+    <section style="background:url(../public/build/assets/image/backgroundgif.gif)">
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+                <div class="swiper-slide card">
+                    <div class="box1"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="../public/build/assets/image/fundadores/fundador1.png" alt="">
                         </div>
-                        <div class="card-content">
-                            <h2 class="name">Nombre<span>Fundador</span></h2>
-                            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-                                quia delectus quis magni architecto, eius illum earum minus cum reprehenderit sequi
-                                excepturi. Quibusdam ad, soluta alias repellendus possimus voluptas perspiciatis!</p>
+                        <div class="name-profession">
+                            <span class="name">Fundador 1</span>
+                            <span class="profession">profession</span>
+                        </div>
+                        <div class="about-information">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ut sit beatae?
+                                Assumenda, ratione tempora. Quia eos facere doloremque quis, eum at sit magni! Eveniet
+                                ex aliquid voluptas architecto nemo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="box1"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="../public/build/assets/image/fundadores/fundador2.png" alt="">
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Fundador 2</span>
+                            <span class="profession">profession</span>
+                        </div>
+                        <div class="about-information">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ut sit beatae?
+                                Assumenda, ratione tempora. Quia eos facere doloremque quis, eum at sit magni! Eveniet
+                                ex aliquid voluptas architecto nemo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide card">
+                    <div class="box1"></div>
+                    <div class="card-content">
+                        <div class="image">
+                            <img src="../public/build/assets/image/fundadores/fundador3.png" alt="">
+                        </div>
+                        <div class="name-profession">
+                            <span class="name">Fundador 3</span>
+                            <span class="profession">profession</span>
+                        </div>
+                        <div class="about-information">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ut sit beatae?
+                                Assumenda, ratione tempora. Quia eos facere doloremque quis, eum at sit magni! Eveniet
+                                ex aliquid voluptas architecto nemo.</p>
                         </div>
                     </div>
                 </div>
             </div>
-    </section> `  -->
+
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
 
 
     <section class="about" id="about">
@@ -137,24 +178,30 @@
                 <h2>Información adicional</h2>
                 <p>
                     1. La Asociación vela por los intereses y los derechos de la comunidad.<br>
-                    2. Ofrece un espacio para grupos de interés social como lo son: INAMU, alcohólicos Anónimos, Grupos de
+                    2. Ofrece un espacio para grupos de interés social como lo son: INAMU, alcohólicos Anónimos, Grupos
+                    de
                     Adulto mayor, Alanón, Scouts, etc.<br>
-                    3. Ofrece espacio para grupos de capacitación: odontología, computo, acondicionamiento físico, etc.<br>
-                    4. Se hace responsable del mantenimiento de las zonas verdes y áreas comunitarias como lo son el parque
+                    3. Ofrece espacio para grupos de capacitación: odontología, computo, acondicionamiento físico,
+                    etc.<br>
+                    4. Se hace responsable del mantenimiento de las zonas verdes y áreas comunitarias como lo son el
+                    parque
                     infantil, la cancha multiusos, salón comunal, área de máquinas, etc.<br>
-                    5. Ejerce una función de cooperación que contribuye a que las Municipalidades se mantengan trabajando 
+                    5. Ejerce una función de cooperación que contribuye a que las Municipalidades se mantengan
+                    trabajando
                     por el beneficio de la comunidad en situaciones muy específicas.<br>
                     6. La Junta directiva cuenta con un plan de trabajo para cada período que incluye un fondo de
                     solidaridad en caso de emergencias o ayuda comunal a los vecinos.<br>
-                    7. En casos específicos y siempre que lo permita la agenda y los compromisos adquiridos, se facilitan
+                    7. En casos específicos y siempre que lo permita la agenda y los compromisos adquiridos, se
+                    facilitan
                     las instalaciones para te de canastilla o novenarios.<br>
-                    8. También en caso de reuniones comunitarias con el cuerpo de policía se cuenta con la disponibilidad de
+                    8. También en caso de reuniones comunitarias con el cuerpo de policía se cuenta con la
+                    disponibilidad de
                     espacio.
                 </p>
             </div>
-                <div class="about-img">
-                    <img src="../public/build/assets/image/Benef.png" alt="">
-                </div>
+            <div class="about-img">
+                <img src="../public/build/assets/image/Benef.png" alt="">
+            </div>
         </div>
     </section>
 
@@ -167,8 +214,32 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="http://localhost/SalonComunal2024/public/build/JavaScript/indexscript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        /*SWIPER*/
 
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            grabCursor: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                pauseOnMousereEnter: true,
+            },
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevtEl: ".swiper-button-prev"
+            }
+        })
+    </script>
 
 </body>
 
