@@ -84,7 +84,7 @@ section{
     border-radius: 30px;
     width: 55%;
 }
-select{
+#tipR{
     background-color: white;
     color: #000000;
     border-radius: 30px;
@@ -140,7 +140,8 @@ img, svg{
     .activity-form input[type="text"] {
         width: 100%;
     }
-    select{
+    
+    #tipR{
         width: 100%;
     }
     .activity-form{
@@ -180,6 +181,10 @@ img, svg{
         width: 100%;
         height: 4rem;
     }
+    #tipR{
+        width: 100%;
+        height: 4rem;
+    }
     .text-content{
         font-size: 1.5rem;
     }
@@ -193,9 +198,6 @@ section relative
 menu padding 0
 ***/
 
-svg{
-    text-align: left;
-}
 
 /**********************************MODAL***********************************/
 .modalDialog {
