@@ -103,10 +103,10 @@
 
                         <div class="row">
                             <div class="col-6">
-                                <label for="direccion" class="form-label">Direccion Exacta</label>
+                                <label for="direccion" class="form-label">Dirección Exacta</label>
                                 <input type="text" class="form-control form-control-lg mt-6" id="direccion"
                                     name="direccion">
-                                <div class="form-text" placeholder="Digite su direccion exacta">Digite su direccion
+                                <div class="form-text" placeholder="Digite su direccion exacta">Digite su dirección
                                     exacta</div>
                             </div>
                         </div>
