@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/formReservas/form-reservaciones.css">
+    <link rel="stylesheet"
+        href="http://localhost/SalonComunal2024/public/build/css/formReservas/form-reservaciones.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/header/headerStyle.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/footer/footerStyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,9 +16,10 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Formulario de Reservas</title>
 </head>
+
 <body>
     <header>
-     <?php
+        <?php
         require("../../../includes/header.php");
         ?>
     </header>
@@ -30,33 +32,33 @@
                             <h1>Reservaciones</h1>
                         </div>
                         <div class="row mt-3">
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="ced" class="form-label">Cédula</label>
-                                <input type="number" class="form-control form-control-sm mb-3 mt-3" id="ced" name="ced">
+                                <input type="number" class="form-control form-control-lg mb-3 mt-3" id="ced" name="ced">
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="nom" class="form-label">Nombre</label>
-                                <input type="text" class="form-control form-control-sm mb-3 mt-3" id="nom" name="nom">
+                                <input type="text" class="form-control form-control-lg mb-3 mt-3" id="nom" name="nom">
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="ape" class="form-label">Apellidos</label>
-                                <input type="text" class="form-control form-control-sm mb-3 mt-3" id="ape" name="ape">
+                                <input type="text" class="form-control form-control-lg mb-3 mt-3" id="ape" name="ape">
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="mail" class="form-label">Correo Electrónico</label>
-                                <input type="email" class="form-control form-control-sm mb-3 mt-3" id="mail"
+                                <input type="email" class="form-control form-control-lg mb-3 mt-3" id="mail"
                                     name="mail">
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="tel" class="form-label">Teléfono</label>
-                                <input type="number" class="form-control form-control-sm mb-3 mt-3" id="tel" name="tel">
+                                <input type="number" class="form-control form-control-lg mb-3 mt-3" id="tel" name="tel">
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="eda" class="form-label">Edad</label>
-                                <input type="number" class="form-control form-control-sm mb-3 mt-3" id="eda" name="eda">
+                                <input type="number" class="form-control form-control-lg mb-3 mt-3" id="eda" name="eda">
                             </div>
                         </div>
 
@@ -101,25 +103,25 @@
 
                         <div class="row">
                             <div class="col-6">
-                                <label for="direccion" class="form-label">Direccion Exacta</label>
+                                <label for="direccion" class="form-label">Dirección Exacta</label>
                                 <input type="text" class="form-control form-control-lg mt-6" id="direccion"
                                     name="direccion">
-                                <div class="form-text" placeholder="Digite su direccion exacta">Digite su direccion
+                                <div class="form-text" placeholder="Digite su direccion exacta">Digite su dirección
                                     exacta</div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="fec" class="form-label">Fecha de la Reservación</label>
-                                <input type="date" class="form-control form-control-sm mb-3 mt-3" id="fec" name="fec">
+                                <input type="date" class="form-control form-control-lg mb-3 mt-3" id="fec" name="fec">
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="hoi" class="form-label">Hora de Inicio</label>
-                                <input type="time" class="form-control form-control-sm mb-3 mt-3" id="hoi" name="hoi">
+                                <input type="time" class="form-control form-control-lg mb-3 mt-3" id="hoi" name="hoi">
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <label for="hof" class="form-label">Hora Final</label>
-                                <input type="time" class="form-control form-control-sm mb-3 mt-3" id="hof" name="hof">
+                                <input type="time" class="form-control form-control-lg mb-3 mt-3" id="hof" name="hof">
                             </div>
                         </div>
                         <div class="row">
@@ -138,30 +140,54 @@
 
                         </div>
                         <div class="row">
-                              <div id="beneficios" class="col-12 mb-6">
+                            <div id="beneficios" class="col-12 mb-6">
                                 <h3>Beneficios del Salón</h3>
                                 <ul>
                                     <li>1. La Asociación vela por los intereses y los derechos de la comunidad.</li>
-                                    <li>2. Ofrece un espacio para grupos de interés social como lo son: INAMU, alcohólicos Anónimos, Grupos de
-                                    Adulto mayor, Alanón, Scouts, etc.</li>
-                                    <li>3. Ofrece espacio para grupos de capacitación: odontología, computo, acondicionamiento físico, etc.</li>
-                                    <li> 4. Se hace responsable del mantenimiento de las zonas verdes y áreas comunitarias como lo son el parque
-                                    infantil, la cancha multiusos, salón comunal, área de máquinas, etc.</li>
-                                    <li> 5. Ejerce una función de cooperación que contribuye a que las Municipalidades se mantengan trabajando 
-                                    por el beneficio de la comunidad en situaciones muy específicas.</li>
-                                    <li> 6. La Junta directiva cuenta con un plan de trabajo para cada período que incluye un fondo de
-                                    solidaridad en caso de emergencias o ayuda comunal a los vecinos.</li>
-                                    <li> 7. En casos específicos y siempre que lo permita la agenda y los compromisos adquiridos, se facilitan
-                                    las instalaciones para te de canastilla o novenarios.</li>
-                                    <li> 8. También en caso de reuniones comunitarias con el cuerpo de policía se cuenta con la disponibilidad de
-                                    espacio.</li>
+                                    <li>2. Ofrece un espacio para grupos de interés social como lo son: INAMU,
+                                        alcohólicos Anónimos, Grupos de Adulto mayor, Alanón, Scouts, etc.</li>
+                                    <li>3. Ofrece espacio para grupos de capacitación: odontología, computo,
+                                        acondicionamiento físico, etc.</li>
+                                    <li>4. Se hace responsable del mantenimiento de las zonas verdes y áreas
+                                        comunitarias como lo son el parque infantil, la cancha multiusos, salón comunal,
+                                        área de máquinas, etc.</li>
+                                    <a href="#openModal" class="btn">Saber más</a>
                                 </ul>
-                            </div>  
+                                <div id="openModal" class="modalDialog">
+                                    <div id="modalContent">
+                                        <a href="#close" title="Close" class="close">X</a>
+                                        <h2>Bene<span>ficios</span></h2>
+                                        <h2>Información adicional</h2>
+                                        <ul>
+                                            <li>1. La Asociación vela por los intereses y los derechos de la comunidad
+                                            </li>
+                                            <li>2. Ofrece un espacio para grupos de interés social como lo son: INAMU,
+                                                alcohólicos Anónimos, Grupos de Adulto mayor, Alanón, Scouts, etc.</li>
+                                            <li>3. Ofrece espacio para grupos de capacitación: odontología, computo,
+                                                acondicionamiento físico, etc.</li>
+                                            <li>4. Se hace responsable del mantenimiento de las zonas verdes y áreas
+                                                comunitarias como lo son el parque infantil, la cancha multiusos, salón
+                                                comunal, área de máquinas, etc.</li>
+                                            <li>5. Ejerce una función de cooperación que contribuye a que las
+                                                Municipalidades se mantengan trabajando por el beneficio de la comunidad
+                                                en situaciones muy específicas.</li>
+                                            <li>6. La Junta directiva cuenta con un plan de trabajo para cada período
+                                                que incluye un fondo de solidaridad en caso de emergencias o ayuda
+                                                comunal a los vecinos.</li>
+                                            <li>7. En casos específicos y siempre que lo permita la agenda y los
+                                                compromisos adquiridos, se facilitan las instalaciones para te de
+                                                canastilla o novenarios.</li>
+                                            <li>8. También en caso de reuniones comunitarias con el cuerpo de policía se
+                                                cuenta con la disponibilidad de espacio.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-6">
                                 <label for="canP" class="form-label">Cantidad de Personas</label>
-                                <input type="number" class="form-control form-control-sm mb-3 mt-3" id="canP"
+                                <input type="number" class="form-control form-control-lg mb-3 mt-3" id="canP"
                                     name="canP">
                             </div>
                         </div>
@@ -169,32 +195,32 @@
                             <div class="col-6">
                                 <fieldset disabled>
                                     <label for="cosT" class="form-label">Costo Total</label>
-                                    <input type="number" class="form-control form-control-sm mb-3 mt-3" id="cosT"
+                                    <input type="number" class="form-control form-control-lg mb-3 mt-3" id="cosT"
                                         name="cosT">
                                 </fieldset>
                             </div>
 
                         </div>
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <fieldset disabled>
                                     <label for="cos" class="form-label">Costo de la Renta</label>
-                                    <input type="number" class="form-control form-control-sm mb-3 mt-3" id="cos"
+                                    <input type="number" class="form-control form-control-lg mb-3 mt-3" id="cos"
                                         name="cos">
                                 </fieldset>
 
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <fieldset disabled>
                                     <label for="cosD" class="form-label">Costo del Deposito</label>
-                                    <input type="number" class="form-control form-control-sm mb-3 mt-3" id="cosD"
+                                    <input type="number" class="form-control form-control-lg mb-3 mt-3" id="cosD"
                                         name="cosD">
                                 </fieldset>
                             </div>
-                            <div class="col-4">
+                            <div class="col-xl-4 col-sm-6">
                                 <fieldset disabled>
                                     <label for="cosL" class="form-label">Costo de Limpieza</label>
-                                    <input type="number" class="form-control form-control-sm mb-3 mt-3" id="cosL"
+                                    <input type="number" class="form-control form-control-lg mb-3 mt-3" id="cosL"
                                         name="cosL">
                                 </fieldset>
                             </div>
@@ -210,7 +236,7 @@
                     </form>
                 </div>
                 <div class="text-center mb-5">
-                <a href="" class="btn">Enviar</a>
+                    <button id="button" class="btn btn-primary btn-lg">Enviar</button>
                 </div>
             </div>
         </div>
@@ -219,7 +245,9 @@
         <?php
         require("../../../includes/footer.php");
         ?>
-    </footer>    
+    </footer>
+    <script src="http://localhost/SalonComunal2024/public/build/JavaScript/animacionbotonformreservas.js"></script>
+    <script src="http://localhost/SalonComunal2024/public/build/JavaScript/modalformreservas.js"></script>
 </body>
 
 

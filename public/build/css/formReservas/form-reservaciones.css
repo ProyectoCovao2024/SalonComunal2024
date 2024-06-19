@@ -42,6 +42,95 @@
     text-align: center;
   }
 
+  .modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 600px;
+    height: 80vh;
+    position: relative;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: rgb(255,255,255);
+    background: linear-gradient(27deg, rgba(255,255,255,1) 76%, rgba(6,97,122,1) 100%);
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.modalDialog > div::-webkit-scrollbar {
+    display: none;
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    top: 0px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+    z-index: 5 !important;
+}
+
+.close:hover { background: #ff0000; }
+
+@media (max-width: 197px) {
+    .modalDialog > div {
+        width: fit-content;
+        margin: 2% !important; 
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 634px) {
+    .modalDialog > div {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1034px) {
+    .modalDialog > div {
+        width: 80%;
+        margin: 2% !important; 
+        text-overflow: ellipsis;
+        font-size: large;
+    }
+}
+
   * {
     margin: 0;
     padding: 0;
@@ -56,6 +145,12 @@ body {
 
 .form-check-input{
   margin-left: 50px;
+}
+
+.formBox input{
+    background-color: white;
+    color: #000000;
+    border-radius: 30px;
 }
 
 
@@ -110,20 +205,20 @@ body {
     }
 
     .formBox form {
-        font-size: 0.9em; /* Tamaño de la fuente */
+        font-size: 1em; /* Tamaño de la fuente */
     }
 }
 
 @media (max-width: 1400px) {
     .formBox {
-        width: 60%;
+        width: 70%;
         height: auto;
         padding: 5%;
         border-color: rgb(0, 81, 255);
     }
 
     .formBox form {
-        font-size: 0.9em;
+        font-size: 1em;
     }
 }
 
@@ -136,7 +231,7 @@ body {
     }
 
     .formBox form {
-        font-size: 0.9em;
+        font-size: 1.5em;
     }
 }
 
@@ -149,7 +244,7 @@ body {
     }
 
     .formBox form {
-        font-size: 0.9em;
+        font-size: 1.5em;
     }
 }
 
@@ -162,7 +257,7 @@ body {
     }
 
     .formBox form {
-        font-size: 0.9em;
+        font-size: 1.4em;
     }
 }
 
@@ -175,7 +270,7 @@ body {
     }
 
     .formBox form {
-        font-size: 0.8em;
+        font-size: 2em;
     }
 }
 
@@ -186,10 +281,10 @@ body {
 
 .btn {
     display: inline-block;
-    padding: 1rem 2.8rem;
+    padding: 1.5rem 3.5rem;
     background-color: #06617A !important;
-    border-radius: 4rem;
-    font-size: 1.6rem;
+    border-radius: 5rem;
+    font-size: 2rem;
     color: #FFF !important;
     letter-spacing: .1rem;
     font-weight: 600;
@@ -200,4 +295,31 @@ body {
     background: #0a94ba !important;
     color: white;
     box-shadow: 0 0 1rem #FFF;
+}
+
+.bubbles{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    background: #06617A;
+    z-index: -1;
+    /*animation: animacionBubble 2s linear forwards;*/
+}
+
+.bubbles:nth-child(even){
+    background: transparent;
+    border: 1px solid #0a94ba;
+}
+
+@keyframes animacionBubble{
+    0%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(var(--x),var(--y));
+    }
 }
