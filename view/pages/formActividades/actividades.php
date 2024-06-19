@@ -48,8 +48,12 @@
                             <input type="text" class="form-control" id="nombre_actividad">
                         </div>
                         <div class="form-group">
-                            <label for="tipo_actividad">Tipo de Actividad</label>
-                            <input type="text" class="form-control" id="tipo_actividad">
+                            <label for="tipo_actividad">Monetización</label>
+                            <select name="tipR" id="tipR" class="form-select mb-4">
+                                <option>De pago</option>
+                                <option>No de pago</option>
+                                <option>Voluntario</option>
+                            </select>                        
                         </div>
                         <div class="text-center">
                             <button type="submit" class="btn btn-light">Agregar</button>
@@ -57,13 +61,47 @@
                             <button type="submit" class="btn btn-light">Eliminar</button>
                         </div>
                     </form>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-file-earmark-spreadsheet" viewBox="0 0 16 16">
-                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5zM3 12v-2h2v2zm0 1h2v2H4a1 1 0 0 1-1-1zm3 2v-2h3v2zm4 0v-2h3v1a1 1 0 0 1-1 1zm3-3h-3v-2h3zm-7 0v-2h3v2z"/>
-                    </svg>
+                    
+                    
+                    <a href="#openModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white"         class="bi bi-table" viewBox="0 0 16 16">
+                            <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 2h-4v3h4zm0 4h-4v3h4zm0 4h-4v3h3a1 1 0 0 0 1-1zm-5 3v-3H6v3zm-5 0v-3H1v2a1 1 0 0 0 1 1zm-4-4h4V8H1zm0-4h4V4H1zm5-3v3h4V4zm4 4H6v3h4z"/>
+                        </svg>
+                    </a>
 
 
 
-
+                    <div id="openModal" class="modalDialog">
+                        <div>
+                            <a href="#close" title="Close" class="close">X</a>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th class="table-primary" scope="col">Código</th>
+                                        <th class="table-primary" scope="col">Nombre</th>
+                                        <th class="table-primary" scope="col">Monetización</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Act-01</td>
+                                        <td>Quinceaños</td>
+                                        <td>Retribución</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Act-02</td>
+                                        <td>Grupo de apoyo</td>
+                                        <td>No retribución</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Act-03</td>
+                                        <td>Venta de comida</td>
+                                        <td>Pago voluntario</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
 
 

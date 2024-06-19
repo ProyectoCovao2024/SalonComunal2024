@@ -84,6 +84,12 @@ section{
     border-radius: 30px;
     width: 55%;
 }
+select{
+    background-color: white;
+    color: #000000;
+    border-radius: 30px;
+    width: 55%;
+}
 
 .activity-form .btn {
     margin-right: 10px;
@@ -132,6 +138,9 @@ img, svg{
         font-size: 2rem;
     }
     .activity-form input[type="text"] {
+        width: 100%;
+    }
+    select{
         width: 100%;
     }
     .activity-form{
@@ -184,6 +193,96 @@ section relative
 menu padding 0
 ***/
 
+svg{
+    text-align: left;
+}
+
 /**********************************MODAL***********************************/
-/*prueba*/
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+	width: 600px;
+    height: 80vh;
+	position: relative;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.modalDialog >div:-webkit-scrollbar{
+	display: none;
+}
+
+.close {
+	background: #606061;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: 0px;
+	text-align: center;
+	top: 0px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+	z-index: 5 !important;
+}
+.close:hover { background: #ff0000; }
+
+@media (max-width: 197px){
+	.modalDialog > div{
+		width: fit-content;
+		margin: 2% !important; 
+		text-overflow: ellipsis;
+	}
+}
+
+@media (max-width: 634px){
+	.modalDialog > div{
+		width: 80%;
+	}
+}
+
+@media (min-width: 1034px){
+	.modalDialog > div{
+		width: 80%;
+		margin: 2% !important; 
+		text-overflow: ellipsis;
+		font-size: large;
+	}
+}
 
