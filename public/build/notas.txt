@@ -1,2 +1,0 @@
-//Contenido para incorporar archivos publicos 
-Cualquier cosa
