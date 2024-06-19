@@ -10,15 +10,16 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet"
-        href="css/historialReservas.css">
+        href="http://localhost/SalonComunal2024/public/build/css/historialDeReservas/historialReservas.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/header/headerStyle.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/footer/footerStyle.css">
-    <script defer src="http://localhost/SalonComunal2024/public/build/JavaScript/headerscript.js"></script>
     <title>Historial Reservas</title>
 </head>
 
 <body>
-
+<?php
+    require ('../../../includes/header.php')
+?>
     <div class="box">
         <div class="container">
             <div class="row">
@@ -44,8 +45,9 @@
                                             </ul>
                                         </div>
                                         <div class="botones">
-                                            <button>Aceptar</button>
+                                            <button type="button" class="btn btn-success">Aceptar</button>
                                             <button>Rechazar</button>
+                                            <button type="button" class="btn btn-primary">Prueba</button>
                                         </div>
                                     </div>
                                     <div class="boxreservas">
@@ -121,7 +123,7 @@
                                 <button id="accordion-button-two" class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                     aria-controls="flush-collapseTwo">
-                                    Resevaciones Aprovadas
+                                    Resevaciones Aprobadas
                                 </button>
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse"
