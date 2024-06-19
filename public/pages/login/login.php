@@ -29,7 +29,8 @@
             <div class="card">
                 <div class="card_login">
                     <h3>Bienv<span>enido</span></h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit maxime laudantium quisquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, iure dolores assumenda, nobis, illum ipsam nemo sed voluptatibus excepturi ex ea sequi veniam? Optio dignissimos velit accusamus impedit ut vero?</p>
+                    <p>¡Nos alegra verte de nuevo! Gracias por regresar a nuestra plataforma. Esperamos que encuentres todo lo que necesitas y que tu experiencia sea agradable. Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarnos. ¡Disfruta tu visita!</p>
+                    <p class="contact"><i class='bx bx-envelope'></i> example<span>@gmail.com</span></p>
                 </div>
                 </div>
             </div>

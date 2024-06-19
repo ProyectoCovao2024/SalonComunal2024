@@ -7,7 +7,7 @@ ScrollReveal({
     delay: 100 
 });
 
-ScrollReveal().reveal('.home-content', { origin: 'top' });
+ScrollReveal().reveal('.home-content', '.mySwiper', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .about-img, .fund-content, .explor-content, .slide-content', { origin: 'bottom' });
 ScrollReveal().reveal('.about-content', { origin: 'left' });
 
