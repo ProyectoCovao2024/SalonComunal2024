@@ -306,6 +306,31 @@ header .menu{
 	z-index: 5 !important;
 }
 .close:hover { background: #ff0000; }
+/**************************************/
+.formContainer{
+    position: relative;
+    background: #83FF2C;
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 8px;
+}
+.groupInfo{
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(5,1fr);
+    gap: 5px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 2%;
+}
+
+/**************************************/
+
+
 
 @media (max-width: 197px){
 	.modalDialog > div{
@@ -331,7 +356,3 @@ header .menu{
 }
 
 /************************/
-
-.formContainer{
-    
-}

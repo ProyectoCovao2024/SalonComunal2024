@@ -166,8 +166,39 @@
                         <form action="#">
                             <fieldset>
                                 <legend>Informacion</legend>
-                                <label for="cedulaInfo">Cedula</label>
-                                <input type="number" value="111111111">
+                                <div class="groupInfo">
+                                    <label for="">Cedula</label>
+                                    <label for="">Nombre</label>
+                                    <input type="text">
+                                    <input type="text">
+                                    <label for="">Apellidos</label>
+                                    <label for="">Correo Electronico</label>
+                                    <input type="text">
+                                    <input type="text">
+                                    <label for="">Telefono</label><br>
+                                    <input type="text">
+                                    <br>
+                                </div>
+                                <div class="groupInfo">
+                                <label for="">Cedula</label>
+                                    <label for="">Nombre</label>
+                                    <input type="text">
+                                    <input type="text">
+                                    <label for="">Apellidos</label>
+                                    <label for="">Correo Electronico</label>
+                                    <input type="text">
+                                    <input type="text">
+                                    <label for="">Telefono</label><br>
+                                    <input type="text">
+                                    <br>
+                                </div>
+                                <div class="group3">
+
+                                </div>
+                                <div class="group4">
+
+                                </div>
+                                <div class="buttoms"></div>
                             </fieldset>
                         </form>
                     </div>
