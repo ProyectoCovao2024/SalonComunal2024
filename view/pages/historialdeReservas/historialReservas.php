@@ -45,9 +45,8 @@
                                             </ul>
                                         </div>
                                         <div class="botones">
-                                            <button type="button" class="btn btn-success">Aceptar</button>
+                                            <button>Aceptar</button>
                                             <button>Rechazar</button>
-                                            <button type="button" class="btn btn-primary">Prueba</button>
                                         </div>
                                     </div>
                                     <div class="boxreservas">
@@ -182,25 +181,46 @@
                                     <br>
                                 </div>
                                 <div class="groupInfo">
-                                <label for="">Cedula</label>
-                                    <label for="">Nombre</label>
+                                <label for="">Edad</label>
+                                    <label for="">Provincia</label>
                                     <input type="text">
                                     <input type="text">
-                                    <label for="">Apellidos</label>
-                                    <label for="">Correo Electronico</label>
+                                    <label for="">Canton</label>
+                                    <label for="">Distrito</label>
                                     <input type="text">
                                     <input type="text">
-                                    <label for="">Telefono</label><br>
+                                    <label for="">Direccion Exacta</label><br>
                                     <input type="text">
                                     <br>
                                 </div>
-                                <div class="group3">
-
+                                <div class="groupInfo">
+                                <label for="">Fecha Reservacion</label>
+                                    <label for="">Hora de Inicio</label>
+                                    <input type="text">
+                                    <input type="text">
+                                    <label for="">Hora de Finalizacion</label>
+                                    <label for="">Tipo de actividad</label>
+                                    <input type="text">
+                                    <input type="text">
+                                    <label for="">Cantidad de Personas</label><br>
+                                    <input type="text">
+                                    <br>
                                 </div>
-                                <div class="group4">
-
+                                <div class="groupInfo">
+                                <label for="">Costo Total</label>
+                                    <label for="">Costo de la Renta</label>
+                                    <input type="text">
+                                    <input type="text">
+                                    <label for="">Costo del deposito</label>
+                                    <label for="">osto de Limpieza</label>
+                                    <input type="text">
+                                    <input type="text">
+                                    <br>
                                 </div>
-                                <div class="buttoms"></div>
+                                <div class="buttoms">
+                                    <button >Modificar</button>
+                                    <button >Eliminar</button>
+                                </div>
                             </fieldset>
                         </form>
                     </div>
