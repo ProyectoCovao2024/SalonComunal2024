@@ -75,6 +75,7 @@ section{
 
 .activity-form label {
     color: #fff;
+    padding-bottom: 5px;
 }
 
 .activity-form input[type="text"] {
@@ -86,6 +87,12 @@ section{
 
 .activity-form .btn {
     margin-right: 10px;
+    font-size: 1rem;
+}
+
+.activity-form i{
+    position: absolute;
+    color: red;
 }
 
 
@@ -109,6 +116,10 @@ section{
     height: -webkit-fill-available;
 }
 
+img, svg{
+    color: #000000;
+}
+
 /*********/
 
 @media(max-width:767px){
@@ -122,7 +133,6 @@ section{
     }
     .activity-form input[type="text"] {
         width: 100%;
-        height: 4rem;
     }
     .activity-form{
         border-top-left-radius: 0px 0px;
@@ -138,8 +148,11 @@ section{
         border-top-left-radius: 30px 30px;
         border-top-right-radius: 30px 30px;
         border-bottom-left-radius: 0px 0px;
-
     }
+    .activity-form .btn {
+        font-size: 1.7rem;   
+    }
+    
 }
 
 @media screen and (max-width: 1200px) {
@@ -147,8 +160,20 @@ section{
         display: initial;
         z-index: 1000;
     }
-    /*aqui*/
-
+    .activity-form .btn {
+        font-size: 1.7rem;
+    }
+    .activity-form label {
+        color: #fff;
+        font-size: 2rem;
+    }
+    .activity-form input[type="text"] {
+        width: 100%;
+        height: 4rem;
+    }
+    .text-content{
+        font-size: 1.5rem;
+    }
 
 }
 
@@ -158,3 +183,6 @@ body display grid
 section relative
 menu padding 0
 ***/
+
+/**********************************MODAL***********************************/
+
