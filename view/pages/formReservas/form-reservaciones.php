@@ -66,6 +66,7 @@
                             <div class="col-4">
                                 <label for="prov" class="form-label">Provincia</label>
                                 <select name="prov" id="prov" class="form-select mb-4">
+                                <option value="" hidden>Selecciona una opción</option>
                                     <option>Alajuela</option>
                                     <option>Cartago</option>
                                     <option>Guanacaste</option>
@@ -78,6 +79,7 @@
                             <div class="col-4">
                                 <label for="can" class="form-label">Cantón</label>
                                 <select name="can" id="can" class="form-select mb-4">
+                                <option value="" hidden>Selecciona una opción</option>
                                     <option>Alajuela</option>
                                     <option>Cartago</option>
                                     <option>Guanacaste</option>
@@ -90,6 +92,7 @@
                             <div class="col-4">
                                 <label for="dis" class="form-label">Distrito</label>
                                 <select name="dis" id="dis" class="form-select mb-4">
+                                <option value="" hidden>Selecciona una opción</option>
                                     <option>Alajuela</option>
                                     <option>Cartago</option>
                                     <option>Guanacaste</option>
@@ -128,6 +131,7 @@
                             <div class="col-6">
                                 <label for="tipR" class="form-label">Tipo de Actividad</label>
                                 <select name="tipR" id="tipR" class="form-select mb-4">
+                                <option value="" hidden>Selecciona una opción</option>
                                     <option>Alajuela</option>
                                     <option>Cartago</option>
                                     <option>Guanacaste</option>
@@ -236,7 +240,8 @@
                     </form>
                 </div>
                 <div class="text-center mb-5">
-                    <button id="button" class="btn btn-primary btn-lg">Enviar</button>
+                <button> Button
+                </button>
                 </div>
             </div>
         </div>

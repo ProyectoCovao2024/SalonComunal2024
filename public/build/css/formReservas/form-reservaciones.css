@@ -176,9 +176,10 @@ body {
     align-items: center;
     padding: 5%;
     background: rgba(255, 255, 255, 0.8);
+    box-shadow: 15px 10px 10px #9cdbeb;
     backdrop-filter: blur(9px);
     border-radius: 60px;
-    border: solid 5px rgb(255, 174, 0);
+    border: 0.5rem solid #7abfc45d;
     overflow: auto;
     height: fit-content;
     animation: fadeIn 2s ease-in-out;
@@ -201,7 +202,7 @@ body {
     .formBox {
         width: 60%;
         padding: 5%;
-        border-color: rgb(255, 174, 0);
+        border: 0.5rem solid #7abfc45d;
     }
 
     .formBox form {
@@ -214,7 +215,7 @@ body {
         width: 70%;
         height: auto;
         padding: 5%;
-        border-color: rgb(0, 81, 255);
+        border: 0.5rem solid #7abfc45d;
     }
 
     .formBox form {
@@ -227,7 +228,7 @@ body {
         width: 70%;
         height: auto;
         padding: 10%;
-        border-color: rgb(178, 253, 3);
+        border: 0.5rem solid #7abfc45d;
     }
 
     .formBox form {
@@ -240,7 +241,7 @@ body {
         width: 75%;
         height: auto;
         padding: 10%;
-        border-color: rgb(51, 6, 51);
+        border: 0.5rem solid #7abfc45d;
     }
 
     .formBox form {
@@ -253,7 +254,7 @@ body {
         width: 90%;
         height: auto;
         padding: 10%;
-        border-color: rgb(0, 217, 255);
+        border: 0.5rem solid #7abfc45d;
     }
 
     .formBox form {
@@ -266,7 +267,7 @@ body {
         width: 100%;
         height: auto;
         padding: 10%;
-        border-color: rgb(253, 3, 3);
+        border: 0.5rem solid #7abfc45d;
     }
 
     .formBox form {
@@ -279,23 +280,32 @@ body {
     justify-content: center;
 }
 
-.btn {
+button {
+    position: relative;
     display: inline-block;
-    padding: 1.5rem 3.5rem;
-    background-color: #06617A !important;
-    border-radius: 5rem;
-    font-size: 2rem;
-    color: #FFF !important;
-    letter-spacing: .1rem;
-    font-weight: 600;
-    transition: 0.5s ease;
-}
-
-.btn:hover {
-    background: #0a94ba !important;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #725AC1;
+  }
+  
+  button:hover {
     color: white;
-    box-shadow: 0 0 1rem #FFF;
-}
+    box-shadow: inset 0 -100px 0 0 #725AC1;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
 
 .bubbles{
     position: absolute;
