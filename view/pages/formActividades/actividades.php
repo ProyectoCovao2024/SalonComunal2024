@@ -32,7 +32,7 @@
         <div class="row">
             <div id="info" class="col-md-4">
                 <div class="text-content m-0 ">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error repellendus accusantium quidem natus, maxime voluptatem. Adipisci dignissimos, facilis, animi maxime sit, aut vero omnis numquam ex corporis voluptatibus accusamus neque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsa quaerat cumque dolore, fuga cupiditate est minima excepturi. Nesciunt dicta est odio inventore provident odit mollitia magni sapiente quo at?</p>
+                    <p>La página de actividades permite crear diferentes tipos de actividades que pueden llevarse a cabo en el salón comunal, cada uno con su método de monetización específico. Además, al precionar el icono situado en el inferior izquierda, se pueden visualizar los tipos de actividades ingresadas anteriormente. </p>
                 </div>
             </div>
             <div class="col-md-8">
@@ -50,8 +50,9 @@
                         <div class="form-group">
                             <label for="tipo_actividad">Monetización</label>
                             <select name="tipR" id="tipR" class="form-select mb-4">
-                                <option>De pago</option>
-                                <option>No de pago</option>
+                                <option value="" hidden>Selecciona una opción</option>
+                                <option>Retribución</option>
+                                <option>No retribución</option>
                                 <option>Voluntario</option>
                             </select>                        
                         </div>
@@ -95,8 +96,8 @@
                                     </tr>
                                     <tr>
                                         <td>Act-03</td>
-                                        <td>Venta de comida</td>
-                                        <td>Pago voluntario</td>
+                                        <td>Ventas de comida</td>
+                                        <td>Voluntario</td>
                                     </tr>
                                 </tbody>
                             </table>
