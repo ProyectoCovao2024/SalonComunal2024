@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body style="background:url(http://localhost/SalonComunal2024/public/build/assets/image/backgroundgif.gif)">
 
     <header>
         <?php 
@@ -28,11 +28,11 @@
 
 
 
-<section class="activities-section m-0" style="background:url(http://localhost/SalonComunal2024/public/build/assets/image/backgroundgif.gif)">
+<section class="activities-section m-0">
     <div class="container" >
         <div class="row">
             <div id="info" class="col-md-4" >
-            <div class="text-content m-0 ">
+            <div class="text-content m-0">
             <p>La página de actividades permite crear diferentes tipos de actividades que pueden llevarse a cabo en el salón comunal, cada uno con su método de monetización específico. Además, al precionar el icono situado en el inferior izquierda, se pueden visualizar los tipos de actividades ingresadas anteriormente. </p>
             </div>
                 
