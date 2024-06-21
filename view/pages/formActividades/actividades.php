@@ -31,12 +31,8 @@
     <div class="container">
         <div class="row">
             <div id="info" class="col-md-4" >
-
-            <div class="card">
-                <p class="small-desc">
-                    La página de actividades permite crear diferentes tipos de actividades que pueden llevarse a cabo en el salón comunal, cada uno con su método de monetización específico. Además, al precionar el icono situado en el inferior izquierda, se pueden visualizar los tipos de actividades ingresadas anteriormente.
-                </p>
-                <div class="go-corner"></div>
+            <div class="text-content m-0 ">
+            <p>La página de actividades permite crear diferentes tipos de actividades que pueden llevarse a cabo en el salón comunal, cada uno con su método de monetización específico. Además, al precionar el icono situado en el inferior izquierda, se pueden visualizar los tipos de actividades ingresadas anteriormente. </p>
             </div>
                 
             </div>
