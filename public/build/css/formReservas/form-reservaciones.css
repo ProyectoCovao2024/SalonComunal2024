@@ -118,13 +118,13 @@
 
 @media (max-width: 634px) {
     .modalDialog > div {
-        width: 80%;
+        width: fit-content;
     }
 }
 
 @media (min-width: 1034px) {
     .modalDialog > div {
-        width: 80%;
+        width: fit-content;
         margin: 2% !important; 
         text-overflow: ellipsis;
         font-size: large;
@@ -140,14 +140,6 @@
 
 body {
     background-image: url('http://localhost/SalonComunal2024/public/build/assets/image/backgroundgif.gif');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    min-height: 100vh;
-    position: absolute;
-    display: grid;
-    width: 100%;
 }
 
 .form-check-input{
@@ -159,6 +151,12 @@ body {
     color: #000000;
     border-radius: 30px;
 }
+
+.formBox select{
+    background-color: white;
+    color: #000000;
+    border-radius: 30px;
+} 
 
 
 @keyframes animateBackground {
