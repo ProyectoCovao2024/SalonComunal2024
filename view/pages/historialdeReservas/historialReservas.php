@@ -10,15 +10,16 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet"
-        href="css/historialReservas.css">
+        href="http://localhost/SalonComunal2024/public/build/css/historialDeReservas/historialReservas.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/header/headerStyle.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/footer/footerStyle.css">
-    <script defer src="http://localhost/SalonComunal2024/public/build/JavaScript/headerscript.js"></script>
     <title>Historial Reservas</title>
 </head>
 
 <body>
-
+<?php
+    require ('../../../includes/header.php')
+?>
     <div class="box">
         <div class="container">
             <div class="row">
@@ -121,7 +122,7 @@
                                 <button id="accordion-button-two" class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false"
                                     aria-controls="flush-collapseTwo">
-                                    Resevaciones Aprovadas
+                                    Resevaciones Aprobadas
                                 </button>
                             </h2>
                             <div id="flush-collapseTwo" class="accordion-collapse collapse"
@@ -180,25 +181,46 @@
                                     <br>
                                 </div>
                                 <div class="groupInfo">
-                                <label for="">Cedula</label>
-                                    <label for="">Nombre</label>
+                                <label for="">Edad</label>
+                                    <label for="">Provincia</label>
                                     <input type="text">
                                     <input type="text">
-                                    <label for="">Apellidos</label>
-                                    <label for="">Correo Electronico</label>
+                                    <label for="">Canton</label>
+                                    <label for="">Distrito</label>
                                     <input type="text">
                                     <input type="text">
-                                    <label for="">Telefono</label><br>
+                                    <label for="">Direccion Exacta</label><br>
                                     <input type="text">
                                     <br>
                                 </div>
-                                <div class="group3">
-
+                                <div class="groupInfo">
+                                <label for="">Fecha Reservacion</label>
+                                    <label for="">Hora de Inicio</label>
+                                    <input type="text">
+                                    <input type="text">
+                                    <label for="">Hora de Finalizacion</label>
+                                    <label for="">Tipo de actividad</label>
+                                    <input type="text">
+                                    <input type="text">
+                                    <label for="">Cantidad de Personas</label><br>
+                                    <input type="text">
+                                    <br>
                                 </div>
-                                <div class="group4">
-
+                                <div class="groupInfo">
+                                <label for="">Costo Total</label>
+                                    <label for="">Costo de la Renta</label>
+                                    <input type="text">
+                                    <input type="text">
+                                    <label for="">Costo del deposito</label>
+                                    <label for="">osto de Limpieza</label>
+                                    <input type="text">
+                                    <input type="text">
+                                    <br>
                                 </div>
-                                <div class="buttoms"></div>
+                                <div class="buttoms">
+                                    <button >Modificar</button>
+                                    <button >Eliminar</button>
+                                </div>
                             </fieldset>
                         </form>
                     </div>

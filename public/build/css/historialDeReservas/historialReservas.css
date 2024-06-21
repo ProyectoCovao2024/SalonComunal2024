@@ -145,26 +145,26 @@ header .menu{
 }
 
 .botones button:nth-child(1){
-    background: #83FF2C !important;
-    border: 5px double green;
+    background: #7eff5c !important;
+    border: 5px double #00ff66;
     width: 80%;
     height: 80%;
-    border-radius: 20px;
+    border-radius: 5px;
     font-size: 1.2em;
-    font-weight: 600;
+    font-weight: 400;
     color: black;
     margin-left: 0%;
     margin-right: 2%;
 }
 
 .botones button:nth-child(2){
-    background: #ff4545 !important;
-    border: 5px double red;
+    background: #ff8554 !important;
+    border: 5px double #ff3616;
     width: 80%;
     height: 80%;
-    border-radius: 20px;
+    border-radius: 5px;
     font-size: 1.2em;
-    font-weight: 600;
+    font-weight: 400;
     color: black;
     margin-right: 5%;
 }
@@ -314,7 +314,7 @@ header .menu{
     min-height: 100%;
     display: grid;
     grid-template-columns: repeat(1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(2, fit-content);
     gap: 8px;
 }
 .groupInfo{
@@ -326,6 +326,10 @@ header .menu{
     padding-left: 4%;
     padding-right: 4%;
     padding-bottom: 2%;
+}
+
+.buttoms{
+    grid-row: 2/3;
 }
 
 /**************************************/
