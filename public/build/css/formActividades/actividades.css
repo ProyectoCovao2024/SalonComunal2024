@@ -2,8 +2,11 @@
     height: fit-content;
 }
 
+header{
+    z-index: 2;
+}
+
 body{
-    background: url(../../assets/image/backgroundgif.gif);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -195,6 +198,9 @@ body display grid
 section relative
 menu padding 0
 ***/
+
+
+
 
 
 /**********************************MODAL***********************************/
