@@ -30,10 +30,15 @@
 <section class="activities-section m-0">
     <div class="container">
         <div class="row">
-            <div id="info" class="col-md-4">
-                <div class="text-content m-0 ">
-                    <p>La página de actividades permite crear diferentes tipos de actividades que pueden llevarse a cabo en el salón comunal, cada uno con su método de monetización específico. Además, al precionar el icono situado en el inferior izquierda, se pueden visualizar los tipos de actividades ingresadas anteriormente. </p>
-                </div>
+            <div id="info" class="col-md-4" >
+
+            <div class="card">
+                <p class="small-desc">
+                    La página de actividades permite crear diferentes tipos de actividades que pueden llevarse a cabo en el salón comunal, cada uno con su método de monetización específico. Además, al precionar el icono situado en el inferior izquierda, se pueden visualizar los tipos de actividades ingresadas anteriormente.
+                </p>
+                <div class="go-corner"></div>
+            </div>
+                
             </div>
             <div class="col-md-8">
                 <div class="activity-form m-0">
@@ -63,7 +68,7 @@
                         </div>
                     </form>
                     
-                    
+
                     <a href="#openModal">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white"         class="bi bi-table" viewBox="0 0 16 16">
                             <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 2h-4v3h4zm0 4h-4v3h4zm0 4h-4v3h3a1 1 0 0 0 1-1zm-5 3v-3H6v3zm-5 0v-3H1v2a1 1 0 0 0 1 1zm-4-4h4V8H1zm0-4h4V4H1zm5-3v3h4V4zm4 4H6v3h4z"/>
