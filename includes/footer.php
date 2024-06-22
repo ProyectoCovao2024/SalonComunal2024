@@ -17,11 +17,10 @@
         </a></li>
 </ul>
 <ul class="menuL">
-    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-    <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-    <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-    <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-    <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+    <li class="menu__item"><a class="menu__link" href="/SalonComunal2024/public/index.php">Inicio</a></li>
+    <li class="menu__item"><a class="menu__link" href="/SalonComunal2024/view/pages/terminosyCondiciones/terminosyCondiciones.php">Términos y Condiciones</a></li>
+    <li class="menu__item"><a class="menu__link" href="/SalonComunal2024/view/pages/galeria/galeria.php">Galería</a></li>
+    <li class="menu__item"><a class="menu__link" href="/SalonComunal2024/view/pages/formReservas/form-reservaciones.php">Reservaciones</a></li>
 
 </ul>
 <p>&copy;2024 Asociación de Desarrollo Integral. Los Ángeles e INVU | Todos los derechos reservados</p>

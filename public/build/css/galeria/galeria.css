@@ -60,7 +60,6 @@ body {
     font-size: 4.2rem;
     bottom: -60px;
     position: relative;
-
 }
 
 .img {
@@ -96,4 +95,15 @@ footer {
     height: 90px;
     background: url("../../assets/image/wave.png");
     background-size: 1000px 90px;
+}
+
+/***************************************************************/
+
+@keyframes lettersAnimation{
+    0%{
+
+    }
+    100%{
+        
+    }
 }

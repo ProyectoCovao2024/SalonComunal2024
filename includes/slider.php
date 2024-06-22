@@ -2,7 +2,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="../public/build/css/slide/slide.css">
 <section class="mislide" style="background:url(../public/build/assets/image/backgroundgif.gif)">
-        <div class="swiper mySwiper container">
+        <div class="swiper mySwiper slideranimation container">
             <div class="swiper-wrapper content">
                 <div class="swiper-slide card">
                     <div class="box1"></div>
@@ -16,8 +16,8 @@
                             <i class="fab fa-instagram"></i>
                         </div>
                         <div class="name-profession">
-                            <span class="name">Example</span>
-                            <span class="profession">Exampleee</span>
+                            <span class="name" data-swiper-parallax="-100">Example</span>
+                            <span class="profession" data-swiper-parallax="-200">Exampleee</span>
                         </div>
                         <div class="rating">
                             <i class="fas fa-star"></i>
@@ -26,7 +26,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <div class="abouttt">
+                        <div class="abouttt" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quia sapiente! Quos
                                 libero rem non expedita suscipit perspiciatis quia saepe animi accusamus itaque soluta
                                 distinctio, dolorum nulla quo minus obcaecati.</p>
@@ -45,8 +45,8 @@
                             <i class="fab fa-instagram"></i>
                         </div>
                         <div class="name-profession">
-                            <span class="name">Example</span>
-                            <span class="profession">Exampleee</span>
+                            <span class="name" data-swiper-parallax="-100">Example</span>
+                            <span class="profession" data-swiper-parallax="-200">Exampleee</span>
                         </div>
                         <div class="rating">
                             <i class="fas fa-star"></i>
@@ -55,7 +55,7 @@
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <div class="abouttt">
+                        <div class="abouttt" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quia sapiente! Quos
                                 libero rem non expedita suscipit perspiciatis quia saepe animi accusamus itaque soluta
                                 distinctio, dolorum nulla quo minus obcaecati.</p>
@@ -74,8 +74,8 @@
                             <i class="fab fa-instagram"></i>
                         </div>
                         <div class="name-profession">
-                            <span class="name">Example</span>
-                            <span class="profession">Exampleee</span>
+                            <span class="name" data-swiper-parallax="-100">Example</span>
+                            <span class="profession" data-swiper-parallax="-200">Exampleee</span>
                         </div>
                         <div class="rating">
                             <i class="fas fa-star"></i>
@@ -84,7 +84,7 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <div class="abouttt">
+                        <div class="abouttt" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quia sapiente! Quos
                                 libero rem non expedita suscipit perspiciatis quia saepe animi accusamus itaque soluta
                                 distinctio, dolorum nulla quo minus obcaecati.</p>
@@ -103,8 +103,8 @@
                             <i class="fab fa-instagram"></i>
                         </div>
                         <div class="name-profession">
-                            <span class="name">Example</span>
-                            <span class="profession">Exampleee</span>
+                            <span class="name" data-swiper-parallax="-100">Example</span>
+                            <span class="profession" data-swiper-parallax="-200">Exampleee</span>
                         </div>
                         <div class="rating">
                             <i class="fas fa-star"></i>
@@ -113,7 +113,7 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                         </div>
-                        <div class="abouttt">
+                        <div class="abouttt" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quia sapiente! Quos
                                 libero rem non expedita suscipit perspiciatis quia saepe animi accusamus itaque soluta
                                 distinctio, dolorum nulla quo minus obcaecati.</p>
@@ -132,8 +132,8 @@
                             <i class="fab fa-instagram"></i>
                         </div>
                         <div class="name-profession">
-                            <span class="name">Example</span>
-                            <span class="profession">Exampleee</span>
+                            <span class="name" data-swiper-parallax="-100">Example</span>
+                            <span class="profession" data-swiper-parallax="-200">Exampleee</span>
                         </div>
                         <div class="rating">
                             <i class="fas fa-star"></i>
@@ -142,7 +142,7 @@
                             <i class="fas fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <div class="abouttt">
+                        <div class="abouttt" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quia sapiente! Quos
                                 libero rem non expedita suscipit perspiciatis quia saepe animi accusamus itaque soluta
                                 distinctio, dolorum nulla quo minus obcaecati.</p>
@@ -161,8 +161,8 @@
                             <i class="fab fa-instagram"></i>
                         </div>
                         <div class="name-profession">
-                            <span class="name">Example</span>
-                            <span class="profession">Exampleee</span>
+                            <span class="name" data-swiper-parallax="-100">Example</span>
+                            <span class="profession" data-swiper-parallax="-200">Exampleee</span>
                         </div>
                         <div class="rating">
                             <i class="fas fa-star"></i>
@@ -171,7 +171,7 @@
                             <i class="far fa-star"></i>
                             <i class="far fa-star"></i>
                         </div>
-                        <div class="abouttt">
+                        <div class="abouttt" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
                             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quia sapiente! Quos
                                 libero rem non expedita suscipit perspiciatis quia saepe animi accusamus itaque soluta
                                 distinctio, dolorum nulla quo minus obcaecati.</p>
@@ -181,9 +181,7 @@
             </div>
         <div class="swiper-pagination"></div>
         </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        
         
 </section>
-<script src="http://localhost/SalonComunal2024/public/build/JavaScript/slider.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
