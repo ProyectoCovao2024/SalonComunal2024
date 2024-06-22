@@ -7,6 +7,7 @@
     <link rel="stylesheet"
         href="http://localhost/SalonComunal2024/public/build/css/formReservas/form-reservaciones.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/header/headerStyle.css">
+    <link rel="icon" type="image/x-icon" href="http://localhost/SalonComunal2024/public/build/assets/image/logo.ico">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/footer/footerStyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
@@ -28,7 +29,7 @@
             <div class="col-sm-10 col-md-11 col-lg-11 col-xl-12 col-xxl-12">
                 <div class="formBox">
                     <form>
-                        <div class="titulo">
+                        <div class="titulo mb-3">
                             <h1>Reservaciones</h1>
                         </div>
                         <div class="row mt-3">
@@ -66,7 +67,7 @@
                             <div class="col-4">
                                 <label for="prov" class="form-label">Provincia</label>
                                 <select name="prov" id="prov" class="form-select mb-4">
-                                <option value="" hidden>Selecciona una opción</option>
+                                    <option value="" hidden>Selecciona una opción</option>
                                     <option>Alajuela</option>
                                     <option>Cartago</option>
                                     <option>Guanacaste</option>
@@ -79,7 +80,7 @@
                             <div class="col-4">
                                 <label for="can" class="form-label">Cantón</label>
                                 <select name="can" id="can" class="form-select mb-4">
-                                <option value="" hidden>Selecciona una opción</option>
+                                    <option value="" hidden>Selecciona una opción</option>
                                     <option>Alajuela</option>
                                     <option>Cartago</option>
                                     <option>Guanacaste</option>
@@ -92,7 +93,7 @@
                             <div class="col-4">
                                 <label for="dis" class="form-label">Distrito</label>
                                 <select name="dis" id="dis" class="form-select mb-4">
-                                <option value="" hidden>Selecciona una opción</option>
+                                    <option value="" hidden>Selecciona una opción</option>
                                     <option>Alajuela</option>
                                     <option>Cartago</option>
                                     <option>Guanacaste</option>
@@ -109,8 +110,6 @@
                                 <label for="direccion" class="form-label">Dirección Exacta</label>
                                 <input type="text" class="form-control form-control-lg mt-6" id="direccion"
                                     name="direccion">
-                                <div class="form-text" placeholder="Digite su direccion exacta">Digite su dirección
-                                    exacta</div>
                             </div>
                         </div>
                         <div class="row">
@@ -131,7 +130,7 @@
                             <div class="col-6">
                                 <label for="tipR" class="form-label">Tipo de Actividad</label>
                                 <select name="tipR" id="tipR" class="form-select mb-4">
-                                <option value="" hidden>Selecciona una opción</option>
+                                    <option value="" hidden>Selecciona una opción</option>
                                     <option>Alajuela</option>
                                     <option>Cartago</option>
                                     <option>Guanacaste</option>
@@ -231,17 +230,20 @@
                         </div>
                         <div class="row">
                             <div class="col-7">
-                                <p>Lee y acepta nuestros terminos y condiciones</p>
+                                <p>Lee y acepta nuestros términos y condiciones</p>
                             </div>
                             <div class="col-5">
-                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <div class="check_container">
+                                    <input id="checkbox" class="hidden" type="checkbox">
+                                    <label class="checkbox" for="checkbox"></label>
+                                </div>
                             </div>
                         </div>
                     </form>
                 </div>
                 <div class="text-center mb-5">
-                <button> Button
-                </button>
+                    <button> Enviar
+                    </button>
                 </div>
             </div>
         </div>

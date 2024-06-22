@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="http://localhost/SalonComunal2024/public/build/assets/image/logo.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -166,55 +167,54 @@
                     <div class="formContainer">
                         <form action="#">
                             <fieldset>
-                                <legend>Informacion</legend>
                                 <div class="groupInfo">
-                                    <label for="">Cedula</label>
-                                    <label for="">Nombre</label>
-                                    <input type="text">
-                                    <input type="text">
-                                    <label for="">Apellidos</label>
-                                    <label for="">Correo Electronico</label>
-                                    <input type="text">
-                                    <input type="text">
-                                    <label for="">Telefono</label><br>
-                                    <input type="text">
+                                    <label for="cedula">Cedula</label>
+                                    <label for="nombre">Nombre</label>
+                                    <input type="numbre" name="cedula" id="cedula">
+                                    <input type="text" name="nombre" id="nombre">
+                                    <label for="apellidos">Apellidos</label>
+                                    <label for="correo">Correo Electronico</label>
+                                    <input type="text" name="apellidos" id="apellidos">
+                                    <input type="text" name="correo" id="correo">
+                                    <label for="telefono">Telefono</label><br>
+                                    <input type="number" name="telefono" id="telefono">
                                     <br>
                                 </div>
                                 <div class="groupInfo">
-                                <label for="">Edad</label>
-                                    <label for="">Provincia</label>
-                                    <input type="text">
-                                    <input type="text">
-                                    <label for="">Canton</label>
-                                    <label for="">Distrito</label>
-                                    <input type="text">
-                                    <input type="text">
-                                    <label for="">Direccion Exacta</label><br>
-                                    <input type="text">
+                                <label for="edad">Edad</label>
+                                    <label for="provincia">Provincia</label>
+                                    <input type="text" name="edad" id="edad">
+                                    <input type="text" name="provincia" id="provincia">
+                                    <label for="canton">Canton</label>
+                                    <label for="distrito">Distrito</label>
+                                    <input type="text" name="canton" id="canton">
+                                    <input type="text" name="distrito" id="distrito">
+                                    <label for="direccion">Direccion Exacta</label><br>
+                                    <input type="text" name="direccion" id="direccion">
                                     <br>
                                 </div>
                                 <div class="groupInfo">
-                                <label for="">Fecha Reservacion</label>
-                                    <label for="">Hora de Inicio</label>
-                                    <input type="text">
-                                    <input type="text">
-                                    <label for="">Hora de Finalizacion</label>
-                                    <label for="">Tipo de actividad</label>
-                                    <input type="text">
-                                    <input type="text">
-                                    <label for="">Cantidad de Personas</label><br>
-                                    <input type="text">
+                                <label for="fechaReservacion">Fecha Reservacion</label>
+                                    <label for="horaInicio">Hora de Inicio</label>
+                                    <input type="date" name="fechaReservacion" id="fechaReservacion">
+                                    <input type="time" name="horaInicio" id="horaInicio">
+                                    <label for="horaFinal">Hora de Finalizacion</label>
+                                    <label for="tipoActividad">Tipo de actividad</label>
+                                    <input type="time" name="horaFinal" id="horaFinal">
+                                    <input type="text" name="tipoActividad" id="tipoActividad">
+                                    <label for="cantidadPersonas">Cantidad de Personas</label><br>
+                                    <input type="number" name="cantidadPersonas" id="cantidadPersonas">
                                     <br>
                                 </div>
                                 <div class="groupInfo">
-                                <label for="">Costo Total</label>
-                                    <label for="">Costo de la Renta</label>
-                                    <input type="text">
-                                    <input type="text">
-                                    <label for="">Costo del deposito</label>
-                                    <label for="">osto de Limpieza</label>
-                                    <input type="text">
-                                    <input type="text">
+                                <label for="costoTotal">Costo Total</label>
+                                    <label for="costoRenta">Costo de la Renta</label>
+                                    <input type="number" name="costoTotal" id="costoTotal">
+                                    <input type="number" name="costoRenta" id="costoRenta">
+                                    <label for="costoDeposito">Costo del deposito</label>
+                                    <label for="costoLimpieza">Costo de Limpieza</label>
+                                    <input type="number" name="costoDeposito" id="costoDeposito">
+                                    <input type="number" name="costoLimpieza" id="costoLimpieza">
                                     <br>
                                 </div>
                                 <div class="buttoms">

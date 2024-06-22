@@ -7,10 +7,7 @@
 body{
     position: absolute;
     background: url(../../assets/image/backgroundgif.gif);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: repeat;
     width: 100vw;
     min-height: 100vh;
     box-sizing: border-box;
@@ -280,6 +277,7 @@ header .menu{
     transition: opacity 400ms ease-in;
 	overflow-y: auto;
 	overflow-x: hidden;
+
 }
 
 .modalDialog >div:-webkit-scrollbar{
@@ -309,19 +307,19 @@ header .menu{
 /**************************************/
 .formContainer{
     position: relative;
-    background: #83FF2C;
     width: 100%;
-    min-height: 100%;
+    height: fit-content;
     display: grid;
     grid-template-columns: repeat(1fr);
     grid-template-rows: repeat(2, fit-content);
     gap: 8px;
+
 }
 .groupInfo{
     grid-row: 1/2;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(5,1fr);
+    grid-template-rows: repeat(6,1fr);
     gap: 5px;
     padding-left: 4%;
     padding-right: 4%;
@@ -330,33 +328,141 @@ header .menu{
 
 .buttoms{
     grid-row: 2/3;
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttoms button{
+    width: 100px;
+    height: 60px;
+    margin-left: 10px;
+    border-radius: 10%;
+    border: none;
+    filter: drop-shadow(11px 5px 10px #000000);
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.buttoms button::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #00acce;
+    transform: translateX(-50%);
+    right: -70%;
+    border-radius: 40%;
+    animation: fill 9s ease-in-out infinite;
+    z-index: -5;
+}
+.buttoms button::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #6cdef5;
+    transform: translateX(-50%);
+    right: -70%;
+    border-radius: 40%;
+    animation: fill 9s ease-in-out infinite;
+    animation-delay: 1s;
+    z-index: -5;
+}
+
+.formContainer label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight:700 ;
+    height: fit-content;
+    margin-left: 2%;
+    bottom: -20px;
+    position: relative;
+}
+
+.formContainer input{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight:300;
+    height: 45px;
+    margin-bottom: 15px;
+    margin-left: 2%;
+    box-shadow: 6px 2px 10px 0px rgba(0,0,0,0.75);
+    border: none;
+    border-radius: 60px;
+    text-align: center;
 }
 
 /**************************************/
 
-
-
-@media (max-width: 197px){
+@media (max-width: 1000px){
 	.modalDialog > div{
-		width: fit-content;
-		margin: 2% !important; 
-		text-overflow: ellipsis;
+		width: 80%;
+        height: fit-content;
+        height: fit-content;
 	}
 }
 
-@media (max-width: 634px){
+@media (min-width: 1032px){
 	.modalDialog > div{
-		width: 80%;
-	}
-}
-
-@media (min-width: 1034px){
-	.modalDialog > div{
-		width: 80%;
-		margin: 2% !important; 
-		text-overflow: ellipsis;
-		font-size: large;
+        height: fit-content;
+        width: 80%;
 	}
 }
 
 /************************/
+
+@media (max-width: 1000px){
+    .formContainer label{
+        font-size: 1.9rem;
+        font-weight:900 ;
+    }
+    
+    .formContainer input{
+        font-size: 2rem;
+        font-weight:500;
+    }
+
+    .buttoms button{
+        font-size: 1.9rem;
+        font-weight:900 ;
+    }
+}
+
+@media (min-width: 1032px){
+    .formContainer label{
+        font-size: 1.1rem;
+        font-weight:700 ;
+    }
+    
+    .formContainer input{
+        font-size: 1.2rem;
+        font-weight:300;
+    }
+
+    .buttoms button{
+        font-size: 1.2rem;
+        font-weight:300;
+    }
+}
+
+/*******************************************/
+
+@keyframes fill{
+    0%{
+        top: 150px;
+        transform: translate(-50%) rotate(0deg);
+    }
+    50%{
+        top: -10px;
+        transform: translate(-50%) rotate(360deg);
+    }
+    100%{
+        top: 150px;
+        transform: translate(-50%) rotate(0deg);
+    }
+}
