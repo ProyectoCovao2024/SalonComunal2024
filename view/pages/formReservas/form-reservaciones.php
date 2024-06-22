@@ -110,8 +110,6 @@
                                 <label for="direccion" class="form-label">Dirección Exacta</label>
                                 <input type="text" class="form-control form-control-lg mt-6" id="direccion"
                                     name="direccion">
-                                <div class="form-text" placeholder="Digite su direccion exacta">Digite su dirección
-                                    exacta</div>
                             </div>
                         </div>
                         <div class="row">
@@ -232,7 +230,7 @@
                         </div>
                         <div class="row">
                             <div class="col-7">
-                                <p>Lee y acepta nuestros terminos y condiciones</p>
+                                <p>Lee y acepta nuestros términos y condiciones</p>
                             </div>
                             <div class="col-5">
                                 <div class="check_container">
