@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/header/headerStyle.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/footer/footerStyle.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/postIngreso/postIngreso.css">
-    <title>Document</title>
+    <title>Post Ingreso</title>
 </head>
 <body>
 <!DOCTYPE html>

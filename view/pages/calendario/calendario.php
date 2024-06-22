@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/header/headerStyle.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/footer/footerStyle.css">
     <script defer src="http://localhost/SalonComunal2024/public/build/JavaScript/dycalendar.js"></script>
-
     <title>Calendario</title>
+    
 </head>
 <body>
 <?php

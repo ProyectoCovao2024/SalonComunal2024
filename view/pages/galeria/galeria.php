@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/header/headerStyle.css">
     <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/galeria/galeria.css">
     <script defer src="http://localhost/SalonComunal2024/public/build/JavaScript/galeria.js"></script>
-    <title>Document</title>
+    <title>Galería</title>
 </head>
 
 <body >
