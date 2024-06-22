@@ -20,7 +20,7 @@
     <section class="home" id="home" style="background:url(../public/build/assets/image/backgroundgif.gif)">
         <div class="home-content">
             <h3>¡Bienvenido!</h3>
-            <h1>Salon Comunal</h1>
+            <h1>Salón Comunal</h1>
             <h3>Desarrollo <span class="infinite-text"></span></h3>
             <p>Nos complace recibir su visita a nuestra página web. Aquí podrá conocer más sobre nuestras instalaciones
                 y servicios, así como realizar reservas de manera fácil y rápida. Nuestro salón está diseñado para
@@ -30,7 +30,7 @@
                 <a href="#"><i class='bx bxl-facebook-square'></i></a>
                 <a href="#"><i class='bx bxl-gmail'></i></a>
             </div>
-            <a href="" class="btn">Historia</a>
+            <!-- <a href="" class="btn">Historia</a> -->
         </div>
         <div class="home-img">
             <img src="../public/build/assets/image/background1.jpeg" alt="">
@@ -83,7 +83,7 @@
     </div>
     </section>   -->
 
-        <?php
+    <?php
         require(__DIR__."../../includes/slider.php")
         ?>
 
@@ -95,11 +95,11 @@
                 1. La Asociación vela por los intereses y los derechos de la comunidad.<br>
                 2. Ofrece un espacio para grupos de interés social como lo son: INAMU, alcohólicos Anónimos, Grupos de
                 Adulto mayor, Alanón, Scouts, etc.<br>
-                3. Ofrece espacio para grupos de capacitación: odontología, computo, acondicionamiento físico, etc.<br>
+                3. Ofrece espacio para grupos de capacitación: odontología, cómputo, acondicionamiento físico, etc.<br>
                 4. Se hace responsable del mantenimiento de las zonas verdes y áreas comunitarias como lo son el parque
                 infantil, la cancha multiusos, salón comunal, área de máquinas, etc.<br>
             </p>
-            <a href="#" class="btn" id="openModalBtn">Saber más</a>
+            <a href="#" class="btn" id="openModalBtnBenf">Saber más</a>
         </div>
         <div class="about-img">
             <img src="../public/build/assets/image/Benef.png" alt="">
@@ -115,7 +115,7 @@
                     2. Ofrece un espacio para grupos de interés social como lo son: INAMU, alcohólicos Anónimos, Grupos
                     de
                     Adulto mayor, Alanón, Scouts, etc.<br>
-                    3. Ofrece espacio para grupos de capacitación: odontología, computo, acondicionamiento físico,
+                    3. Ofrece espacio para grupos de capacitación: odontología, cómputo, acondicionamiento físico,
                     etc.<br>
                     4. Se hace responsable del mantenimiento de las zonas verdes y áreas comunitarias como lo son el
                     parque
@@ -149,10 +149,10 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="http://localhost/SalonComunal2024/public/build/JavaScript/indexscript.js"></script>
     <script>
-        /*Swiper*/ 
+        /*Swiper*/
 
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3, 
+            slidesPerView: 3,
             spaceBetween: 30,
             grabCursor: true,
             autoplay: {
@@ -172,8 +172,8 @@
                 prevEl: ".swiper-button-prev",
             },
             breakpoints: {
-                1201:{
-                    slidesPerView: 3,  
+                1201: {
+                    slidesPerView: 3,
                 },
                 1200: {
                     slidesPerView: 2,
@@ -182,7 +182,7 @@
                     slidesPerView: 2,
                 },
                 0: {
-                    slidesPerView: 1, 
+                    slidesPerView: 1,
                 }
             }
         });
