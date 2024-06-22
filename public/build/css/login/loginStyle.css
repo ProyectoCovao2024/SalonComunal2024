@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: sans-serif;
 }
 
 body {
@@ -29,6 +31,14 @@ main {
 
 span {
     color: #06617A;
+}
+
+h1, h2, h3{
+    font-family: 'Quicksand' !important;
+}
+
+p{
+    font-family: 'Nunito' !important;
 }
 
 .contenedor__todo {
@@ -238,7 +248,7 @@ span {
     /*Cards*/
 
     .card {
-        top: -320px;
+        top: -220px;
         left: -1px;
         max-width: 555px;
         height: 310px;
@@ -293,7 +303,7 @@ span {
     /*Cards*/
 
     .card {
-        top: -320px;
+        top: -220px;
         left: -1px;
         max-width: 555px;
         height: 310px;
@@ -345,7 +355,7 @@ span {
     /*Cards*/
 
     .card {
-        top: -280px;
+        top: -220px;
         left: -1px;
         max-width: 90%;
         height: 300px;
@@ -356,8 +366,63 @@ span {
     .card div {
         margin: 0px;
         position: absolute;
+        padding: 100px 20px; 
     }
 
 }
 
-@media screen and (max-width: 360px) {}
+@media screen and (max-width: 360px) {
+    
+
+    main {
+        margin-top: 100px;
+    }
+
+    /*Formulario*/
+
+    .formu {
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .formu form {
+        top: 10px;
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .formu form .img i {
+        font-size: 70px;
+    }
+
+    .formu form input {
+        width: 100%;
+        margin-top: 15px;
+        padding: 10px;
+        border-radius: 10px;
+        background: #f2f2f2;
+        font-size: 14px;
+        outline: none;
+    }
+
+    /*Cards*/
+
+    .card {
+        top: -200px;
+        left: -1px;
+        max-width: 90%;
+        height: 300px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .card div {
+        margin: 0px;
+        position: absolute;
+        padding: 100px 20px; 
+    }
+}
