@@ -1,12 +1,15 @@
+<?php 
+require ("../includes/url.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/build/css/index/indexStyle.css">
-    <link rel="stylesheet" href="../public/build/css/header/headerStyle.css">
-    <link rel="stylesheet" href="../public/build/css/footer/footerStyle.css">
+    <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/index/indexStyle.css">
+    <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/header/headerStyle.css">
+    <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/footer/footerStyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Inicio</title>
 </head>

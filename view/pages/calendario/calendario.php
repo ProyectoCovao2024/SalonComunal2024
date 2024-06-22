@@ -1,13 +1,16 @@
+<?php 
+require ("../../../includes/url.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/calendario/calendario.css">
-    <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/calendario/dycalendar.css">
-    <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/header/headerStyle.css">
-    <link rel="stylesheet" href="http://localhost/SalonComunal2024/public/build/css/footer/footerStyle.css">
-    <script defer src="http://localhost/SalonComunal2024/public/build/JavaScript/dycalendar.js"></script>
+    <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/calendario/calendario.css">
+    <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/calendario/dycalendar.css">
+    <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/header/headerStyle.css">
+    <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/footer/footerStyle.css">
+    <script defer src="<?php echo urlLocal?>/public/build/JavaScript/dycalendar.js"></script>
 
     <title>Calendario</title>
 </head>
