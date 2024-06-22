@@ -24,7 +24,7 @@ const typed = new Typed('.infinite-text',{
 
 /*MODALS*/
 var modal = document.getElementById("BenefModal");
-var btn = document.getElementById("openModalBtn");
+var btn = document.getElementById("openModalBtnBenf");
 var span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
@@ -44,4 +44,5 @@ window.onclick = function(event) {
         document.body.style.overflow = "auto";
     }
 }
+
 
