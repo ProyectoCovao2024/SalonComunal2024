@@ -4,13 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../public/build/css/index/indexStyle.css">
     <link rel="stylesheet" href="../public/build/css/header/headerStyle.css">
     <link rel="stylesheet" href="../public/build/css/footer/footerStyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Inicio</title>
 </head>
@@ -90,7 +86,7 @@
     </div>
     </section>   -->
 
-    <section style="background:url(../public/build/assets/image/backgroundgif.gif)">
+    <!-- <section style="background:url(../public/build/assets/image/backgroundgif.gif)">
         <div class="swiper mySwiper container">
             <div class="swiper-wrapper content">
                 <div class="swiper-slide card">
@@ -150,8 +146,11 @@
         <div class="swiper-button-next"></div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-pagination"></div>
-    </section>
+    </section> -->
 
+        <?php
+        require(__DIR__."../../includes/slider.php")
+        ?>
 
     <section class="about" id="about">
         <div class="about-content">
@@ -214,33 +213,31 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="http://localhost/SalonComunal2024/public/build/JavaScript/indexscript.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        /*SWIPER*/
+        /*Swiper*/ 
 
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            grabCursor: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-                pauseOnMousereEnter: true,
-            },
-            slidesPerGroup: 1,
-            loop: true,
-            loopFillGroupWithBlank: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevtEl: ".swiper-button-prev"
-            }
-        })
+var swiper = new Swiper (".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    grabCursor: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+    },
+    slidesPerGroup: 1,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
     </script>
-
 </body>
 
 </html>
