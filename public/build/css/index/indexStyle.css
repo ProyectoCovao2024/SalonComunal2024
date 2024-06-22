@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     top: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+
 }
 
 body {
@@ -11,7 +14,8 @@ body {
     justify-content: center;
     align-items: center;
     background: #fff;
-    text-decoration: none;
+    align-items: flex-end;
+    width: 100%;
 }
 
 section {
@@ -35,6 +39,17 @@ section {
 .home-content h3 {
     font-size: 3.2rem;
     font-weight: 700;
+}
+
+h1,
+h2,
+h3,
+span {
+    font-family: 'Quicksand' !important;
+}
+
+p {
+    font-family: 'Nunito' !important;
 }
 
 .home-content h3:nth-of-type(2) {
@@ -82,6 +97,7 @@ span {
     background: #06617A;
     border-radius: 4rem;
     font-size: 1.6rem;
+    text-decoration: none !important;
     color: #FFF;
     letter-spacing: .1rem;
     font-weight: 600;
@@ -95,9 +111,12 @@ span {
 }
 
 .explora {
-    padding: 100px 0;
     text-align: center;
     min-height: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flow;
+    width: 100% !important;
 }
 
 .explora .btn {
@@ -121,7 +140,9 @@ span {
 .explor-content {
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 80px;
+    width: 95%;
+    align-items: center;
 }
 
 .explora h2 {
@@ -132,10 +153,14 @@ span {
 }
 
 .explor-1 {
-    padding: 100px 20px;
+    padding: 210px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center; 
+    text-align: center; 
+    flex: 1 1 28%; 
+    margin: 15px; 
 }
 
 .explor-1 img {
@@ -157,8 +182,8 @@ span {
 }
 
 .bg-1 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url();
+    background-image: linear-gradient(rgba(106, 221, 253, 0.616), rgba(0, 0, 0, 0.7)),
+        url(../../assets/image/back1.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -167,8 +192,8 @@ span {
 }
 
 .bg-2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url();
+    background-image: linear-gradient(rgba(106, 221, 253, 0.616), rgba(0, 0, 0, 0.7)),
+        url(../../assets/image/back2.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -177,8 +202,8 @@ span {
 }
 
 .bg-3 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url();
+    background-image: linear-gradient(rgba(106, 221, 253, 0.616), rgba(0, 0, 0, 0.7)),
+        url(../../assets/image/back3.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -240,17 +265,17 @@ span {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
     background: rgb(231, 231, 231);
-    margin: 8% auto; 
+    margin: 8% auto;
     padding: 35px;
     width: 50%;
     border: 0.5rem solid #7abfc45d;
-    border-radius: 5%; 
+    border-radius: 5%;
 }
 
 .close {
@@ -281,7 +306,8 @@ span {
     }
 }
 
-@keyframes ScaleCard{
+@keyframes ScaleCard {
+
     0%,
     100% {
         transform: translateY(10px);
@@ -294,18 +320,32 @@ span {
 
 /*Responsive Desing*/
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
 
-    html{
+    html {
+        width: 100%;
         font-size: 55%;
     }
-  
+
+    .explor-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .explor-1 {
+        flex: 1 1 calc(50% - 30px);
+    }
+
+    .explor-content .explor-1:nth-child(3) {
+        flex: 1 1 100%;
+    }
+
 }
-  
-  
-@media screen and (max-width: 991px){
-   
-    section{
+
+
+@media screen and (max-width: 991px) {
+
+    section {
         padding: 10rem 3% 2rem;
     }
 
@@ -315,66 +355,98 @@ span {
 
 }
 
-@media screen and (max-width: 763px){
-  
-   .home{
-    flex-direction: column;
-   }
+@media screen and (max-width: 763px) {
 
-   .home-content h3{
-    font-size: 2.6rem;
-    justify-content: center;
-    align-items: center;
-   }
+    .home {
+        flex-direction: column;
+    }
 
-   .home-content h1{
-    font-size: 5rem;
-   }
+    .home-content h3 {
+        font-size: 2.6rem;
+        justify-content: center;
+        align-items: center;
+    }
 
-   .home-img img{
-    width: 70vw;
-    margin-top: 4rem;
-   }
+    .home-content h1 {
+        font-size: 5rem;
+    }
 
-   .about{
-    flex-direction: column;
-   }
+    .home-img img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
 
-   .about img{
-    width: 50vw;
-    margin-top: 2rem;
-   }
+    .explor-content {
+        flex-direction: column;
+        align-items: center;
+    }
 
-   .aboutt{
-    flex-direction: column;
-   }
+    .bg-1,
+    .bg-2,
+    .bg-3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
-   .aboutt img{
-    width: 50vw;
-    margin-top: 2rem;
-   }
-   
+    .explor-1 {
+        padding: 20px 20px; 
+        justify-content: center; 
+        flex: 1 1 100%; 
+        margin: 10px 0;
+    }
 
-   .modal-content p{
-    font-size: 13px;
+    .explora h2 {
+        font-size: 50px;
+        line-height: 50px;
+        margin-top: 0;
+    }
+
+    .explor-1 h3 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+
+    .explor-1 p {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about img {
+        width: 50vw;
+        margin-top: 2rem;
+    }
+
+    .aboutt {
+        flex-direction: column;
+    }
+
+    .aboutt img {
+        width: 50vw;
+        margin-top: 2rem;
+    }
+
+
+    .modal-content p {
+        font-size: 13px;
+    }
 }
-  
-}
 
-@media screen and (max-width: 365px){
-    
-    .home-img img{
+@media screen and (max-width: 365px) {
+
+    .home-img img {
         width: 70vw;
     }
 
-    .about img{
+    .about img {
         width: 50vw;
     }
 
-    .aboutt img{
+    .aboutt img {
         width: 50vw;
     }
 
 }
-  
-

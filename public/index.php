@@ -41,19 +41,16 @@
         <h2>NUESTRO <span>PROPÓSITO</span></h2>
         <div class="explor-content">
             <div class="explor-1 bg-1">
-                <img src="" alt="">
                 <h3>Misión</h3>
                 <p>Conozca nuestra misión y el propósito que nos impulsa.</p>
                 <a class="btn" href="#">Saber más</a>
             </div>
             <div class="explor-1 bg-2">
-                <img src="" alt="">
                 <h3>Valores</h3>
                 <p>Conozca nuestros valores y los principios que nos guían.</p>
                 <a class="btn" href="#">Saber más</a>
             </div>
             <div class="explor-1 bg-3">
-                <img src="" alt="">
                 <h3>Objetivos</h3>
                 <p>Conozca nuestros objetivos y nuestras metas a futuro.</p>
                 <a class="btn" href="#">Saber más</a>
@@ -62,7 +59,7 @@
     </section>
 
     <!-- <section class="gallery-content">
-        
+       
     </section> -->
 
     <!-- <section class="aboutt" id="about" style ="background:url(../public/build/assets/image/backgroundgif.gif)">
@@ -85,68 +82,6 @@
         <img src="../public/build/assets/image/Background2.jpeg" alt="" style="border-radius: 15%;">
     </div>
     </section>   -->
-
-    <!-- <section style="background:url(../public/build/assets/image/backgroundgif.gif)">
-        <div class="swiper mySwiper container">
-            <div class="swiper-wrapper content">
-                <div class="swiper-slide card">
-                    <div class="box1"></div>
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="../public/build/assets/image/fundadores/fundador1.png" alt="">
-                        </div>
-                        <div class="name-profession">
-                            <span class="name">Fundador 1</span>
-                            <span class="profession">profession</span>
-                        </div>
-                        <div class="about-information">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ut sit beatae?
-                                Assumenda, ratione tempora. Quia eos facere doloremque quis, eum at sit magni! Eveniet
-                                ex aliquid voluptas architecto nemo.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide card">
-                    <div class="box1"></div>
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="../public/build/assets/image/fundadores/fundador2.png" alt="">
-                        </div>
-                        <div class="name-profession">
-                            <span class="name">Fundador 2</span>
-                            <span class="profession">profession</span>
-                        </div>
-                        <div class="about-information">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ut sit beatae?
-                                Assumenda, ratione tempora. Quia eos facere doloremque quis, eum at sit magni! Eveniet
-                                ex aliquid voluptas architecto nemo.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide card">
-                    <div class="box1"></div>
-                    <div class="card-content">
-                        <div class="image">
-                            <img src="../public/build/assets/image/fundadores/fundador3.png" alt="">
-                        </div>
-                        <div class="name-profession">
-                            <span class="name">Fundador 3</span>
-                            <span class="profession">profession</span>
-                        </div>
-                        <div class="about-information">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ut sit beatae?
-                                Assumenda, ratione tempora. Quia eos facere doloremque quis, eum at sit magni! Eveniet
-                                ex aliquid voluptas architecto nemo.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-    </section> -->
 
         <?php
         require(__DIR__."../../includes/slider.php")
@@ -216,27 +151,41 @@
     <script>
         /*Swiper*/ 
 
-var swiper = new Swiper (".mySwiper", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    grabCursor: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true,
-    },
-    slidesPerGroup: 1,
-    loop: true,
-    loopFillGroupWithBlank: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3, 
+            spaceBetween: 30,
+            grabCursor: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                1201:{
+                    slidesPerView: 3,  
+                },
+                1200: {
+                    slidesPerView: 2,
+                },
+                763: {
+                    slidesPerView: 2,
+                },
+                0: {
+                    slidesPerView: 1, 
+                }
+            }
+        });
     </script>
 </body>
 
