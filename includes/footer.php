@@ -18,7 +18,7 @@
 </ul>
 <ul class="menuL">
     <li class="menu__item"><a class="menu__link" href="/SalonComunal2024/public/index.php">Inicio</a></li>
-    <li class="menu__item"><a class="menu__link" href="/SalonComunal2024/view/pages/terminosyCondiciones/terminosyCondiciones.php">Terminos y Condiciones</a></li>
+    <li class="menu__item"><a class="menu__link" href="/SalonComunal2024/view/pages/terminosyCondiciones/terminosyCondiciones.php">Términos y Condiciones</a></li>
     <li class="menu__item"><a class="menu__link" href="/SalonComunal2024/view/pages/galeria/galeria.php">Galería</a></li>
     <li class="menu__item"><a class="menu__link" href="/SalonComunal2024/view/pages/formReservas/form-reservaciones.php">Reservaciones</a></li>
 
