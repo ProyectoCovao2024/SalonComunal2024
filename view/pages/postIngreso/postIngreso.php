@@ -17,6 +17,8 @@ require ("../../../includes/url.php");
 <?php
     require ('../../../includes/header.php')
 ?>
+<h1>Bienvenido</h1>
+<p>Nombre del Usuario</p>
 <div class="box">
 <div class="cardContainer">
         <div class="card">
