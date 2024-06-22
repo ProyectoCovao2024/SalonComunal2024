@@ -21,27 +21,27 @@ require ("../../../includes/url.php");
 <div class="cardContainer">
         <div class="card">
             <div class="cardUp">
-                <img src="http://localhost/SalonComunal2024/public/build/assets/image/postIngreso/actividades.jpg" alt="">
+                <img src="<?php echo urlLocal?>/public/build/assets/image/postIngreso/actividades.jpg" alt="">
             </div>
             <div class="cardDown">
                 <p>
-                    <a href="/SalonComunal2024/view/pages/formActividades/actividades.php">Actividades</a>
+                    <a href="<?php echo urlLocal?>/view/pages/formActividades/actividades.php">Actividades</a>
                 </p>
             </div>
         </div>
         <div class="card">
             <div class="cardUp">
-                <img src="http://localhost/SalonComunal2024/public/build/assets/image/postIngreso/miembros.jpg" alt="">
+                <img src="<?php echo urlLocal?>/public/build/assets/image/postIngreso/miembros.jpg" alt="">
             </div>
             <div class="cardDown">
                 <p>
-                    <a href="">Miembros</a>
+                    <a href="#">Miembros</a>
                 </p>
             </div>
         </div>
         <div class="card">
             <div class="cardUp">
-                <img src="http://localhost/SalonComunal2024/public/build/assets/image/postIngreso/publicaciones.jpg" alt="">
+                <img src="<?php echo urlLocal?>/public/build/assets/image/postIngreso/publicaciones.jpg" alt="">
             </div>
             <div class="cardDown">
                 <p>
@@ -51,11 +51,11 @@ require ("../../../includes/url.php");
         </div>
         <div class="card">
             <div class="cardUp">
-                <img src="http://localhost/SalonComunal2024/public/build/assets/image/postIngreso/reservas.jpg" alt="">
+                <img src="<?php echo urlLocal?>/public/build/assets/image/postIngreso/reservas.jpg" alt="">
             </div>
             <div class="cardDown">
                 <p>
-                    <a href="/SalonComunal2024/view/pages/historialdeReservas/historialReservas.php">Reservas</a>
+                    <a href="<?php echo urlLocal?>/view/pages/historialdeReservas/historialReservas.php">Reservas</a>
                 </p>
             </div>
         </div>
