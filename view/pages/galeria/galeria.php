@@ -33,7 +33,7 @@ require ("../../../includes/url.php");
     require ('../../../includes/header.php')
 ?>
     <div class="sliderImage">
-        <h1>Salon Comunal</h1>
+        <h1>Salón Comunal</h1>
         <div class="container">
             <div class="ring">
                 <div class="img"></div>
