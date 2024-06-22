@@ -2,7 +2,7 @@
 require ("../../../includes/url.php");
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +13,7 @@ require ("../../../includes/url.php");
     <script defer src="<?php echo urlLocal?>/public/build/JavaScript/dycalendar.js"></script>
 
     <title>Calendario</title>
+    
 </head>
 <body>
 <?php
