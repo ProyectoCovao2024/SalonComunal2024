@@ -1,12 +1,15 @@
+<?php 
+require ("../../../includes/url.php");
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/x-icon" href="http://localhost/SalonComunal2024/public/build/assets/image/logo.ico">
-<link rel="stylesheet" href="../../../public/build/css/login/loginStyle.css">
-<link rel="stylesheet" href="../../../public/build/css/header/headerStyle.css">
-<link rel="stylesheet" href="../../../public/build/css/footer/footerStyle.css">
+<link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/login/loginStyle.css">
+<link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/header/headerStyle.css">
+<link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/footer/footerStyle.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 <title>Login</title>
 </head>
