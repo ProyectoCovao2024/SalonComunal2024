@@ -29,7 +29,7 @@
             </div>
             <div class="cardDown">
                 <p>
-                    <a href="#">Actividades</a>
+                    <a href="/SalonComunal2024/view/pages/formActividades/actividades.php">Actividades</a>
                 </p>
             </div>
         </div>
@@ -39,7 +39,7 @@
             </div>
             <div class="cardDown">
                 <p>
-                    <a href="#">Miembros</a>
+                    <a href="">Miembros</a>
                 </p>
             </div>
         </div>
@@ -59,7 +59,7 @@
             </div>
             <div class="cardDown">
                 <p>
-                    <a href="#">Reservas</a>
+                    <a href="/SalonComunal2024/view/pages/historialdeReservas/historialReservas.php">Reservas</a>
                 </p>
             </div>
         </div>
