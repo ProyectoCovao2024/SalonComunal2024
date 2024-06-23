@@ -233,7 +233,7 @@ require ("../../../includes/url.php");
                         </div>
                         <div class="row">
                             <div class="col-7">
-                                <p>Lee y acepta nuestros términos y condiciones</p>
+                                <a href="">Lee y acepta nuestros términos y condiciones</a>
                             </div>
                             <div class="col-5">
                                 <div class="check_container">
