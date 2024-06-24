@@ -233,7 +233,7 @@ require ("../../../includes/url.php");
                         </div>
                         <div class="row">
                             <div class="col-7">
-                                <a href="">Lee y acepta nuestros términos y condiciones</a>
+                                <a href="<?php echo urlLocal?>/view/pages/terminosyCondiciones/terminosyCondiciones.php">Lee y acepta nuestros términos y condiciones</a>
                             </div>
                             <div class="col-5">
                                 <div class="check_container">
