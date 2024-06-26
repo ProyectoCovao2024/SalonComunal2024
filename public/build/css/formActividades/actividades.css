@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+
 .row{
     height: fit-content;
 }
@@ -36,9 +38,6 @@ section{
 
 }
 
-
-  
-
 .activity-form {
     background-image:  url('../../../build/assets/image/Background-salon.jpeg'); 
     background-size: cover;
@@ -65,9 +64,9 @@ section{
     z-index: -1;
 }
 
-
 .activity-form h2 {
     color: #fff;
+    font-family: "Quicksand", sans-serif;
 }
 
 .activity-form form {
@@ -125,6 +124,26 @@ section{
     align-items: center;
     text-align: justify;
     height: -webkit-fill-available;
+}
+
+.text-content p{
+    font-family: "Nunito", sans-serif;
+}
+
+.form-group label{
+    font-family: "Nunito", sans-serif;
+}
+
+.text-center button{
+    font-family: "Nunito", sans-serif;
+}
+
+.table-primary{
+    font-family: "Quicksand", sans-serif;
+}
+
+td{
+    font-family: "Nunito", sans-serif;
 }
 
 img, svg{

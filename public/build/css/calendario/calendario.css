@@ -10,10 +10,7 @@
 
 body{
     background: url(../../assets/image/backgroundgif.gif);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: repeat;
 }
 
 section{

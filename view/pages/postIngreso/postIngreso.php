@@ -6,6 +6,7 @@ require ("../../../includes/url.php");
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="<?php echo urlLocal?>/public/build/assets/image/logo.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/header/headerStyle.css">
     <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/footer/footerStyle.css">
@@ -16,31 +17,33 @@ require ("../../../includes/url.php");
 <?php
     require ('../../../includes/header.php')
 ?>
+<h1>Bienvenido</h1>
+<p>Nombre del Usuario</p>
 <div class="box">
 <div class="cardContainer">
         <div class="card">
             <div class="cardUp">
-                <img src="http://localhost/SalonComunal2024/public/build/assets/image/postIngreso/actividades.jpg" alt="">
+                <img src="<?php echo urlLocal?>/public/build/assets/image/postIngreso/actividades.jpg" alt="">
             </div>
             <div class="cardDown">
                 <p>
-                    <a href="/SalonComunal2024/view/pages/formActividades/actividades.php">Actividades</a>
+                    <a href="<?php echo urlLocal?>/view/pages/formActividades/actividades.php">Actividades</a>
                 </p>
             </div>
         </div>
         <div class="card">
             <div class="cardUp">
-                <img src="http://localhost/SalonComunal2024/public/build/assets/image/postIngreso/miembros.jpg" alt="">
+                <img src="<?php echo urlLocal?>/public/build/assets/image/postIngreso/miembros.jpg" alt="">
             </div>
             <div class="cardDown">
                 <p>
-                    <a href="">Miembros</a>
+                    <a href="#">Miembros</a>
                 </p>
             </div>
         </div>
         <div class="card">
             <div class="cardUp">
-                <img src="http://localhost/SalonComunal2024/public/build/assets/image/postIngreso/publicaciones.jpg" alt="">
+                <img src="<?php echo urlLocal?>/public/build/assets/image/postIngreso/publicaciones.jpg" alt="">
             </div>
             <div class="cardDown">
                 <p>
@@ -50,11 +53,11 @@ require ("../../../includes/url.php");
         </div>
         <div class="card">
             <div class="cardUp">
-                <img src="http://localhost/SalonComunal2024/public/build/assets/image/postIngreso/reservas.jpg" alt="">
+                <img src="<?php echo urlLocal?>/public/build/assets/image/postIngreso/reservas.jpg" alt="">
             </div>
             <div class="cardDown">
                 <p>
-                    <a href="/SalonComunal2024/view/pages/historialdeReservas/historialReservas.php">Reservas</a>
+                    <a href="<?php echo urlLocal?>/view/pages/historialdeReservas/historialReservas.php">Reservas</a>
                 </p>
             </div>
         </div>

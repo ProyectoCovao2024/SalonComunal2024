@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
 
 #menu:checked~.navbar {
     display: initial;
@@ -26,6 +26,7 @@
   #beneficios h3 {
     margin-bottom: 15px;
     text-align: center;
+    font-family: "Quicksand", sans-serif;
   }
   
   #beneficios ul {
@@ -36,6 +37,7 @@
   #beneficios ul li {
     margin-bottom: 10px;
     font-size: 16px;
+    font-family: "Nunito", sans-serif;
   }
   
   .titulo{
@@ -174,6 +176,18 @@ body {
   .hidden {
     display: none !important;
   }
+
+  .formBox label{
+    font-family: "Nunito", sans-serif;
+  }
+
+  .formBox h1{
+    font-family: "Quicksand", sans-serif;
+  }
+
+  .formBox a{
+    font-family: "Nunito", sans-serif;
+  }
   
 
 .formBox input{
@@ -195,6 +209,10 @@ body {
     padding: 10px;
     transition: box-shadow 0.3s ease-in-out;
 } 
+
+.formBox select option{
+    font-family: "Nunito", sans-serif;
+}
 
 
 @keyframes animateBackground {
@@ -333,12 +351,14 @@ body {
     letter-spacing: .1rem;
     font-weight: 600;
     transition: 0.5s ease;
+    font-family: "Nunito", sans-serif;
 }
 
 .btn:hover {
     background: #0a94ba !important;
     color: white;
     box-shadow: 0 0 1rem #FFF;
+    font-family: "Nunito", sans-serif;
 }
 
 button {
@@ -357,11 +377,13 @@ button {
     border: 2px solid #0a94ba;
     border-radius: 30px !important;
     box-shadow: inset 0 0 0 0 #0a94ba;
+    font-family: "Nunito", sans-serif;
   }
   
   button:hover {
     color: white;
     box-shadow: inset 0 -100px 0 0 #0a94ba;
+    font-family: "Nunito", sans-serif;
   }
   
   button:active {
