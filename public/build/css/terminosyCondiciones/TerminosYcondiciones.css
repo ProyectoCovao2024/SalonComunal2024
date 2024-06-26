@@ -1,19 +1,31 @@
-.row{
-    height: 165px;
-}
-
-.TyC-section {
-    padding: 100px 0;
+body{
+    background-image: url('../../../build/assets/image/backgroundgif.gif'); /* Ruta a tu imagen de fondo */
+    background-size: contain;
+    background-position: center;
+    padding-top: 20px;
+    position: relative;
 }
 
 .text-content {
-    padding: 20px;
+    margin: 70px;
+    padding: 40px;
     background-color: #06617A;
     color: white;
     border-radius: 30px;
     text-align: justify;
+    font-family: sans-serif;
 }
 
-.TyC-form form {
-    margin-top: 20px;
+h1{
+    text-align: center;
+}
+
+p{
+    font-size: 14px;
+}
+
+.sub{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
 }
