@@ -49,6 +49,7 @@
     color: white;
     display: block;
     font-weight: 600;
+    font-family: "Quicksand", sans-serif !important;
 }
 
 .menu .navbar ul li a:hover {
