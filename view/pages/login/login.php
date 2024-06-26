@@ -11,6 +11,7 @@ require ("../../../includes/url.php");
 <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/header/headerStyle.css">
 <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/footer/footerStyle.css">
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="icon" href="../../../public/build/assets/image/logo.ico" type="image/png">
 <title>Login</title>
 </head>
 <body>
