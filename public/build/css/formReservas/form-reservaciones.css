@@ -221,19 +221,6 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
-
-@keyframes animateBackground {
-    0% {
-        background-position: center center;
-    }
-    50% {
-        background-position: top right;
-    }
-    100% {
-        background-position: center center;
-    }
-}
-
 .formBox {
     position: relative;
     width: 95%;
