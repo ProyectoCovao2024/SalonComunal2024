@@ -176,38 +176,44 @@ span {
 }
 
 .explor-1 p {
-    color: whitesmoke;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     line-height: 20px;
 }
 
 .bg-1 {
-    background-image: linear-gradient(rgba(106, 221, 253, 0.616), rgba(0, 0, 0, 0.7)),
+    background-image: linear-gradient(rgba(106, 221, 253, 0.452), rgba(255, 255, 255, 0.192)),
         url(../../assets/image/back1.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 28%;
+    border: 3px solid #06617A;
+    border-radius: 5%;
     height: 450px;
 }
 
 .bg-2 {
-    background-image: linear-gradient(rgba(106, 221, 253, 0.616), rgba(0, 0, 0, 0.7)),
+    background-image: linear-gradient(rgba(106, 221, 253, 0.452), rgba(255, 255, 255, 0.192)),
         url(../../assets/image/back2.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 28%;
+    border: 3px solid #06617A;
+    border-radius: 5%;
     height: 450px;
 }
 
 .bg-3 {
-    background-image: linear-gradient(rgba(106, 221, 253, 0.616), rgba(0, 0, 0, 0.7)),
+    background-image: linear-gradient(rgba(106, 221, 253, 0.452), rgba(255, 255, 255, 0.192)),
         url(../../assets/image/back3.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 28%;
+    border: 3px solid #06617A;
+    border-radius: 5%;
     height: 450px;
 }
 
@@ -391,8 +397,9 @@ span {
     .explor-1 {
         padding: 20px 20px; 
         justify-content: center; 
+        align-items: center;
         flex: 1 1 100%; 
-        margin: 10px 0;
+        margin: 10px 20px;
     }
 
     .explora h2 {
