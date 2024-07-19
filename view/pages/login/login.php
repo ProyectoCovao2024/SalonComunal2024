@@ -20,35 +20,36 @@ require ("../../../includes/url.php");
     require(__DIR__."../../../../includes/header.php");
     ?>
 
-<?php
-            // Conexión a la base de datos (simulada)
-            $conn = new mysqli("localhost", "root", "", "mi_base_de_datos");
+    <?php
 
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $usuario = $_POST['usuario'];
-                $password = $_POST['password'];
+            // // Conexión a la base de datos (simulada)
+            // $conn = new mysqli("localhost", "root", "", "mi_base_de_datos");
 
-                // Consultar si el usuario existe
-                $sql = "SELECT * FROM usuarios WHERE usuario='$usuario'";
-                $result = $conn->query($sql);
+            // if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            //     $usuario = $_POST['usuario'];
+            //     $password = $_POST['password'];
 
-                if ($result->num_rows > 0) {
-                    // Usuario encontrado
-                    $row = $result->fetch_assoc();
-                    if ($row['contraseña'] == $password) {
-                        // Contraseña correcta - Redirigir a otra página
-                        header("Location: pagina_principal.php");
-                        exit();
-                    } else {
-                        // Contraseña incorrecta
-                        echo "<p class='error-message yellow'>Contraseña incorrecta.</p>";
-                    }
-                } else {
-                    // Usuario no encontrado
-                    echo "<p class='error-message red'>Usuario no encontrado.</p>";
-                }
-            }
-            ?>
+            //     // Consultar si el usuario existe
+            //     $sql = "SELECT * FROM usuarios WHERE usuario='$usuario'";
+            //     $result = $conn->query($sql);
+
+            //     if ($result->num_rows > 0) {
+            //         // Usuario encontrado
+            //         $row = $result->fetch_assoc();
+            //         if ($row['contraseña'] == $password) {
+            //             // Contraseña correcta - Redirigir a otra página
+            //             header("Location: pagina_principal.php");
+            //             exit();
+            //         } else {
+            //             // Contraseña incorrecta
+            //             echo "<p class='error-message yellow'>Contraseña incorrecta.</p>";
+            //         }
+            //     } else {
+            //         // Usuario no encontrado
+            //         echo "<p class='error-message red'>Usuario no encontrado.</p>";
+            //     }
+            // }
+    ?>
 
 
     <main>
