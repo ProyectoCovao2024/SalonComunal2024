@@ -1,6 +1,9 @@
 <?php
 class Reserva_model{
 
+    private $db;
+    private $Reservar;
+
 
 
 
