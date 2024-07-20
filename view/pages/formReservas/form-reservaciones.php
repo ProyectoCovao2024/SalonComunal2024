@@ -32,7 +32,7 @@ require ("../../../includes/url.php");
             <div class="col-sm-10 col-md-11 col-lg-11 col-xl-12 col-xxl-12">
                 <div class="formBox">
                     <form>
-                        <div class="titulo mb-3">
+                        <div class="titulo mb-5">
                             <h1>Reservaciones</h1>
                         </div>
                         <div class="row mt-3">
@@ -147,7 +147,7 @@ require ("../../../includes/url.php");
                         </div>
                         <div class="row">
                             <div id="beneficios" class="col-12 mb-6">
-                                <h3>Beneficios del Salón</h3>
+                                <h3>Bene<span>ficios</span> del salón comunal</h3>
                                 <ul>
                                     <li>1. La Asociación vela por los intereses y los derechos de la comunidad.</li>
                                     <li>2. Ofrece un espacio para grupos de interés social como lo son: INAMU,

@@ -179,6 +179,27 @@ p{
     color: #1f1e1e;
 }
 
+/* Mensajes de error */
+.error-message {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
+
+.error-message.yellow {
+    background-color: rgba(255, 255, 0, 0.7); 
+    color: darkgoldenrod; 
+}
+
+.error-message.red {
+    background-color: rgba(255, 0, 0, 0.7); 
+    color: darkred; 
+}
+
 /*Animation*/
 
 @keyframes bounce {
