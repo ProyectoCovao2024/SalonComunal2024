@@ -44,7 +44,16 @@ require ("../../../includes/url.php");
                                         <div class="datos">
                                             <ul>
                                                 <li>
-                                                    <a href="#openModal">Cedula Nombre Direccion Fecha Hora Actividad</a>
+                                                    <?php 
+                                                    require('../../../controller/historialReservas.php');
+                                                    echo'<a href="#openModal">';
+                                                    foreach($matrizHistorial as $listaHistorial ){
+                                                        echo $listaHistorial["cedulaPersona"];
+                                                        echo $listaHistorial["nombrePersona"];
+                                                        echo $listaHistorial["direccionExactaPersona"];
+                                                    }
+                                                    echo'</a>';
+                                                    ?>
                                                 </li>
                                             </ul>
                                         </div>
