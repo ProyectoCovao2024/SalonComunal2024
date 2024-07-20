@@ -29,11 +29,11 @@ require ("../../../includes/url.php");
     </header>
     
 
-    <h1 class="text-center p-3">Control de Miembros</h1>
+    <h1 class="text-center p-3">Control d<span>e Miembros</span></h1>
 
     <div class="container-fluid row">
         <form id="crudForm" class="col-4 p-3 styleform" method="POST">
-            <h3 class="text-center alert alert-secondary">Formulario</h3>
+            <div class="h3style"><h3 class="text-center">Formulario</h3></div>
             <?php
             // include("modelo/conexion.php");
             // include("controlador/registro_auto.php");
@@ -41,26 +41,26 @@ require ("../../../includes/url.php");
             ?>
             <div class="mb-3">
                 <label for="marca" class="form-label">Nombre</label>
-                <input type="text" class="form-control" name="marca">
+                <input type="text" class="form-control" name="nombre">
             </div>
             <div class="mb-3">
                 <label for="modelo" class="form-label">Cédula</label>
-                <input type="number" class="form-control" name="modelo">
+                <input type="number" class="form-control" name="cedula">
             </div>
             <div class="mb-3">
                 <label for="capacidadmotor" class="form-label">Dirección</label>
-                <input type="number" class="form-control" name="capacidadmotor">
+                <input type="text" class="form-control" name="direccion">
             </div>
             <div class="mb-3">
                 <label for="transmision" class="form-label">Celular</label>
-                <input type="text" class="form-control" name="transmision">
+                <input type="text" class="form-control" name="celular">
             </div>
             <div class="mb-3">
                 <label for="traccion" class="form-label">Correo</label>
-                <input type="text" class="form-control" name="traccion">
+                <input type="email" class="form-control" name="correo">
             </div>
             <button type="submit" class="btn btn-primary" name="btnregistro" value="ok">Registrar</button>
-            <button type="button" class="btn btn-secondary" onclick="limpiarCampos()">Limpiar Campos</button>
+            <button type="button" class="btn btn-secondary" onclick="limpiarCampos()"><i class='bx bx-message-square-x'></i></button>
             <div id="multiActionButton" class="d-none">
                     <button onclick="return fulleliminar()" type="submit" name="btneliminar" class="btn btn-danger">Eliminar Todos los Datos Seleccionados</button>
             </div>

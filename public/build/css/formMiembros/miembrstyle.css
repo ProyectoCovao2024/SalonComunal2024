@@ -1,3 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
+
+header{
+    min-height: 15vh;
+}
+
 .styleform{
     background-color: #9cdbeb73;
+}
+
+.h3style{
+    padding: 10px;
+    background-image: url(../../assets/image/Background-olas.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+span,
+th {
+    font-family: 'Quicksand' !important;
+}
+
+p {
+    font-family: 'Nunito' !important;
+}
+
+span {
+    color: #06617A;
 }
