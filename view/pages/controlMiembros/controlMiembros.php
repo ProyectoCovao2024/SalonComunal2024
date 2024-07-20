@@ -21,6 +21,16 @@ require ("../../../includes/url.php");
     <title>Control de miembros</title>
 </head>
 
+
+
+
+
+
+
+
+
+
+
 <body>
     <header>
         <?php
