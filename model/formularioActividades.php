@@ -1,6 +1,6 @@
 <?php 
 
-class formularioActividades_model{
+class formularioActividades_model{       //son las clases
 
     private $dbConnect; //Variable que va a almacenar la conexion a la base de datos
     private $formularioActividades; //Array el cual va a almacenar todos los elementos obtenidos de la consulta de sql
