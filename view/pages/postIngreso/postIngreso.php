@@ -15,7 +15,7 @@ require ("../../../includes/url.php");
 </head>
 <body>
 <?php
-    require ('../../../includes/header.php')
+    require ('../../../includes/config/header2.php')
 ?>
 <h1>Bienvenido</h1>
 <p>Nombre del Usuario</p>
