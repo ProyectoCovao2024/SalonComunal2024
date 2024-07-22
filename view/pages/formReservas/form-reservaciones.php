@@ -7,8 +7,7 @@ require ("../../../includes/url.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-        href="<?php echo urlLocal?>/public/build/css/formReservas/form-reservaciones.css">
+    <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/formReservas/form-reservaciones.css">
     <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/header/headerStyle.css">
     <link rel="icon" type="image/x-icon" href="<?php echo urlLocal?>/public/build/assets/image/logo.ico">
     <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/footer/footerStyle.css">
@@ -111,8 +110,7 @@ require ("../../../includes/url.php");
                         <div class="row">
                             <div class="col-6">
                                 <label for="dire" class="form-label">Dirección Exacta</label>
-                                <input type="text" class="form-control form-control-lg mt-6" id="dire"
-                                    name="dire">
+                                <input type="text" class="form-control form-control-lg mt-6" id="dire" name="dire">
                             </div>
                         </div>
                         <div class="row">
@@ -233,7 +231,9 @@ require ("../../../includes/url.php");
                         </div>
                         <div class="row">
                             <div class="col-7">
-                                <a href="<?php echo urlLocal?>/view/pages/terminosyCondiciones/terminosyCondiciones.php">Lee y acepta nuestros términos y condiciones</a>
+                                <a
+                                    href="<?php echo urlLocal?>/view/pages/terminosyCondiciones/terminosyCondiciones.php">Lee
+                                    y acepta nuestros términos y condiciones</a>
                             </div>
                             <div class="col-5">
                                 <div class="check_container">
@@ -243,9 +243,9 @@ require ("../../../includes/url.php");
                             </div>
                         </div>
                         <div class="text-center mt-5">
-                    <button name="registrarR"> Enviar
-                    </button>
-                </div>
+                            <button name="registrarR"> Enviar
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
