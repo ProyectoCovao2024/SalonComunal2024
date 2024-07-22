@@ -242,11 +242,11 @@ require ("../../../includes/url.php");
                                 </div>
                             </div>
                         </div>
-                    </form>
-                </div>
-                <div class="text-center mb-5">
+                        <div class="text-center mt-5">
                     <button name="registrarR"> Enviar
                     </button>
+                </div>
+                    </form>
                 </div>
             </div>
         </div>
