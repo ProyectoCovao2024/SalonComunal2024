@@ -24,7 +24,7 @@ require ("../../../includes/url.php");
 
     <header>
         <?php 
-            require("../../../includes/config/header2.php");
+            require("../../../includes/header2.php");
         ?> 
     </header>
 

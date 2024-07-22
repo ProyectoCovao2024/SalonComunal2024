@@ -31,7 +31,7 @@ require ("../../../includes/url.php");
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-sm-10 col-md-11 col-lg-11 col-xl-12 col-xxl-12">
                 <div class="formBox">
-                    <form>
+                    <form action="controller/formularioReservas.php" method="post">
                         <div class="titulo mb-5">
                             <h1>Reservaciones</h1>
                         </div>
@@ -110,9 +110,9 @@ require ("../../../includes/url.php");
 
                         <div class="row">
                             <div class="col-6">
-                                <label for="direccion" class="form-label">Dirección Exacta</label>
-                                <input type="text" class="form-control form-control-lg mt-6" id="direccion"
-                                    name="direccion">
+                                <label for="dire" class="form-label">Dirección Exacta</label>
+                                <input type="text" class="form-control form-control-lg mt-6" id="dire"
+                                    name="dire">
                             </div>
                         </div>
                         <div class="row">
@@ -131,8 +131,8 @@ require ("../../../includes/url.php");
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <label for="tipR" class="form-label">Tipo de Actividad</label>
-                                <select name="tipR" id="tipR" class="form-select mb-4">
+                                <label for="tipA" class="form-label">Tipo de Actividad</label>
+                                <select name="tipA" id="tipA" class="form-select mb-4">
                                     <option value="" hidden>Selecciona una opción</option>
                                     <option>Alajuela</option>
                                     <option>Cartago</option>
@@ -245,7 +245,7 @@ require ("../../../includes/url.php");
                     </form>
                 </div>
                 <div class="text-center mb-5">
-                    <button> Enviar
+                    <button name="registrarR"> Enviar
                     </button>
                 </div>
             </div>

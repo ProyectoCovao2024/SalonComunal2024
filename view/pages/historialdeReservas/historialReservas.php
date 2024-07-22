@@ -22,7 +22,7 @@ require ("../../../includes/url.php");
 
 <body>
 <?php
-    require ('../../../includes/config/header2.php');
+    require ('../../../includes/header2.php');
 ?>
     <div class="box">
         <div class="container">
