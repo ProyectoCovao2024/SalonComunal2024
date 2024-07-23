@@ -43,22 +43,21 @@ require ("../../../includes/url.php");
             <div class="col-md-8">
                 <div class="activity-form m-0">
                     <h2 class="text-center">Actividades</h2>
-                    <form>
-                        <div class="form-group">
+                    <form action="../../../controller/formularioActividades.php" method="post">                        <div class="form-group">
                             <label for="codigo_actividad">Código de Actividad</label>
-                            <input type="text" class="form-control" id="codigo_actividad">
+                            <input type="text" class="form-control" id="codigo_actividad" name="codigo_actividad" required>
                         </div>
                         <div class="form-group">
                             <label for="nombre_actividad">Nombre de la Actividad</label>
-                            <input type="text" class="form-control" id="nombre_actividad">
+                            <input type="text" class="form-control" id="nombre_actividad"  name="nombre_actividad" required>
                         </div>
                         <div class="form-group">
-                            <label for="tipo_actividad">Monetización</label>
-                            <select name="tipR" id="tipR" class="form-select mb-4">
+                            <label for="tipR">Monetización</label>
+                            <select name="tipR" id="tipR" class="form-select mb-4" required>
                                 <option value="" hidden>Selecciona una opción</option>
-                                <option>Retribución</option>
-                                <option>No retribución</option>
-                                <option>Voluntario</option>
+                                <option value="Retribución">Retribución</option>
+                                <option value="No retribución">No retribución</option>
+                                <option value="Voluntario">Voluntario</option>
                             </select>                        
                         </div>
                         <div class="text-center">
