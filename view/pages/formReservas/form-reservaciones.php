@@ -70,13 +70,16 @@ require ("../../../includes/url.php");
                                 <label for="prov" class="form-label">Provincia</label>
                                 <select name="prov" id="prov" class="form-select mb-4">
                                     <option value="" hidden>Selecciona una opción</option>
-                                    <option>Alajuela</option>
-                                    <option>Cartago</option>
-                                    <option>Guanacaste</option>
-                                    <option>Heredia</option>
-                                    <option>Limón</option>
-                                    <option>Puntarenas</option>
-                                    <option>San José</option>
+                                    <?php 
+                                                    require('../../../controller/provincia.php');
+                                                    
+                                                    foreach($matrizprovincia as $listaprovincia ){
+                                                        echo'<option>';
+                                                        echo $listaprovincia["nombreProvincia"];
+                                                        echo'</option>';
+                                                    }
+                                                    
+                                                    ?>
                                 </select>
                             </div>
                             <div class="col-4">
