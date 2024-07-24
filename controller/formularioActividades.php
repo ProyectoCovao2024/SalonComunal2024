@@ -4,6 +4,8 @@ require("../../../model/formularioActividades.php");
 $formularioActividad = new formularioActividades_model();
 
 $listaActividades = $formularioActividad->getMonetizaciones();
+
+$formularioActividades = $formularioActividad->getFormularioActividades();
 /*
 // Obtener las opciones de monetización desde la base de datos
 $monetizaciones = $formularioActividad->getMonetizaciones();
