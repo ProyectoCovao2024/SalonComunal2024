@@ -26,7 +26,7 @@ class formularioActividades_model {
     }
 
     // Método para crear una nueva actividad
-    /*public function crearActividad($tipoActividad, $codigoTipodeMonetizacion) {
+    public function crearActividad($tipoActividad, $codigoTipodeMonetizacion) {
         // Ajuste en el nombre de las columnas en la consulta
         $query = "INSERT INTO `actividades` (`tipoActividad`, `codigoTipodeMonetizacion`) VALUES (?, ?)";
         $stmt = $this->dbConnect->prepare($query);
@@ -46,7 +46,7 @@ class formularioActividades_model {
         } else {
             throw new Exception("Error al crear la actividad: " . $stmt->error);
         }
-    }*/
+    }
     
     
 
