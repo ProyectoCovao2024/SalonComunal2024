@@ -29,24 +29,18 @@ class Reserva_model{
 
 function RegistrarReserva(){
 
-    $insertarpersona = "INSERT INTO `persona` (cedulaPersona, nombrePersona, apellidosPersona, direccionExactaPersona, correoElectronicoPersona, codigoProvincia, edad, costodeposito, costoLimpieza, costoRenta, costoTotal) VALUES ('$cedula', '$nombre', '$apellidos', '$direccion', '$correo', '$provincia', '$edad', '$costoD', '$costoL', '$costoR', '$costoT')";
+    $insertarpersona = "INSERT INTO `persona` (cedulaPersona, nombrePersona, apellidosPersona, direccionExactaPersona, correoElectronicoPersona, edad, costodeposito, costoLimpieza, costoRenta, costoTotal) VALUES ('$cedula', '$nombre', '$apellidos', '$direccion', '$correo', '$edad', '$costoD', '$costoL', '$costoR', '$costoT')";
     $result_insertar = mysqli_query($dbConnect, $insertarPersona);
     
     $insertarReserva = "INSERT INTO `reserva` (fechaInicio, horaInicio, horaFinalizacion, cantidaddePersonas) VALUES ('$fecha', '$horaInicio', '$horaFinal', '$cantidad')";
     $result_insertar = mysqli_query($dbConnect, $insertarReserva);
 
-    $tipoE = "INSERT INTO `persona` (cedulaPersona, nombrePersona, apellidosPersona, direccionExactaPersona, correoElectronicoPersona, codigoProvincia, edad, costodeposito, costoLimpieza, costoRenta, costoTotal) VALUES ('$cedula', '$nombre', '$apellidos', '$direccion', '$correo', '$provincia', '$edad', '$costoD', '$costoL', '$costoR', '$costoT')";
-    $result_insertar = mysqli_query($dbConnect, $insertarReserva);
-
-    $insertarReserva = "INSERT INTO `persona` (cedulaPersona, nombrePersona, apellidosPersona, direccionExactaPersona, correoElectronicoPersona, codigoProvincia, edad, costodeposito, costoLimpieza, costoRenta, costoTotal) VALUES ('$cedula', '$nombre', '$apellidos', '$direccion', '$correo', '$provincia', '$edad', '$costoD', '$costoL', '$costoR', '$costoT')";
-    $result_insertar = mysqli_query($dbConnect, $insertarReserva);
-
-    $insertarReserva = "INSERT INTO `persona` (cedulaPersona, nombrePersona, apellidosPersona, direccionExactaPersona, correoElectronicoPersona, codigoProvincia, edad, costodeposito, costoLimpieza, costoRenta, costoTotal) VALUES ('$cedula', '$nombre', '$apellidos', '$direccion', '$correo', '$provincia', '$edad', '$costoD', '$costoL', '$costoR', '$costoT')";
+    $insertarActividad = "INSERT INTO `actividades` (tipoActividad) VALUES ('$tipoActividad')";
     $result_insertar = mysqli_query($dbConnect, $insertarReserva);
 }
 
 if(isset($_POST["registrarR"])){
-    RegistrarAutos();
+    RegistrarReserva();
 }
 }
 
