@@ -1,20 +1,34 @@
+/* Estilos Generales */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap');
 
-header{
+body {
+    background-image: url('http://localhost/SalonComunal2024/public/build/assets/image/backgroundgif.gif');
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
     min-height: 15vh;
 }
 
-.styleform{
+.container-fluid {
+    flex: 1;
+}
+
+.styleform {
     background-color: #9cdbeb73;
 }
 
-.h3style{
-    padding: 10px;
-    background-image: url(../../assets/image/Background-olas.gif);
+.h3style {
+    padding: 15px;
+    border-radius: 30% 2% 30% 2%;
+    background-image: url(http://localhost/SalonComunal2024/public/build/assets/image/Background_olas2.gif);
     background-size: cover;
-    background-repeat: no-repeat;
     margin-top: 0;
+    text-shadow: 1px 1px 3px white;
+    color: #7ABFC4;
 }
 
 h1,
@@ -31,4 +45,123 @@ p {
 
 span {
     color: #06617A;
+}
+
+.btnstyle {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #06617A !important;
+    border-radius: 2rem !important;
+    font-size: 1.2rem;
+    color: #FFF !important;
+    font-weight: 600;
+    transition: 0.5s ease;
+    font-family: "Nunito", sans-serif;
+}
+
+.btnstyle:hover {
+    background: #0a94ba !important;
+    color: white;
+    box-shadow: 0 0 1rem #FFF;
+    font-family: "Nunito", sans-serif;
+}
+
+.btn-small {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .form-toggle {
+        display: block !important;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
+
+    #crudForm {
+        display: none;
+        transition: max-height 0.3s ease-out;
+        overflow: hidden;
+        max-height: 0;
+        margin: 0 auto;
+        width: 90%;
+        padding: 1rem;
+        background-color: #f8f9fa;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 8px;
+    }
+
+    #crudForm.show {
+        display: block;
+        max-height: 1000px;
+    }
+
+    .table {
+        font-size: 0.9rem;
+    }
+
+    .table th, .table td {
+        padding: 0.5rem;
+    }
+
+    .table-responsive {
+        display: flex;
+        justify-content: center;
+    }
+
+    .table {
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .table thead th:not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(8)),
+    .table tbody td:not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(8)) {
+        display: none;
+    }
+
+    .form-label {
+        font-size: 0.9rem;
+    }
+
+    .form-control {
+        font-size: 0.8rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    #crudForm {
+        margin: 0 auto;
+        width: 70%;
+        padding: 2rem;
+        background-color: #f8f9fa;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 8px;
+    }
+}
+
+footer {
+    background-color: #06617A;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
