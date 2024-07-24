@@ -13,6 +13,7 @@ class formularioActividades_model {
     }
 
     function getformularioActividades() {
+        $this->formularioActividades = [];
         $consulta = "SELECT actividades.codigoActividad, actividades.tipoActividad,actividades.codigoTipodeMonetizacion,tipodemonetizacion.TipodeMonetizacion
         FROM `actividades`
         inner join `tipodemonetizacion`
