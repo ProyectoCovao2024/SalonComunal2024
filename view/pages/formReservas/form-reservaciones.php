@@ -7,8 +7,7 @@ require ("../../../includes/url.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"
-        href="<?php echo urlLocal?>/public/build/css/formReservas/form-reservaciones.css">
+    <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/formReservas/form-reservaciones.css">
     <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/header/headerStyle.css">
     <link rel="icon" type="image/x-icon" href="<?php echo urlLocal?>/public/build/assets/image/logo.ico">
     <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/footer/footerStyle.css">
@@ -31,7 +30,7 @@ require ("../../../includes/url.php");
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-sm-10 col-md-11 col-lg-11 col-xl-12 col-xxl-12">
                 <div class="formBox">
-                    <form>
+                    <form action="controller/formularioReservas.php" method="post">
                         <div class="titulo mb-5">
                             <h1>Reservaciones</h1>
                         </div>
@@ -71,13 +70,16 @@ require ("../../../includes/url.php");
                                 <label for="prov" class="form-label">Provincia</label>
                                 <select name="prov" id="prov" class="form-select mb-4">
                                     <option value="" hidden>Selecciona una opción</option>
-                                    <option>Alajuela</option>
-                                    <option>Cartago</option>
-                                    <option>Guanacaste</option>
-                                    <option>Heredia</option>
-                                    <option>Limón</option>
-                                    <option>Puntarenas</option>
-                                    <option>San José</option>
+                                    <?php 
+                                                    require('../../../controller/provincia.php');
+                                                    
+                                                    foreach($matrizprovincia as $listaprovincia ){
+                                                        echo'<option>';
+                                                        echo $listaprovincia["nombreProvincia"];
+                                                        echo'</option>';
+                                                    }
+                                                    
+                                                    ?>
                                 </select>
                             </div>
                             <div class="col-4">
@@ -110,9 +112,8 @@ require ("../../../includes/url.php");
 
                         <div class="row">
                             <div class="col-6">
-                                <label for="direccion" class="form-label">Dirección Exacta</label>
-                                <input type="text" class="form-control form-control-lg mt-6" id="direccion"
-                                    name="direccion">
+                                <label for="dire" class="form-label">Dirección Exacta</label>
+                                <input type="text" class="form-control form-control-lg mt-6" id="dire" name="dire">
                             </div>
                         </div>
                         <div class="row">
@@ -131,8 +132,8 @@ require ("../../../includes/url.php");
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <label for="tipR" class="form-label">Tipo de Actividad</label>
-                                <select name="tipR" id="tipR" class="form-select mb-4">
+                                <label for="tipA" class="form-label">Tipo de Actividad</label>
+                                <select name="tipA" id="tipA" class="form-select mb-4">
                                     <option value="" hidden>Selecciona una opción</option>
                                     <option>Alajuela</option>
                                     <option>Cartago</option>
@@ -233,7 +234,9 @@ require ("../../../includes/url.php");
                         </div>
                         <div class="row">
                             <div class="col-7">
-                                <a href="<?php echo urlLocal?>/view/pages/terminosyCondiciones/terminosyCondiciones.php">Lee y acepta nuestros términos y condiciones</a>
+                                <a
+                                    href="<?php echo urlLocal?>/view/pages/terminosyCondiciones/terminosyCondiciones.php">Lee
+                                    y acepta nuestros términos y condiciones</a>
                             </div>
                             <div class="col-5">
                                 <div class="check_container">
@@ -242,11 +245,11 @@ require ("../../../includes/url.php");
                                 </div>
                             </div>
                         </div>
+                        <div class="text-center mt-5">
+                            <button name="registrarR"> Enviar
+                            </button>
+                        </div>
                     </form>
-                </div>
-                <div class="text-center mb-5">
-                    <button> Enviar
-                    </button>
                 </div>
             </div>
         </div>
