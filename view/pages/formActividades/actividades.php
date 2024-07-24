@@ -99,10 +99,10 @@ require ("../../../includes/url.php");
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
                                                     <?php 
                                                     
                                                     foreach($formularioActividades as $codigoActividad ){
+                                                        echo '<tr>';
                                                         echo'<td>';
                                                         echo $codigoActividad["codigoActividad"];
                                                         echo'</td>';
@@ -112,10 +112,10 @@ require ("../../../includes/url.php");
                                                         echo'<td>';
                                                         echo $codigoActividad["TipodeMonetizacion"];
                                                         echo'</td>';
+                                                        echo '</tr>';
                                                     }
                                                     
                                                     ?>
-                                    </tr>
                                 </tbody>
                             </table>
                         </div>
