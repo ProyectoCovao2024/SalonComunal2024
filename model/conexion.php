@@ -2,7 +2,7 @@
 
 class ConectarDB{
     public static function conexion(){
-        require("../../../model/datosBD.php");
+        require("datosBD.php");
         try{
             $conexion = mysqli_connect(HOST,USER,PASSWORD,DB);
             mysqli_select_db($conexion,DB) or die ("No se ha encontrado la base de datos");

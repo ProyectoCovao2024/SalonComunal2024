@@ -1,6 +1,7 @@
 <?php 
 require ("../../../includes/url.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -28,7 +29,9 @@ require ("../../../includes/url.php");
         ?> 
     </header>
 
-
+    <?php
+        require("../../../controller/formularioActividades.php") ;
+    ?>
 
 
 <section class="activities-section m-0">
@@ -43,9 +46,8 @@ require ("../../../includes/url.php");
             <div class="col-md-8">
                 <div class="activity-form m-0">
                     <h2 class="text-center">Actividades</h2>
+
                     <form action="../../../controller/formularioActividades.php" method="post">                        <div class="form-group">
-                            <label for="codigo_actividad">Código de Actividad</label>
-                            <input type="text" class="form-control" id="codigo_actividad" name="codigo_actividad" required>
                         </div>
                         <div class="form-group">
                             <label for="nombre_actividad">Nombre de la Actividad</label>
@@ -55,14 +57,23 @@ require ("../../../includes/url.php");
                             <label for="tipR">Monetización</label>
                             <select name="tipR" id="tipR" class="form-select mb-4" required>
                                 <option value="" hidden>Selecciona una opción</option>
+                                    <?php foreach($listaActividades as $monetizacion): ?>
+                                        <option value="<?php echo $monetizacion['codigoTipodeMonetizacion']; ?>">
+                                            <?php echo $monetizacion['TipodeMonetizacion']; ?>
+                                        </option>
+                                    <?php endforeach; ?> 
+                                <!-- <option value="" hidden>Selecciona una opción</option>
                                 <option value="Retribución">Retribución</option>
                                 <option value="No retribución">No retribución</option>
-                                <option value="Voluntario">Voluntario</option>
+                                <option value="Voluntario">Voluntario</option -->
                             </select>                        
                         </div>
                         <div class="text-center">
+                        <input type="hidden" name="action" value="add" />
                             <button type="submit" class="btn btn-light">Agregar</button>
+                            <input type="hidden" name="action" value="update" />
                             <button type="submit" class="btn btn-light">Actualizar</button>
+                            <input type="hidden" name="action" value="delete" />
                             <button type="submit" class="btn btn-light">Eliminar</button>
                         </div>
                     </form>

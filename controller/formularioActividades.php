@@ -1,26 +1,36 @@
 <?php
-require_once("../model/formularioActividades.php");
+require("../../../model/formularioActividades.php");
 
-// Verifica si se ha enviado el formulario
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $codigo = $_POST['codigo_actividad'];
-    $nombre = $_POST['nombre_actividad'];
-    $monetizacion = $_POST['tipR'];
+$formularioActividad = new formularioActividades_model();
 
-    // Crear una instancia del modelo
-    $formularioActividad = new formularioActividades_model();
+$listaActividades = $formularioActividad->getMonetizaciones();
+/*
+// Obtener las opciones de monetización desde la base de datos
+$monetizaciones = $formularioActividad->getMonetizaciones();
+var_dump($monetizaciones); // Depuración
 
-    // Llamar al método para crear una actividad
-    if ($formularioActividad->crearActividad($codigo, $nombre, $monetizacion)) {
-        $mensaje = "Actividad creada exitosamente.";
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $codigoActividad = $_POST['codigo_actividad'];
+    $nombreActividad = $_POST['nombre_actividad'];
+    $codigoTipodeMonetizacion = $_POST['tipR'];
+
+    if (!empty($codigoActividad) && !empty($nombreActividad) && !empty($codigoTipodeMonetizacion)) {
+        try {
+            // Validar si el valor de `codigoTipodeMonetizacion` existe en la tabla `tipodemonetizacion`
+            if ($formularioActividad->validarMonetizacion($codigoTipodeMonetizacion)) {
+                $formularioActividad->crearActividad($codigoActividad, $nombreActividad, $codigoTipodeMonetizacion);
+                echo "Actividad creada con éxito.";
+            } else {
+                echo "El valor de monetización no es válido.";
+            }
+        } catch (Exception $e) {
+            echo "Error al crear la actividad: " . $e->getMessage();
+        }
     } else {
-        $mensaje = "Error al crear la actividad.";
+        echo "Por favor, complete todos los campos.";
     }
-
-    // Cargar la vista con el mensaje
-    require_once("../../../views/resultado.php");
-} else {
-    // Cargar la vista del formulario si no se envió el formulario
-    require_once("../../../views/formulario_actividad.php");
 }
+
+// Incluir la vista y pasar los datos de monetizaciones
+include("../../../view/pages/formActividades/actividades.php");*/
 ?>
