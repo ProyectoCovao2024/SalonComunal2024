@@ -21,18 +21,30 @@ class formularioActividades_model {
         return $this->formularioActividades;
     }
 
-    public function crearActividad($codigoActividad, $nombreActividad, $codigoTipodeMonetizacion) {
-        $query = "INSERT INTO `actividades` (`nombreActividad`, `codigoTipodeMonetizacion`) VALUES (?, ?)";
+    // Método para crear una nueva actividad
+    /*public function crearActividad($tipoActividad, $codigoTipodeMonetizacion) {
+        // Ajuste en el nombre de las columnas en la consulta
+        $query = "INSERT INTO `actividades` (`tipoActividad`, `codigoTipodeMonetizacion`) VALUES (?, ?)";
         $stmt = $this->dbConnect->prepare($query);
-
-        $stmt->bind_param("ssi", $nombreActividad, $codigoTipodeMonetizacion);
-
+    
+        if (!$stmt) {
+            throw new Exception("Error en la preparación de la consulta: " . $this->dbConnect->error);
+        }
+    
+        // Verifica que $codigoTipodeMonetizacion es un entero
+        $codigoTipodeMonetizacion = (int)$codigoTipodeMonetizacion;
+    
+        // El primer parámetro es el tipo de actividad (cadena) y el segundo es el código de monetización (entero)
+        $stmt->bind_param("si", $tipoActividad, $codigoTipodeMonetizacion);
+    
         if ($stmt->execute()) {
             return true;
         } else {
             throw new Exception("Error al crear la actividad: " . $stmt->error);
         }
-    }
+    }*/
+    
+    
 
      public function getMonetizaciones() {
         $consulta = "SELECT * FROM `tipodemonetizacion`";
