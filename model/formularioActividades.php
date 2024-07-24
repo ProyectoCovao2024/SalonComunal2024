@@ -13,7 +13,11 @@ class formularioActividades_model {
     }
 
     function getformularioActividades() {
-        $consulta = "SELECT * FROM `actividades`";
+        $consulta = "SELECT actividades.codigoActividad, actividades.tipoActividad,actividades.codigoTipodeMonetizacion,tipodemonetizacion.TipodeMonetizacion
+        FROM `actividades`
+        inner join `tipodemonetizacion`
+        ON tipodemonetizacion.codigoTipodeMonetizacion = actividades. codigoTipodeMonetizacion 
+        ";
         $query = mysqli_query($this->dbConnect, $consulta);
         while ($fila = $query->fetch_assoc()) {
             $this->formularioActividades[] = $fila;

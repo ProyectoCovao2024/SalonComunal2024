@@ -100,19 +100,21 @@ require ("../../../includes/url.php");
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Act-01</td>
-                                        <td>Quinceaños</td>
-                                        <td>Retribución</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Act-02</td>
-                                        <td>Grupo de apoyo</td>
-                                        <td>No retribución</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Act-03</td>
-                                        <td>Ventas de comida</td>
-                                        <td>Voluntario</td>
+                                                    <?php 
+                                                    
+                                                    foreach($formularioActividades as $codigoActividad ){
+                                                        echo'<td>';
+                                                        echo $codigoActividad["codigoActividad"];
+                                                        echo'</td>';
+                                                        echo'<td>';
+                                                        echo $codigoActividad["tipoActividad"];
+                                                        echo'</td>';
+                                                        echo'<td>';
+                                                        echo $codigoActividad["TipodeMonetizacion"];
+                                                        echo'</td>';
+                                                    }
+                                                    
+                                                    ?>
                                     </tr>
                                 </tbody>
                             </table>
