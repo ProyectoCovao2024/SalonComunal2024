@@ -16,6 +16,7 @@ require ("../../../includes/url.php");
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
+    <script defer src="<?php echo urlLocal?>/public/build/JavaScript/provincias.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Formulario de Reservas</title>
 </head>
@@ -23,8 +24,13 @@ require ("../../../includes/url.php");
 <body>
     <header>
         <?php
-        require("../../../includes/header.php");
+            require("../../../includes/header.php");
         ?>
+
+        <?php
+            require("../../../controller/provincias.php");
+        ?>
+
     </header>
     <div class="container-fluid mt-5">
         <div class="row d-flex justify-content-center align-items-center">
@@ -71,41 +77,21 @@ require ("../../../includes/url.php");
                                 <select name="prov" id="prov" class="form-select mb-4">
                                     <option value="" hidden>Selecciona una opción</option>
                                     <?php 
-                                                    require('../../../controller/provincia.php');
-                                                    
-                                                    foreach($matrizprovincia as $listaprovincia ){
-                                                        echo'<option>';
-                                                        echo $listaprovincia["nombreProvincia"];
-                                                        echo'</option>';
-                                                    }
-                                                    
-                                                    ?>
+                                    foreach($listaProvincias as $row){ ?>
+                                        <option value="<?php echo $row["codigoProvincia"]?>"><?php echo $row["nombreProvincia"]?></option>
+                                    <?php } ?>
                                 </select>
                             </div>
                             <div class="col-4">
                                 <label for="can" class="form-label">Cantón</label>
                                 <select name="can" id="can" class="form-select mb-4">
-                                    <option value="" hidden>Selecciona una opción</option>
-                                    <option>Alajuela</option>
-                                    <option>Cartago</option>
-                                    <option>Guanacaste</option>
-                                    <option>Heredia</option>
-                                    <option>Limón</option>
-                                    <option>Puntarenas</option>
-                                    <option>San José</option>
+
                                 </select>
                             </div>
                             <div class="col-4">
                                 <label for="dis" class="form-label">Distrito</label>
                                 <select name="dis" id="dis" class="form-select mb-4">
-                                    <option value="" hidden>Selecciona una opción</option>
-                                    <option>Alajuela</option>
-                                    <option>Cartago</option>
-                                    <option>Guanacaste</option>
-                                    <option>Heredia</option>
-                                    <option>Limón</option>
-                                    <option>Puntarenas</option>
-                                    <option>San José</option>
+
                                 </select>
                             </div>
                         </div>
