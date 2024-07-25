@@ -14,17 +14,19 @@ class formularioActividades_model {
 
     function getformularioActividades() {
         $this->formularioActividades = [];
-        $consulta = "SELECT actividades.tipoActividad,actividades.codigoTipodeMonetizacion,tipodemonetizacion.TipodeMonetizacion
-        FROM `actividades`
-        inner join `tipodemonetizacion`
-        ON tipodemonetizacion.codigoTipodeMonetizacion = actividades. codigoTipodeMonetizacion 
-        ";
+        $consulta = "SELECT actividades.tipoActividad, actividades.codigoTipodeMonetizacion, tipodemonetizacion.TipodeMonetizacion
+                     FROM `actividades`
+                     INNER JOIN `tipodemonetizacion`
+                     ON tipodemonetizacion.codigoTipodeMonetizacion = actividades.codigoTipodeMonetizacion";
         $query = mysqli_query($this->dbConnect, $consulta);
         while ($fila = $query->fetch_assoc()) {
+            // Convertir el tipo de actividad a mayúsculas
+            $fila['tipoActividad'] = strtoupper($fila['tipoActividad']);
             $this->formularioActividades[] = $fila;
         }
         return $this->formularioActividades;
     }
+    
 
     public function actividadExiste($tipoActividad) {
         $query = "SELECT COUNT(*) as count FROM `actividades` WHERE LOWER(`tipoActividad`) = LOWER(?)";
@@ -44,6 +46,14 @@ class formularioActividades_model {
 
     // Método para crear una nueva actividad
     public function crearActividad($tipoActividad, $codigoTipodeMonetizacion) {
+        // Convertir el nombre de la actividad a mayúsculas
+        $tipoActividad = strtoupper($tipoActividad);
+    
+        // Verificar que $tipoActividad no contiene números ni signos
+        if (preg_match('/[^A-Z\s]/', $tipoActividad)) {
+            throw new Exception("El nombre de la actividad solo puede contener letras y espacios.");
+        }
+    
         // Ajuste en el nombre de las columnas en la consulta
         $query = "INSERT INTO `actividades` (`tipoActividad`, `codigoTipodeMonetizacion`) VALUES (?, ?)";
         $stmt = $this->dbConnect->prepare($query);
@@ -64,6 +74,7 @@ class formularioActividades_model {
             throw new Exception("Error al crear la actividad: " . $stmt->error);
         }
     }
+    
     
 
      public function getMonetizaciones() {

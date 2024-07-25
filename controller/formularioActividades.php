@@ -17,8 +17,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $tipoActividad = isset($_POST['nombre_actividad']) ? $_POST['nombre_actividad'] : null;
     $codigoTipodeMonetizacion = isset($_POST['tipR']) ? $_POST['tipR'] : null;
 
+    $tipoActividad = trim(ltrim(rtrim($tipoActividad)));
+
     // Verifica que los campos no estén vacíos
-    if (!empty($tipoActividad) && !empty($codigoTipodeMonetizacion)) {
+    if (!empty($tipoActividad) && !empty($codigoTipodeMonetizacion) && $tipoActividad!='') {
         try {
             // Verifica si la actividad ya existe
             if ($formularioActividad->actividadExiste($tipoActividad)) {

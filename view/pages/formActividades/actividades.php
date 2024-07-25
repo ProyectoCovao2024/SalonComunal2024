@@ -71,7 +71,7 @@ require ("../../../includes/url.php");
                         <div class="text-center">
                         <input type="hidden" name="action" value="add" />
                             <button type="submit" class="btn btn-light">Agregar</button>
-                            <input type="hidden" name="action" value="update" />
+                            <input type="hidden" name="action2" value="update" />
                             <button type="submit" class="btn btn-light">Actualizar</button>
                             <input type="hidden" name="action" value="delete" />
                             <button type="submit" class="btn btn-light">Eliminar</button>
@@ -128,7 +128,7 @@ require ("../../../includes/url.php");
 
 
 
-
+<script src="\SalonComunal2024\public\build\JavaScript\validacionActividades.js"></script>
 
 </body>
 </html>
