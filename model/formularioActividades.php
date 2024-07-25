@@ -14,7 +14,7 @@ class formularioActividades_model {
 
     function getformularioActividades() {
         $this->formularioActividades = [];
-        $consulta = "SELECT actividades.codigoActividad, actividades.tipoActividad,actividades.codigoTipodeMonetizacion,tipodemonetizacion.TipodeMonetizacion
+        $consulta = "SELECT actividades.tipoActividad,actividades.codigoTipodeMonetizacion,tipodemonetizacion.TipodeMonetizacion
         FROM `actividades`
         inner join `tipodemonetizacion`
         ON tipodemonetizacion.codigoTipodeMonetizacion = actividades. codigoTipodeMonetizacion 
@@ -24,6 +24,22 @@ class formularioActividades_model {
             $this->formularioActividades[] = $fila;
         }
         return $this->formularioActividades;
+    }
+
+    public function actividadExiste($tipoActividad) {
+        $query = "SELECT COUNT(*) as count FROM `actividades` WHERE LOWER(`tipoActividad`) = LOWER(?)";
+        $stmt = $this->dbConnect->prepare($query);
+    
+        if (!$stmt) {
+            throw new Exception("Error en la preparación de la consulta: " . $this->dbConnect->error);
+        }
+    
+        $stmt->bind_param("s", $tipoActividad);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $row = $result->fetch_assoc();
+    
+        return $row['count'] > 0;
     }
 
     // Método para crear una nueva actividad
@@ -48,7 +64,6 @@ class formularioActividades_model {
             throw new Exception("Error al crear la actividad: " . $stmt->error);
         }
     }
-    
     
 
      public function getMonetizaciones() {
@@ -76,6 +91,8 @@ class formularioActividades_model {
         return $row['count'] > 0;
     }
 }
+
+
 
 ?>
  

@@ -93,7 +93,6 @@ require ("../../../includes/url.php");
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th class="table-primary" scope="col">Código</th>
                                         <th class="table-primary" scope="col">Nombre</th>
                                         <th class="table-primary" scope="col">Monetización</th>
                                     </tr>
@@ -102,9 +101,6 @@ require ("../../../includes/url.php");
                                                     <?php 
                                                     
                                                     foreach($formularioActividades as $codigoActividad ){
-                                                        echo '<tr>';
-                                                        echo'<td>';
-                                                        echo $codigoActividad["codigoActividad"];
                                                         echo'</td>';
                                                         echo'<td>';
                                                         echo $codigoActividad["tipoActividad"];
