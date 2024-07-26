@@ -181,24 +181,30 @@ p{
 
 /* Mensajes de error */
 .error-message {
-    width: 100%;
+    margin-top: 10px;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-    font-size: 16px;
-    margin-bottom: 15px;
-    opacity: 0.9;
 }
 
-.error-message.yellow {
-    background-color: rgba(255, 255, 0, 0.7); 
-    color: darkgoldenrod; 
+.correo_invalido {
+    background-color: rgba(255, 255, 0, 0.2);
+    border: 1px solid rgba(255, 255, 0, 0.8);
+    color: rgba(204, 204, 0, 0.9);
 }
 
-.error-message.red {
-    background-color: rgba(255, 0, 0, 0.7); 
-    color: darkred; 
+.contrasena_invalida {
+    background-color: rgba(255, 255, 0, 0.2);
+    border: 1px solid rgba(255, 255, 0, 0.8);
+    color: rgba(204, 204, 0, 0.9);
 }
+
+.credenciales_incorrectas {
+    background-color: rgba(255, 0, 0, 0.2);
+    border: 1px solid rgba(255, 0, 0, 0.8);
+    color: rgba(204, 0, 0, 0.9);
+}
+
 
 /*Animation*/
 

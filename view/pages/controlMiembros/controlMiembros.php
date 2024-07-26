@@ -30,7 +30,7 @@ require ("../../../includes/url.php");
     <h1 class="text-center p-3">Control d<span>e Miembros</span></h1>
 
 <div class="container-fluid row">
-    <button class="btnstyle form-toggle d-lg-none" onclick="toggleForm()">Mostrar/Ocultar Formulario</button>
+<button class="btnstyle form-toggle justify-content-center" onclick="toggleForm()">Mostrar/Ocultar Formulario</button>
     <form id="crudForm" class="col-12 col-lg-4 p-3 styleform" method="POST">
         <div class="h3style"><h3 class="text-center">Formulario</h3></div>
         <?php

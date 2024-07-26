@@ -1,8 +1,19 @@
 // Función para alternar la visibilidad del formulario
 function toggleForm() {
     var form = document.getElementById('crudForm');
-    form.classList.toggle('show');
+    if (form.classList.contains('show')) {
+        form.classList.remove('show');
+        setTimeout(function() {
+            form.style.display = 'none';
+        }, 500); 
+    } else {
+        form.style.display = 'block';
+        setTimeout(function() {
+            form.classList.add('show');
+        }, 10); 
+    }
 }
+
 
 // Función para seleccionar todos los checkboxes
 function seleccionarTodos(source) {

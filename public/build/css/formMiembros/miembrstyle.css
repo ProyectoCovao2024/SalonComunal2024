@@ -75,40 +75,42 @@ span {
     overflow-x: auto;
 }
 
+.form-toggle{
+    display: none;
+}
+
 /* Media Queries */
 @media (max-width: 1200px) {
+    
     .form-toggle {
         display: block !important;
+        height: 40px !important;
+        width: 500px !important;
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 10px;
         font-size: 1rem;
-        padding: 5px 10px;
+        padding: 0;
     }
-
+    
     #crudForm {
         display: none;
-        transition: max-height 0.3s ease-out;
-        overflow: hidden;
-        max-height: 0;
-        margin: 0 auto;
-        width: 90%;
-        padding: 1rem;
-        background-color: #f8f9fa;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        border-radius: 8px;
+        opacity: 0;
+        transform: translateY(-20px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
     }
-
+    
     #crudForm.show {
         display: block;
-        max-height: 1000px;
+        opacity: 1;
+        transform: translateY(0);
     }
-
+    
     .table {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
     }
 
     .table th, .table td {
-        padding: 0.5rem;
+        padding: 5rem;
     }
 
     .table-responsive {
@@ -117,8 +119,8 @@ span {
     }
 
     .table {
-        width: 100%;
-        max-width: 1000px;
+        width: 400px !important;
+        max-width: 100%;
     }
 
     .table thead th:not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)):not(:nth-child(8)),
