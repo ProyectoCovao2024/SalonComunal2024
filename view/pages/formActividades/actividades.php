@@ -71,7 +71,7 @@ require ("../../../includes/url.php");
                         <div class="text-center">
                         <input type="hidden" name="action" value="add" />
                             <button type="submit" class="btn btn-light">Agregar</button>
-                            <input type="hidden" name="action" value="update" />
+                            <input type="hidden" name="action2" value="update" />
                             <button type="submit" class="btn btn-light">Actualizar</button>
                             <input type="hidden" name="action" value="delete" />
                             <button type="submit" class="btn btn-light">Eliminar</button>
@@ -93,43 +93,29 @@ require ("../../../includes/url.php");
                             <table class="table table-bordered">
                                 <thead>
                                     <tr>
-                                        <th class="table-primary" scope="col">Código</th>
                                         <th class="table-primary" scope="col">Nombre</th>
                                         <th class="table-primary" scope="col">Monetización</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>Act-01</td>
-                                        <td>Quinceaños</td>
-                                        <td>Retribución</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Act-02</td>
-                                        <td>Grupo de apoyo</td>
-                                        <td>No retribución</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Act-03</td>
-                                        <td>Ventas de comida</td>
-                                        <td>Voluntario</td>
-                                    </tr>
+                                                    <?php 
+                                                    
+                                                    foreach($formularioActividades as $codigoActividad ){
+                                                        echo'</td>';
+                                                        echo'<td>';
+                                                        echo $codigoActividad["tipoActividad"];
+                                                        echo'</td>';
+                                                        echo'<td>';
+                                                        echo $codigoActividad["TipodeMonetizacion"];
+                                                        echo'</td>';
+                                                        echo '</tr>';
+                                                    }
+                                                    
+                                                    ?>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-
-
-
-
-
-
-
-
-
-                    
-
-
                 </div>
             </div>
         </div>
@@ -142,7 +128,7 @@ require ("../../../includes/url.php");
 
 
 
-
+<script src="\SalonComunal2024\public\build\JavaScript\validacionActividades.js"></script>
 
 </body>
 </html>

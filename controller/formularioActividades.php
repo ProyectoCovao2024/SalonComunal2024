@@ -1,27 +1,36 @@
 <?php
-require("../../../model/formularioActividades.php");
-
+require_once(__DIR__ . "/../model/formularioActividades.php");
 $formularioActividad = new formularioActividades_model();
 
+$listaActividades = $formularioActividad->getformularioActividades();
 $listaActividades = $formularioActividad->getMonetizaciones();
-/*
-// Obtener las opciones de monetización desde la base de datos
-$monetizaciones = $formularioActividad->getMonetizaciones();
-var_dump($monetizaciones); // Depuración
 
+$formularioActividades = $formularioActividad->getFormularioActividades();
+
+
+
+
+
+// Verifica si la solicitud es de tipo POST
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $codigoActividad = $_POST['codigo_actividad'];
-    $nombreActividad = $_POST['nombre_actividad'];
-    $codigoTipodeMonetizacion = $_POST['tipR'];
+    // Recoge los datos del formulario
+    $tipoActividad = isset($_POST['nombre_actividad']) ? $_POST['nombre_actividad'] : null;
+    $codigoTipodeMonetizacion = isset($_POST['tipR']) ? $_POST['tipR'] : null;
 
-    if (!empty($codigoActividad) && !empty($nombreActividad) && !empty($codigoTipodeMonetizacion)) {
+    $tipoActividad = trim(ltrim(rtrim($tipoActividad)));
+
+    // Verifica que los campos no estén vacíos
+    if (!empty($tipoActividad) && !empty($codigoTipodeMonetizacion) && $tipoActividad!='') {
         try {
-            // Validar si el valor de `codigoTipodeMonetizacion` existe en la tabla `tipodemonetizacion`
-            if ($formularioActividad->validarMonetizacion($codigoTipodeMonetizacion)) {
-                $formularioActividad->crearActividad($codigoActividad, $nombreActividad, $codigoTipodeMonetizacion);
-                echo "Actividad creada con éxito.";
+            // Verifica si la actividad ya existe
+            if ($formularioActividad->actividadExiste($tipoActividad)) {
+                echo "Ya existe una actividad con ese nombre.";
             } else {
-                echo "El valor de monetización no es válido.";
+                // Llama al método para crear la actividad en el modelo
+                $resultado = $formularioActividad->crearActividad($tipoActividad, $codigoTipodeMonetizacion);
+                if ($resultado) {
+                    echo "Actividad creada con éxito.";
+                }
             }
         } catch (Exception $e) {
             echo "Error al crear la actividad: " . $e->getMessage();
@@ -30,7 +39,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Por favor, complete todos los campos.";
     }
 }
-
-// Incluir la vista y pasar los datos de monetizaciones
-include("../../../view/pages/formActividades/actividades.php");*/
-?>

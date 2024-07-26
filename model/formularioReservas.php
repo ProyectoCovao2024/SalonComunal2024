@@ -1,4 +1,13 @@
 <?php
+
+//*nueva clase
+
+class reservas_model{
+
+}
+
+
+/*
 class Reserva_model{
     $cedula = $_POST["ced"];
     $nombre = $_POST["nom"];
@@ -43,7 +52,7 @@ if(isset($_POST["registrarR"])){
     RegistrarReserva();
 }
 }
-
+*/
 
 
 
