@@ -69,12 +69,9 @@ require ("../../../includes/url.php");
                             </select>                        
                         </div>
                         <div class="text-center">
-                        <input type="hidden" name="action" value="add" />
-                            <button type="submit" class="btn btn-light">Agregar</button>
-                            <input type="hidden" name="action2" value="update" />
-                            <button type="submit" class="btn btn-light">Actualizar</button>
-                            <input type="hidden" name="action" value="delete" />
-                            <button type="submit" class="btn btn-light">Eliminar</button>
+                        <button type="submit" name="action" value="add" class="btn btn-light">Agregar</button>
+        <button type="submit" name="action" value="update" class="btn btn-light">Actualizar</button>
+        <button type="submit" name="action" value="delete" class="btn btn-light">Eliminar</button>
                         </div>
                     </form>
                     

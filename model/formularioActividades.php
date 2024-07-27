@@ -101,6 +101,32 @@ class formularioActividades_model {
 
         return $row['count'] > 0;
     }
+
+    public function eliminarActividad($tipoActividad) {
+        // Convertir el nombre de la actividad a mayúsculas
+        $tipoActividad = strtoupper($tipoActividad);
+
+        $existe = $this->actividadExiste($tipoActividad);
+    if (!$existe) {
+        return "La actividad no existe.";
+    }
+    
+        // Ajuste en el nombre de las columnas en la consulta
+        $query = "DELETE FROM `actividades` WHERE `tipoActividad` = ?";
+        $stmt = $this->dbConnect->prepare($query);
+    
+        if (!$stmt) {
+            throw new Exception("Error en la preparación de la consulta: " . $this->dbConnect->error);
+        }
+    
+        $stmt->bind_param("s", $tipoActividad);
+    
+        if ($stmt->execute()) {
+            return true;
+        } else {
+            throw new Exception("Error al eliminar la actividad: " . $stmt->error);
+        }
+    }
 }
 
 
