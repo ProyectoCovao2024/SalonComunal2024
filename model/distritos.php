@@ -10,10 +10,10 @@ class Distritos_model{
         $this ->dbConnect = ConectarDB::conexion();
         }
 
-    function getCantones(int $idCanton){
+    function getDistritos(int $idCanton){
         $consulta = "SELECT `codigoDistrito`, `nombreDistrito` FROM `distrito` WHERE `codigoCanton` = $idCanton ORDER BY `nombreDistrito` ASC" ;
         $query = mysqli_query($this->dbConnect,$consulta);
-        $lineaHTML = "<option value=''>Seleccione una opcione</option>";
+        $lineaHTML = "<option value=''>Seleccione una opcion</option>";
         while($fila = $query->fetch_assoc()){
             $lineaHTML .= "<option value='".$fila["codigoDistrito"]."'>".$fila["nombreDistrito"]. "</option>";
         }
