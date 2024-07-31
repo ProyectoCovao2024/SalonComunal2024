@@ -51,11 +51,11 @@ require ("../../../includes/url.php");
                         </div>
                         <div class="form-group">
                             <label for="nombre_actividad">Nombre de la Actividad</label>
-                            <input type="text" class="form-control" id="nombre_actividad"  name="nombre_actividad" required>
+                            <input type="text" class="form-control" id="nombre_actividad"  name="nombre_actividad">
                         </div>
                         <div class="form-group">
                             <label for="tipR">Monetización</label>
-                            <select name="tipR" id="tipR" class="form-select mb-4" required>
+                            <select name="tipR" id="tipR" class="form-select mb-4">
                                 <option value="" hidden>Selecciona una opción</option>
                                     <?php foreach($listaActividades as $monetizacion): ?>
                                         <option value="<?php echo $monetizacion['codigoTipodeMonetizacion']; ?>">
