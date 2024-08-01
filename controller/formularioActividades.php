@@ -22,20 +22,37 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             if ($accion === 'add') {
                 // Verifica si la actividad ya existe
                 if ($formularioActividad->actividadExiste($tipoActividad)) {
-                    echo '
-                        <script>
-                            Swal.fire({
-                                icon: "error",
-                                title: "Oops...",
-                                text: "Ya existe una actividad con ese nombre",
+                    header('Refresh: 3; url=http://localhost/SalonComunal2024/view/pages/formActividades/actividades.php');
+                    echo'
+                        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                        <script type="text/Javascript">
+                            window.onload = function(){
+                                Swal.fire({
+                                    icon: "error",
+                                    title: "Ya existe una actividad con ese nombre!",
+                                    showConfirmButton: false
                                 });
+                            }
                         </script>
                     ';
+                    exit();          
                 } else {
                     // Llama al método para crear la actividad en el modelo
                     $resultado = $formularioActividad->crearActividad($tipoActividad, $codigoTipodeMonetizacion);
                     if ($resultado) {
-                        echo "Actividad creada con éxito.";
+                        header('Refresh: 3; url=http://localhost/SalonComunal2024/view/pages/formActividades/actividades.php');
+                        echo'
+                        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                        <script type="text/Javascript">
+                            window.onload = function(){
+                                Swal.fire({
+                                    icon: "success",
+                                    title: "Actividad creada con éxito!",
+                                    showConfirmButton: false
+                                });
+                            }
+                        </script>
+                    ';
                     }
                 }
             } elseif ($accion === 'delete') {
@@ -51,7 +68,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             echo "Error al procesar la solicitud: " . $e->getMessage();
         }
     } else {
-        echo "Por favor, complete todos los campos.";
+        header('Refresh: 3; url=http://localhost/SalonComunal2024/view/pages/formActividades/actividades.php');
+        echo'
+            <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script type="text/Javascript">
+                window.onload = function(){
+                    Swal.fire({
+                        icon: "error",
+                        title: "Por favor, complete todos los campos!",
+                        showConfirmButton: false
+                    });
+                }
+            
+            </script>
+        ';
+        exit();
     }
 }
 
