@@ -16,36 +16,30 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $tipoActividad = trim(ltrim(rtrim($tipoActividad)));
 
-    // Verifica que los campos no estén vacíos
-    if (!empty($tipoActividad) && !empty($codigoTipodeMonetizacion) && $tipoActividad != '') {
+    // Verifica que los campos no estén vacíos para la acción 'add'
+    if ($accion === 'add' && (!empty($tipoActividad) && !empty($codigoTipodeMonetizacion) && $tipoActividad != '')) {
         try {
-            if ($accion === 'add') {
-                // Verifica si la actividad ya existe
-                if ($formularioActividad->actividadExiste($tipoActividad)) {
-                    echo '
-                        <script>
-                            Swal.fire({
-                                icon: "error",
-                                title: "Oops...",
-                                text: "Ya existe una actividad con ese nombre",
-                                });
-                        </script>
-                    ';
-                } else {
-                    // Llama al método para crear la actividad en el modelo
-                    $resultado = $formularioActividad->crearActividad($tipoActividad, $codigoTipodeMonetizacion);
-                    if ($resultado) {
-                        echo "Actividad creada con éxito.";
-                    }
+            // Verifica si la actividad ya existe
+            if ($formularioActividad->actividadExiste($tipoActividad)) {
+                echo "Ya existe una actividad con ese nombre.";
+            } else {
+                // Llama al método para crear la actividad en el modelo
+                $resultado = $formularioActividad->crearActividad($tipoActividad, $codigoTipodeMonetizacion);
+                if ($resultado) {
+                    echo "Actividad creada con éxito.";
                 }
-            } elseif ($accion === 'delete') {
-                // Llama al método para eliminar la actividad en el modelo
-                $resultado = $formularioActividad->eliminarActividad($tipoActividad);
-                if ($resultado === true) {
-                    echo "Actividad eliminada con éxito.";
-                } else {
-                    echo $resultado; // Mostrar el mensaje de que la actividad no existe
-                }
+            }
+        } catch (Exception $e) {
+            echo "Error al procesar la solicitud: " . $e->getMessage();
+        }
+    } elseif ($accion === 'delete' && !empty($tipoActividad) && $tipoActividad != '') {
+        try {
+            // Llama al método para eliminar la actividad en el modelo
+            $resultado = $formularioActividad->eliminarActividad($tipoActividad);
+            if ($resultado === true) {
+                echo "Actividad eliminada con éxito.";
+            } else {
+                echo $resultado; // Mostrar el mensaje de que la actividad no existe
             }
         } catch (Exception $e) {
             echo "Error al procesar la solicitud: " . $e->getMessage();
@@ -54,5 +48,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Por favor, complete todos los campos.";
     }
 }
-
 ?>
