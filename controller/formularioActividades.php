@@ -16,8 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $tipoActividad = trim(ltrim(rtrim($tipoActividad)));
 
-    // Verifica que los campos no estén vacíos
-    if (!empty($tipoActividad) && !empty($codigoTipodeMonetizacion) && $tipoActividad != '') {
+    // Verifica que los campos no estén vacíos para la acción 'add'
+    if ($accion === 'add' && (!empty($tipoActividad) && !empty($codigoTipodeMonetizacion) && $tipoActividad != '')) {
         try {
             if ($accion === 'add') {
                 // Verifica si la actividad ya existe
@@ -67,6 +67,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } catch (Exception $e) {
             echo "Error al procesar la solicitud: " . $e->getMessage();
         }
+    } elseif ($accion === 'delete' && !empty($tipoActividad) && $tipoActividad != '') {
+        try {
+            // Llama al método para eliminar la actividad en el modelo
+            $resultado = $formularioActividad->eliminarActividad($tipoActividad);
+            if ($resultado === true) {
+                echo "Actividad eliminada con éxito.";
+            } else {
+                echo $resultado; // Mostrar el mensaje de que la actividad no existe
+            }
+        } catch (Exception $e) {
+            echo "Error al procesar la solicitud: " . $e->getMessage();
+        }
     } else {
         header('Refresh: 3; url=http://localhost/SalonComunal2024/view/pages/formActividades/actividades.php');
         echo'
@@ -85,5 +97,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
     }
 }
-
 ?>
