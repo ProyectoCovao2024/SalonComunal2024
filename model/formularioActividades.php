@@ -107,9 +107,11 @@ class formularioActividades_model {
         $tipoActividad = strtoupper($tipoActividad);
 
         $existe = $this->actividadExiste($tipoActividad);
-    if (!$existe) {
-        return "La actividad no existe.";
-    }
+            if (!$existe) {
+
+                return "La actividad no existe!";
+
+            }
     
         // Ajuste en el nombre de las columnas en la consulta
         $query = "DELETE FROM `actividades` WHERE `tipoActividad` = ?";
@@ -127,7 +129,46 @@ class formularioActividades_model {
             throw new Exception("Error al eliminar la actividad: " . $stmt->error);
         }
     }
+
+    public function actualizarActividad($tipoActividad, $codigoTipodeMonetizacion) {
+        // Convertir el nombre de la actividad a mayúsculas
+        $tipoActividad = strtoupper($tipoActividad);
+    
+        // Verificar que la actividad existe antes de actualizar
+        $existe = $this->actividadExiste($tipoActividad);
+        if (!$existe) {
+            throw new Exception("La actividad no existe. No se puede actualizar.");
+        }
+    
+        // Ajuste en el nombre de las columnas en la consulta
+        $query = "UPDATE `actividades` SET `codigoTipodeMonetizacion` = ? WHERE `tipoActividad` = ?";
+        $stmt = $this->dbConnect->prepare($query);
+    
+        if (!$stmt) {
+            throw new Exception("Error en la preparación de la consulta: " . $this->dbConnect->error);
+        }
+    
+        // Verifica que $codigoTipodeMonetizacion es un entero
+        $codigoTipodeMonetizacion = (int)$codigoTipodeMonetizacion;
+    
+        // El primer parámetro es el código de monetización (entero) y el segundo es el tipo de actividad (cadena)
+        $stmt->bind_param("is", $codigoTipodeMonetizacion, $tipoActividad);
+    
+        if ($stmt->execute()) {
+            return true;
+        } else {
+            throw new Exception("Error al actualizar la actividad: " . $stmt->error);
+        }
+    }
+    
+    
+
+
 }
+
+
+
+
 
 
 

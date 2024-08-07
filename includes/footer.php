@@ -7,10 +7,7 @@
 </div>
 <ul class="social-icon">
     <li class="social-icon__item"><a class="social-icon__link" href="#">
-            <ion-icon name="logo-instagram"></ion-icon>
-        </a></li>
-    <li class="social-icon__item"><a class="social-icon__link" href="#">
-            <ion-icon name="html-email-to-text"></ion-icon>
+            <ion-icon name="mail-outline"></ion-icon>
         </a></li>
     <li class="social-icon__item"><a class="social-icon__link" href="#">
             <ion-icon name="logo-whatsapp"></ion-icon>
