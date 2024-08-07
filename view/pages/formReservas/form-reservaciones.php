@@ -18,6 +18,7 @@ require ("../../../includes/url.php");
     </script>
     <script defer src="<?php echo urlLocal?>/public/build/JavaScript/provincias.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Formulario de Reservas</title>
 </head>
 
@@ -36,7 +37,7 @@ require ("../../../includes/url.php");
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-sm-10 col-md-11 col-lg-11 col-xl-12 col-xxl-12">
                 <div class="formBox">
-                    <form action="controller/formularioReservas.php" method="post">
+                    <form action="../../../controller/formularioReservas.php" method="post">
                         <div class="titulo mb-5">
                             <h1>Reservaciones</h1>
                         </div>
@@ -247,6 +248,8 @@ require ("../../../includes/url.php");
     </footer>
     <script src="http://localhost/SalonComunal2024/public/build/JavaScript/animacionbotonformreservas.js"></script>
     <script src="http://localhost/SalonComunal2024/public/build/JavaScript/modalformreservas.js"></script>
+
+
 </body>
 
 
