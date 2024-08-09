@@ -1,10 +1,9 @@
 <?php
 
-//*nueva clase
-
 class reservas_model{
 
     private $dbConnect;
+    private $actividadesForm;
     private $cedula;
     private $nombre;
     private $apellidos;
@@ -26,11 +25,11 @@ class reservas_model{
     private $costoL;
 
     function __construct(){
-        require("conexion.php");
+        require_once "../model/conexion.php";
         $this ->dbConnect =ConectarDB::conexion();
     }
 
-    function validarDatos($ced,$nom,$ape,$mail,$tel,$edad,$prov,$cant,$dist,$direc,$fec,$hoi,$hof,$tipoa,$cantp,$costo,$costor,$costod,$costol){
+    function validarDatos($ced,$nom,$ape,$mail,$tel,$edad,$prov,$cant,$dist,$direc,$fec,$hoi,$hof,$tipoa,$cantp,$costo,$costor,$costod,$costol):bool{
         if(!empty($ced) && !$ced == " " && isset($ced) &&
             !empty($nom) && !$nom == " " && isset($nom) &&
             !empty($ape) && !$ape == " " && isset($ape) &&
@@ -113,11 +112,15 @@ class reservas_model{
             }
     }
 
-    function insertSQL(){
-        $consultaINSERT = "INSERT INTO `reserva`(`codigoReservas`, `fechaInicio`, `horaInicio`, `horaFinalizacion`, `cantidaddePersonas`, `codigoTipoEstado(FK)`, `codigoActividadFK`, `cedulaPersonaFK`) 
-                        VALUES (?,?,?,?,?,?,?,?)";
-        $resultaSLQ = mysqli_prepare($this->dbConnect,$consultaINSERT);
+    function insertSQL($dat){
+        if($dat == true){
+            echo "Funcion de Insert";
+        }
+        else{
+            return false;
+        }
     }
+
 }
 
 
