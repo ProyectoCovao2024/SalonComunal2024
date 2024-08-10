@@ -322,3 +322,9 @@ menu padding 0
 .table td, .table th {
     text-transform: uppercase;
 }
+
+
+/*******************************************/
+#updateInput{
+    display: none;
+}
