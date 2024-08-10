@@ -1,0 +1,21 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "sweetalert2 use for all",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "packages",
+    "json",
+    "npm",
+    "sweetalert2",
+    "alerts"
+  ],
+  "author": "Salon Comunal 2024",
+  "license": "ISC",
+  "dependencies": {
+    "sweetalert2": "^11.12.3"
+  }
+}

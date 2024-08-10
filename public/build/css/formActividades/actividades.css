@@ -323,3 +323,8 @@ menu padding 0
     text-transform: uppercase;
 }
 
+
+/*******************************************/
+#updateInput{
+    display: none;
+}

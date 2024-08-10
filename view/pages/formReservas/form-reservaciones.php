@@ -18,6 +18,7 @@ require ("../../../includes/url.php");
     </script>
     <script defer src="<?php echo urlLocal?>/public/build/JavaScript/provincias.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Formulario de Reservas</title>
 </head>
 
@@ -31,12 +32,13 @@ require ("../../../includes/url.php");
             require("../../../controller/provincias.php");
         ?>
 
+
     </header>
     <div class="container-fluid mt-5">
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-sm-10 col-md-11 col-lg-11 col-xl-12 col-xxl-12">
                 <div class="formBox">
-                    <form action="controller/formularioReservas.php" method="post">
+                    <form action="../../../controller/formularioReservas.php" method="post">
                         <div class="titulo mb-5">
                             <h1>Reservaciones</h1>
                         </div>
@@ -120,14 +122,14 @@ require ("../../../includes/url.php");
                             <div class="col-6">
                                 <label for="tipA" class="form-label">Tipo de Actividad</label>
                                 <select name="tipA" id="tipA" class="form-select mb-4">
-                                    <option value="" hidden>Selecciona una opción</option>
-                                    <option>Alajuela</option>
-                                    <option>Cartago</option>
-                                    <option>Guanacaste</option>
-                                    <option>Heredia</option>
-                                    <option>Limón</option>
-                                    <option>Puntarenas</option>
-                                    <option>San José</option>
+                                    <option value="">Seleccion una opcion</option>
+                                <?php
+                                    //TODO: Mejor la codificacion.
+                                    $consulta = "SELECT * FROM `actividades`";
+                                    $query = mysqli_query(mysqli_connect("localhost","root","","salonComunal2024"), $consulta);
+                                    while($row = $query->fetch_assoc()){?>
+                                        "<option value='<?php echo"".$row["codigoActividad"]."" ?>'><?php echo "".$row["tipoActividad"]."" ?></option>"
+                                    <?php }?>
                                 </select>
                             </div>
 
@@ -186,35 +188,35 @@ require ("../../../includes/url.php");
                         </div>
                         <div class="row">
                             <div class="col-6">
-                                <fieldset disabled>
+                                <fieldset>
                                     <label for="cosT" class="form-label">Costo Total</label>
                                     <input type="number" class="form-control form-control-lg mb-3 mt-3" id="cosT"
-                                        name="cosT">
+                                        name="cosT" value="120.000" readonly>
                                 </fieldset>
                             </div>
 
                         </div>
                         <div class="row">
                             <div class="col-xl-4 col-sm-6">
-                                <fieldset disabled>
+                                <fieldset>
                                     <label for="cos" class="form-label">Costo de la Renta</label>
                                     <input type="number" class="form-control form-control-lg mb-3 mt-3" id="cos"
-                                        name="cos">
+                                        name="cos" value="100.000" readonly>
                                 </fieldset>
 
                             </div>
                             <div class="col-xl-4 col-sm-6">
-                                <fieldset disabled>
+                                <fieldset>
                                     <label for="cosD" class="form-label">Costo del Deposito</label>
                                     <input type="number" class="form-control form-control-lg mb-3 mt-3" id="cosD"
-                                        name="cosD">
+                                        name="cosD" value="10.000" readonly>
                                 </fieldset>
                             </div>
                             <div class="col-xl-4 col-sm-6">
-                                <fieldset disabled>
+                                <fieldset>
                                     <label for="cosL" class="form-label">Costo de Limpieza</label>
                                     <input type="number" class="form-control form-control-lg mb-3 mt-3" id="cosL"
-                                        name="cosL">
+                                        name="cosL" value="10.000" readonly>
                                 </fieldset>
                             </div>
                         </div>
@@ -247,6 +249,8 @@ require ("../../../includes/url.php");
     </footer>
     <script src="http://localhost/SalonComunal2024/public/build/JavaScript/animacionbotonformreservas.js"></script>
     <script src="http://localhost/SalonComunal2024/public/build/JavaScript/modalformreservas.js"></script>
+
+
 </body>
 
 
