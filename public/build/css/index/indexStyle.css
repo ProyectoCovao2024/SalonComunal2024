@@ -70,6 +70,13 @@ span {
     font-size: 1.6rem;
 }
 
+.social-media {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    width: 25%;
+}
+
 .social-media a {
     display: inline-flex;
     justify-content: center;
