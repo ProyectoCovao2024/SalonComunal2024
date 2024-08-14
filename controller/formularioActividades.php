@@ -110,7 +110,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 ';
             }
         } catch (Exception $e) {
-            echo "Error al procesar la solicitud: " . $e->getMessage();
+            header('Refresh: 3; url=http://localhost/SalonComunal2024/view/pages/formActividades/actividades.php');
+            echo '
+                <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                <script type="text/javascript">
+                    window.onload = function(){
+                        Swal.fire({
+                            icon: "error",
+                            title: "' . htmlspecialchars($e->getMessage()) . '",
+                            showConfirmButton: false
+                        });
+                    }
+                </script>
+            ';
         }
     } else {
         header('Refresh: 3; url=http://localhost/SalonComunal2024/view/pages/formActividades/actividades.php');

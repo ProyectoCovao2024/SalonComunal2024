@@ -43,10 +43,8 @@ require ("../../../includes/url.php");
             <div class="row">
                 <div id="info" class="col-md-4">
                     <div class="text-content m-0">
-                        <p>La página de actividades permite crear diferentes tipos de actividades que pueden llevarse a
-                            cabo en el salón comunal, cada uno con su método de monetización específico. Además, al
-                            precionar el icono situado en el inferior izquierda, se pueden visualizar los tipos de
-                            actividades ingresadas anteriormente. </p>
+                        <p>La página de actividades permite crear, actualizar, visualizar y eliminar y diferentes tipos de actividades que pueden realizarse en el salón comunal, cada una con su propio método de monetización específico. Además, al hacer clic en el ícono ubicado en la esquina inferior izquierda, podrás visualizar los tipos de actividades ingresadas previamente. Para actualizar o eliminar una actividad, utiliza las opciones disponibles en la interfaz correspondiente.
+                        </p>
                     </div>
 
                 </div>
