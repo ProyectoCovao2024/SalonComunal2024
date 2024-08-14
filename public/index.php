@@ -30,8 +30,7 @@ require ("../includes/url.php");
                 y servicios, así como realizar reservas de manera fácil y rápida. Nuestro salón está diseñado para
                 satisfacer sus necesidades y ofrecerle un espacio ideal para sus eventos y actividades.</p>
             <div class="social-media">
-                <a href="#"><i class='bx bxl-whatsapp'></i></a>
-                <p>8305<span> 6446</span></p> 
+                <a href="https://api.whatsapp.com/send?phone=83056446&text=Hola,%20¿Cómo%20podemos%20ayudarte?"><i class='bx bxl-whatsapp'></i></a>
             </div>
             <!-- <a href="" class="btn">Historia</a> -->
         </div>
