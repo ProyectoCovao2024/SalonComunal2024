@@ -30,9 +30,7 @@ require ("../includes/url.php");
                 y servicios, así como realizar reservas de manera fácil y rápida. Nuestro salón está diseñado para
                 satisfacer sus necesidades y ofrecerle un espacio ideal para sus eventos y actividades.</p>
             <div class="social-media">
-                <a href="#"><i class='bx bxl-whatsapp'></i></a>
-                <a href="#"><i class='bx bxl-facebook-square'></i></a>
-                <a href="#"><i class='bx bxl-gmail'></i></a>
+                <a href="#"><i class='bx bxl-whatsapp'>8305 <span>6446</span></i></a>
             </div>
             <!-- <a href="" class="btn">Historia</a> -->
         </div>
