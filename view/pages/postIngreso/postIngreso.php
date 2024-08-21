@@ -37,7 +37,7 @@ require ("../../../includes/url.php");
             </div>
             <div class="cardDown">
                 <p>
-                    <a href="#">Miembros</a>
+                    <a href="<?php echo urlLocal?>/view/pages/controlMiembros/controlMiembros.php">Miembros</a>
                 </p>
             </div>
         </div>
