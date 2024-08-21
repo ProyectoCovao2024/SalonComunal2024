@@ -91,12 +91,13 @@
     }
 
     .menu .navbar {
+        display: none; /* Oculto por defecto */
         position: absolute;
-        top: 100%;
+        top: 100%; /* Posiciona el menú justo debajo del header */
         left: 0;
         right: 0;
-        background-color: #06617a82;
-        display: none;
+        background-color: #06617A;
+        z-index: 1000;
     }
 
     .menu .navbar ul li {
@@ -139,6 +140,20 @@
         padding: 2rem 3%;
     }
 
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #06617af5;
+        display: none;
+    }
+
+    .menu .navbar ul li:hover{
+        background-color: #0687aaa4;
+    }
+
+
 }
 
 @media screen and (max-width: 550px) {
@@ -166,7 +181,7 @@
         top: 100%;
         left: 0;
         right: 0;
-        background-color: #06617a82;
+        background-color: #06617af5;
         display: none;
     }
 
