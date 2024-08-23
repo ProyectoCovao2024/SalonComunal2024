@@ -27,9 +27,9 @@
                             <i class="fas fa-star"></i>
                         </div>
                         <div class="abouttt" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quia sapiente! Quos
+                            <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quia sapiente! Quos
                                 libero rem non expedita suscipit perspiciatis quia saepe animi accusamus itaque soluta
-                                distinctio, dolorum nulla quo minus obcaecati.</p>
+                                distinctio, dolorum nulla quo minus obcaecati.</p> -->
                         </div>
                     </div>
                 </div>
@@ -52,13 +52,13 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                         <div class="abouttt" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quia sapiente! Quos
+                            <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quia sapiente! Quos
                                 libero rem non expedita suscipit perspiciatis quia saepe animi accusamus itaque soluta
-                                distinctio, dolorum nulla quo minus obcaecati.</p>
+                                distinctio, dolorum nulla quo minus obcaecati.</p> -->
                         </div>
                     </div>
                 </div>
@@ -108,13 +108,13 @@
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                         <div class="abouttt" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quia sapiente! Quos
+                            <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quia sapiente! Quos
                                 libero rem non expedita suscipit perspiciatis quia saepe animi accusamus itaque soluta
-                                distinctio, dolorum nulla quo minus obcaecati.</p>
+                                distinctio, dolorum nulla quo minus obcaecati.</p> -->
                         </div>
                     </div>
                 </div>
@@ -163,14 +163,14 @@
                         <div class="rating">
                             <i class="fas fa-star"></i>
                             <i class="fas fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
-                            <i class="far fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
                         </div>
                         <div class="abouttt" data-swiper-parallax="-300" data-swiper-parallax-duration="600">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quia sapiente! Quos
+                            <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quia sapiente! Quos
                                 libero rem non expedita suscipit perspiciatis quia saepe animi accusamus itaque soluta
-                                distinctio, dolorum nulla quo minus obcaecati.</p>
+                                distinctio, dolorum nulla quo minus obcaecati.</p> -->
                         </div>
                     </div>
                 </div>
