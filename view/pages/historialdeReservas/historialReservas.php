@@ -13,6 +13,8 @@ require ("../../../includes/url.php");
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="<?php echo urlLocal?>/public/build/JavaScript/aprobarRechazar.js"></script>
     <link rel="stylesheet"
         href="<?php echo urlLocal?>/public/build/css/historialDeReservas/historialReservas.css">
     <link rel="stylesheet" href="<?php echo urlLocal?>/public/build/css/header/headerStyle.css">
@@ -23,6 +25,7 @@ require ("../../../includes/url.php");
 <body>
 <?php
     require ('../../../includes/header2.php');
+    require_once "../../../controller/historialReservas.php";
 ?>
     <div class="box">
         <div class="container">
@@ -41,91 +44,9 @@ require ("../../../includes/url.php");
                                 aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <div class="boxreservas" style="overflow: scroll;">
-                                        <div class="datos">
-                                            <ul>
-                                                <li>
-                                                    <?php 
-                                                    require('../../../controller/historialReservas.php');
-                                                    echo'<a href="#openModal">';
-                                                    foreach($matrizHistorial as $listaHistorial ){
-                                                        echo $listaHistorial["cedulaPersona"];
-                                                        echo $listaHistorial["nombrePersona"];
-                                                        echo $listaHistorial["direccionExactaPersona"];
-                                                    }
-                                                    echo'</a>';
-                                                    ?>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="botones">
-                                            <button>Aceptar</button>
-                                            <button>Rechazar</button>
-                                        </div>
-                                    </div>
-                                    <div class="boxreservas">
-                                        <div class="datos">
-                                            <ul>
-                                                <li>
-                                                    nombre nombre nombre nombre nombre nombre nombre
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="botones">
-                                            <button>Aceptar</button>
-                                            <button>Rechazar</button>
-                                        </div>
-                                    </div>
-                                    <div class="boxreservas">
-                                        <div class="datos">
-                                            <ul>
-                                                <li>
-                                                    Cedula Nombre nombre nombre nombre nombre nombre
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="botones">
-                                            <button>Aceptar</button>
-                                            <button>Rechazar</button>
-                                        </div>
-                                    </div>
-                                    <div class="boxreservas">
-                                        <div class="datos">
-                                            <ul>
-                                                <li>
-                                                    nombre nombre nombre nombre nombre nombre nombre
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="botones">
-                                            <button>Aceptar</button>
-                                            <button>Rechazar</button>
-                                        </div>
-                                    </div>
-                                    <div class="boxreservas">
-                                        <div class="datos">
-                                            <ul>
-                                                <li>
-                                                    nombre nombre nombre nombre nombre nombre nombre
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="botones">
-                                            <button>Aceptar</button>
-                                            <button>Rechazar</button>
-                                        </div>
-                                    </div>
-                                    <div class="boxreservas">
-                                        <div class="datos">
-                                            <ul>
-                                                <li>
-                                                    nombre nombre nombre nombre nombre nombre nombre
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="botones">
-                                            <button>Aceptar</button>
-                                            <button>Rechazar</button>
-                                        </div>
+                                        <?php
+                                            $historialR ->cargarHistorialPendiente();
+                                        ?>
                                     </div>
                                 </div>
                             </div>
@@ -141,10 +62,11 @@ require ("../../../includes/url.php");
                             <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                    Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is
-                                    the second item's accordion body. Let's imagine this being
-                                    filled with some actual content.
+                                <div class="boxreservas" style="overflow: scroll;">
+                                        <?php
+                                            $historialR ->cargarHistorialAprovado();
+                                        ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -159,13 +81,11 @@ require ("../../../includes/url.php");
                             <div id="flush-collapseThree" class="accordion-collapse collapse"
                                 aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
-                                    Placeholder content for this accordion, which is intended to
-                                    demonstrate the <code>.accordion-flush</code> class. This is
-                                    the third item's accordion body. Nothing more exciting
-                                    happening here in terms of content, but just filling up the
-                                    space to make it look, at least at first glance, a bit more
-                                    representative of how this would look in a real-world
-                                    application.
+                                <div class="boxreservas" style="overflow: scroll;">
+                                        <?php
+                                            $historialR ->cargarHistorialRechazado();
+                                        ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -173,70 +93,7 @@ require ("../../../includes/url.php");
                 </div>
             </div>
             <div id="openModal" class="modalDialog">
-                <div>
-                    <a href="#close" title="Close" class="close">X</a>
-                    <h2>Reservacion</h2>
-                    <div class="formContainer">
-                        <form action="#">
-                            <fieldset>
-                                <div class="groupInfo">
-                                    <label for="cedula">Cedula</label>
-                                    <label for="nombre">Nombre</label>
-                                    <input type="numbre" name="cedula" id="cedula">
-                                    <input type="text" name="nombre" id="nombre">
-                                    <label for="apellidos">Apellidos</label>
-                                    <label for="correo">Correo Electronico</label>
-                                    <input type="text" name="apellidos" id="apellidos">
-                                    <input type="text" name="correo" id="correo">
-                                    <label for="telefono">Telefono</label><br>
-                                    <input type="number" name="telefono" id="telefono">
-                                    <br>
-                                </div>
-                                <div class="groupInfo">
-                                <label for="edad">Edad</label>
-                                    <label for="provincia">Provincia</label>
-                                    <input type="text" name="edad" id="edad">
-                                    <input type="text" name="provincia" id="provincia">
-                                    <label for="canton">Canton</label>
-                                    <label for="distrito">Distrito</label>
-                                    <input type="text" name="canton" id="canton">
-                                    <input type="text" name="distrito" id="distrito">
-                                    <label for="direccion">Direccion Exacta</label><br>
-                                    <input type="text" name="direccion" id="direccion">
-                                    <br>
-                                </div>
-                                <div class="groupInfo">
-                                <label for="fechaReservacion">Fecha Reservacion</label>
-                                    <label for="horaInicio">Hora de Inicio</label>
-                                    <input type="date" name="fechaReservacion" id="fechaReservacion">
-                                    <input type="time" name="horaInicio" id="horaInicio">
-                                    <label for="horaFinal">Hora de Finalizacion</label>
-                                    <label for="tipoActividad">Tipo de actividad</label>
-                                    <input type="time" name="horaFinal" id="horaFinal">
-                                    <input type="text" name="tipoActividad" id="tipoActividad">
-                                    <label for="cantidadPersonas">Cantidad de Personas</label><br>
-                                    <input type="number" name="cantidadPersonas" id="cantidadPersonas">
-                                    <br>
-                                </div>
-                                <div class="groupInfo">
-                                <label for="costoTotal">Costo Total</label>
-                                    <label for="costoRenta">Costo de la Renta</label>
-                                    <input type="number" name="costoTotal" id="costoTotal">
-                                    <input type="number" name="costoRenta" id="costoRenta">
-                                    <label for="costoDeposito">Costo del deposito</label>
-                                    <label for="costoLimpieza">Costo de Limpieza</label>
-                                    <input type="number" name="costoDeposito" id="costoDeposito">
-                                    <input type="number" name="costoLimpieza" id="costoLimpieza">
-                                    <br>
-                                </div>
-                                <div class="buttoms">
-                                    <button >Modificar</button>
-                                    <button >Eliminar</button>
-                                </div>
-                            </fieldset>
-                        </form>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>

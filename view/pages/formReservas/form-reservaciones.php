@@ -18,7 +18,9 @@ require ("../../../includes/url.php");
     </script>
     <script defer src="<?php echo urlLocal?>/public/build/JavaScript/provincias.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
+    <script defer src="<?php echo urlLocal?>/public/build/JavaScript/validacionesReservas.js"></script>
     <title>Formulario de Reservas</title>
 </head>
 
@@ -38,22 +40,22 @@ require ("../../../includes/url.php");
         <div class="row d-flex justify-content-center align-items-center">
             <div class="col-sm-10 col-md-11 col-lg-11 col-xl-12 col-xxl-12">
                 <div class="formBox">
-                    <form action="../../../controller/formularioReservas.php" method="post">
+                    <form action="../../../controller/formularioReservas.php" method="post" id="formReserva">
                         <div class="titulo mb-5">
                             <h1>Reservaciones</h1>
                         </div>
                         <div class="row mt-3">
                             <div class="col-xl-4 col-sm-6">
                                 <label for="ced" class="form-label">Cédula</label>
-                                <input type="number" class="form-control form-control-lg mb-3 mt-3" id="ced" name="ced">
+                                <input type="number" class="form-control form-control-lg mb-3 mt-3" id="ced" name="ced" required>
                             </div>
                             <div class="col-xl-4 col-sm-6">
                                 <label for="nom" class="form-label">Nombre</label>
-                                <input type="text" class="form-control form-control-lg mb-3 mt-3" id="nom" name="nom">
+                                <input type="text" class="form-control form-control-lg mb-3 mt-3" id="nom" name="nom" required>
                             </div>
                             <div class="col-xl-4 col-sm-6">
                                 <label for="ape" class="form-label">Apellidos</label>
-                                <input type="text" class="form-control form-control-lg mb-3 mt-3" id="ape" name="ape">
+                                <input type="text" class="form-control form-control-lg mb-3 mt-3" id="ape" name="ape" required>
                             </div>
                         </div>
 
@@ -61,15 +63,15 @@ require ("../../../includes/url.php");
                             <div class="col-xl-4 col-sm-6">
                                 <label for="mail" class="form-label">Correo Electrónico</label>
                                 <input type="email" class="form-control form-control-lg mb-3 mt-3" id="mail"
-                                    name="mail">
+                                    name="mail" required>
                             </div>
                             <div class="col-xl-4 col-sm-6">
                                 <label for="tel" class="form-label">Teléfono</label>
-                                <input type="number" class="form-control form-control-lg mb-3 mt-3" id="tel" name="tel">
+                                <input type="number" class="form-control form-control-lg mb-3 mt-3" id="tel" name="tel" required>
                             </div>
                             <div class="col-xl-4 col-sm-6">
                                 <label for="eda" class="form-label">Edad</label>
-                                <input type="number" class="form-control form-control-lg mb-3 mt-3" id="eda" name="eda">
+                                <input type="number" class="form-control form-control-lg mb-3 mt-3" id="eda" name="eda" required>
                             </div>
                         </div>
 
@@ -101,21 +103,21 @@ require ("../../../includes/url.php");
                         <div class="row">
                             <div class="col-6">
                                 <label for="dire" class="form-label">Dirección Exacta</label>
-                                <input type="text" class="form-control form-control-lg mt-6" id="dire" name="dire">
+                                <input type="text" class="form-control form-control-lg mt-6" id="dire" name="dire" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xl-4 col-sm-6">
                                 <label for="fec" class="form-label">Fecha de la Reservación</label>
-                                <input type="date" class="form-control form-control-lg mb-3 mt-3" id="fec" name="fec">
+                                <input type="date" class="form-control form-control-lg mb-3 mt-3" id="fec" name="fec" required>
                             </div>
                             <div class="col-xl-4 col-sm-6">
                                 <label for="hoi" class="form-label">Hora de Inicio</label>
-                                <input type="time" class="form-control form-control-lg mb-3 mt-3" id="hoi" name="hoi">
+                                <input type="time" class="form-control form-control-lg mb-3 mt-3" id="hoi" name="hoi" required>
                             </div>
                             <div class="col-xl-4 col-sm-6">
                                 <label for="hof" class="form-label">Hora Final</label>
-                                <input type="time" class="form-control form-control-lg mb-3 mt-3" id="hof" name="hof">
+                                <input type="time" class="form-control form-control-lg mb-3 mt-3" id="hof" name="hof" required>
                             </div>
                         </div>
                         <div class="row">
@@ -183,7 +185,7 @@ require ("../../../includes/url.php");
                             <div class="col-6">
                                 <label for="canP" class="form-label">Cantidad de Personas</label>
                                 <input type="number" class="form-control form-control-lg mb-3 mt-3" id="canP"
-                                    name="canP">
+                                    name="canP" required>
                             </div>
                         </div>
                         <div class="row">
@@ -191,7 +193,7 @@ require ("../../../includes/url.php");
                                 <fieldset>
                                     <label for="cosT" class="form-label">Costo Total</label>
                                     <input type="number" class="form-control form-control-lg mb-3 mt-3" id="cosT"
-                                        name="cosT" value="120.000" readonly>
+                                        name="cosT" value="120000.00" readonly>
                                 </fieldset>
                             </div>
 
@@ -201,7 +203,7 @@ require ("../../../includes/url.php");
                                 <fieldset>
                                     <label for="cos" class="form-label">Costo de la Renta</label>
                                     <input type="number" class="form-control form-control-lg mb-3 mt-3" id="cos"
-                                        name="cos" value="100.000" readonly>
+                                        name="cos" value="100000.00" readonly>
                                 </fieldset>
 
                             </div>
@@ -209,14 +211,14 @@ require ("../../../includes/url.php");
                                 <fieldset>
                                     <label for="cosD" class="form-label">Costo del Deposito</label>
                                     <input type="number" class="form-control form-control-lg mb-3 mt-3" id="cosD"
-                                        name="cosD" value="10.000" readonly>
+                                        name="cosD" value="10000.00" readonly>
                                 </fieldset>
                             </div>
                             <div class="col-xl-4 col-sm-6">
                                 <fieldset>
                                     <label for="cosL" class="form-label">Costo de Limpieza</label>
                                     <input type="number" class="form-control form-control-lg mb-3 mt-3" id="cosL"
-                                        name="cosL" value="10.000" readonly>
+                                        name="cosL" value="10000.00" readonly>
                                 </fieldset>
                             </div>
                         </div>
@@ -234,7 +236,7 @@ require ("../../../includes/url.php");
                             </div>
                         </div>
                         <div class="text-center mt-5">
-                            <button name="registrarR"> Enviar
+                            <button type="submit" name="registrarR"> Enviar
                             </button>
                         </div>
                     </form>
@@ -249,7 +251,6 @@ require ("../../../includes/url.php");
     </footer>
     <script src="http://localhost/SalonComunal2024/public/build/JavaScript/animacionbotonformreservas.js"></script>
     <script src="http://localhost/SalonComunal2024/public/build/JavaScript/modalformreservas.js"></script>
-
 
 </body>
 
