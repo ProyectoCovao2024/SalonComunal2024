@@ -31,36 +31,71 @@ require ("../../../includes/url.php");
 
 <div class="container-fluid row">
 <button class="btnstyle form-toggle justify-content-center" onclick="toggleForm()">Mostrar/Ocultar Formulario</button>
-    <form id="crudForm" class="col-12 col-lg-4 p-3 styleform" method="POST">
-        <div class="h3style"><h3 class="text-center">Formulario</h3></div>
-        <?php
-        // include("modelo/conexion.php");
-        // include("controlador/registro_auto.php");
-        // include("controlador/eliminar_fulldatos.php");
-        ?>
-        <div class="mb-3">
+<form id="crudForm" class="col-12 col-lg-4 p-3 styleform" method="POST">
+    <div class="h3style mb-4">
+        <h3 class="text-center">Formulario</h3>
+    </div>
+    
+    <!-- Nombre y Apellidos ¡Nuevos Cambios! -->
+    <div class="mb-3 d-flex justify-content-between">
+        <div class="w-50 me-2 form-floating">
+            <input type="text" class="form-control styled-input" name="nombre" placeholder="Nombre">
             <label for="nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" name="nombre">
         </div>
-        <div class="mb-3">
+        <div class="w-50 ms-2 form-floating">
+            <input type="text" class="form-control styled-input" name="apellidos" placeholder="Apellidos">
+            <label for="apellidos" class="form-label">Apellidos</label>
+        </div>
+    </div>
+
+    <!-- Grupo Cédula y Celular ¡Nuevos Cambios! -->
+    <div class="mb-3 d-flex justify-content-between">
+        <div class="w-50 me-2 form-floating">
+            <input type="text" class="form-control styled-input" name="cedula" pattern="\d*" inputmode="numeric" placeholder="Cédula">
             <label for="cedula" class="form-label">Cédula</label>
-            <input type="number" class="form-control" name="cedula">
         </div>
-        <div class="mb-3">
-            <label for="direccion" class="form-label">Dirección</label>
-            <input type="text" class="form-control" name="direccion">
-        </div>
-        <div class="mb-3">
+        <div class="w-50 ms-2 form-floating">
+            <input type="text" class="form-control styled-input" name="celular" pattern="\d*" inputmode="numeric" placeholder="Celular">
             <label for="celular" class="form-label">Celular</label>
-            <input type="text" class="form-control" name="celular">
         </div>
-        <div class="mb-3">
+    </div>
+    
+    <!-- Dirección ¡Nuevos Cambios! -->
+    <div class="mb-3 form-floating">
+        <input type="text" class="form-control styled-input" name="direccion" placeholder="Dirección">
+        <label for="direccion" class="form-label">Dirección</label>
+    </div>
+
+    <!-- Puesto y Rol ¡Nuevos Cambios! -->
+    <div class="mb-3 d-flex justify-content-between">
+        <div class="w-50 me-2 form-floating">
+            <input type="text" class="form-control styled-input" name="puesto" placeholder="Puesto">
+            <label for="puesto" class="form-label">Puesto</label>
+        </div>
+        <div class="w-50 ms-2 form-floating">
+            <input type="text" class="form-control styled-input" name="rol" placeholder="Rol">
+            <label for="rol" class="form-label">Rol</label>
+        </div>
+    </div>
+
+    <!-- Correo y Contraseña ¡Nuevos Cambios! -->
+    <div class="mb-3 d-flex justify-content-between">
+        <div class="w-50 me-2 form-floating">
+            <input type="email" class="form-control styled-input" name="correo" placeholder="Correo">
             <label for="correo" class="form-label">Correo</label>
-            <input type="email" class="form-control" name="correo">
         </div>
-        <button type="submit" class="btnstyle" name="btnregistro" value="ok">Registrar</button>
-        <button type="button" class="btnstyle" onclick="limpiarCampos()"><i class='bx bx-message-square-x'></i></button>
-    </form>
+        <div class="w-50 ms-2 form-floating">
+            <input type="password" class="form-control styled-input" name="contrasena" placeholder="Contraseña">
+            <label for="contrasena" class="form-label">Contraseña</label>
+        </div>
+    </div>
+
+    <button type="submit" class="btnstyle" name="btnregistro" value="ok">Registrar</button>
+    <button type="button" class="btnstyle" onclick="limpiarCampos()"><i class='bx bx-message-square-x'></i></button>
+</form>
+
+
+
 
     <div class="col-12 col-lg-8 p-4 table-responsive">
         <?php
@@ -75,11 +110,10 @@ require ("../../../includes/url.php");
                     <tr>
                         <th scope="col"><input type="checkbox" onclick="seleccionarTodos(this)"></th>
                         <th scope="col">ID</th>
-                        <th scope="col">Nombre</th>
-                        <th scope="col">Cédula</th>
-                        <th scope="col" class="d-none d-lg-table-cell">Dirección</th>
-                        <th scope="col" class="d-none d-lg-table-cell">Celular</th>
-                        <th scope="col" class="d-none d-lg-table-cell">Correo</th>
+                        <th scope="col">Miembro Cómite</th>
+                        <th scope="col">Telefono</th>
+                        <th scope="col">Puesto</th>
+                        <th scope="col" class="d-none d-lg-table-cell">Rol</th>
                         <th scope="col">Acciones</th>
                     </tr>
                 </thead>
@@ -87,11 +121,10 @@ require ("../../../includes/url.php");
                     <tr>
                         <td><input type="checkbox" name="selectAuto[]" onclick="toggleActionButtons()"></td>
                         <td>1</td>
+                        <td>Example Example Example</td>
+                        <td>0000-0000</td>
                         <td>Example</td>
-                        <td>000000000</td>
                         <td class="d-none d-lg-table-cell">Example</td>
-                        <td class="d-none d-lg-table-cell">99999999</td>
-                        <td class="d-none d-lg-table-cell">Example@gmail.com</td>
                         <td>
                             <a class="btnstyle btn-small"><i class='bx bx-edit'></i></a>
                             <a onclick="return eliminar()" class="btnstyle btn-small"><i class='bx bxs-trash'></i></a>
@@ -100,11 +133,10 @@ require ("../../../includes/url.php");
                     <tr>
                         <td><input type="checkbox" name="selectAuto[]" onclick="toggleActionButtons()"></td>
                         <td>1</td>
+                        <td>Example Example Example</td>
+                        <td>0000-0000</td>
                         <td>Example</td>
-                        <td>000000000</td>
                         <td class="d-none d-lg-table-cell">Example</td>
-                        <td class="d-none d-lg-table-cell">99999999</td>
-                        <td class="d-none d-lg-table-cell">Example@gmail.com</td>
                         <td>
                             <a class="btnstyle btn-small"><i class='bx bx-edit'></i></a>
                             <a onclick="return eliminar()" class="btnstyle btn-small"><i class='bx bxs-trash'></i></a>
@@ -113,11 +145,10 @@ require ("../../../includes/url.php");
                     <tr>
                         <td><input type="checkbox" name="selectAuto[]" onclick="toggleActionButtons()"></td>
                         <td>1</td>
+                        <td>Example Example Example</td>
+                        <td>0000-0000</td>
                         <td>Example</td>
-                        <td>000000000</td>
                         <td class="d-none d-lg-table-cell">Example</td>
-                        <td class="d-none d-lg-table-cell">99999999</td>
-                        <td class="d-none d-lg-table-cell">Example@gmail.com</td>
                         <td>
                             <a class="btnstyle btn-small"><i class='bx bx-edit'></i></a>
                             <a onclick="return eliminar()" class="btnstyle btn-small"><i class='bx bxs-trash'></i></a>
@@ -126,11 +157,10 @@ require ("../../../includes/url.php");
                     <tr>
                         <td><input type="checkbox" name="selectAuto[]" onclick="toggleActionButtons()"></td>
                         <td>1</td>
+                        <td>Example Example Example</td>
+                        <td>0000-0000</td>
                         <td>Example</td>
-                        <td>000000000</td>
                         <td class="d-none d-lg-table-cell">Example</td>
-                        <td class="d-none d-lg-table-cell">99999999</td>
-                        <td class="d-none d-lg-table-cell">Example@gmail.com</td>
                         <td>
                             <a class="btnstyle btn-small"><i class='bx bx-edit'></i></a>
                             <a onclick="return eliminar()" class="btnstyle btn-small"><i class='bx bxs-trash'></i></a>

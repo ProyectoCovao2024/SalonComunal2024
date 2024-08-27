@@ -160,6 +160,10 @@ p{
     color: #9cdbeb;
 }
 
+.card .contact{
+    text-decoration: none !important;
+}
+
 .card .contact i{
     font-size: 21px;
 }

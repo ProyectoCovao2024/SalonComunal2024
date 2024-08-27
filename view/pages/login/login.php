@@ -86,7 +86,7 @@ require ("../../../includes/url.php");
             <div class="card_login">
                 <h3>Bienv<span>enido</span></h3>
                 <p>¡Nos alegra verte de nuevo! Gracias por regresar a nuestra plataforma. Esperamos que encuentres todo lo que necesitas y que tu experiencia sea agradable. Si tienes alguna pregunta o necesitas ayuda, no dudes en contactarnos. ¡Disfruta tu visita!</p>
-                <p class="contact"><i class='bx bx-envelope'></i> example<span>@gmail.com</span></p>
+                <a href="mailto:adilacartago@gmail.com" class="contact"><i class='bx bx-envelope'></i>adilacartago<span>@gmail.com</span></a>
             </div>
         </div>
     </div>

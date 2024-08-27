@@ -30,9 +30,9 @@ require ("../includes/url.php");
                 y servicios, así como realizar reservas de manera fácil y rápida. Nuestro salón está diseñado para
                 satisfacer sus necesidades y ofrecerle un espacio ideal para sus eventos y actividades.</p>
             <div class="social-media">
-                <a href="#"><i class='bx bxl-whatsapp'></i></a>
-                <a href="#"><i class='bx bxl-facebook-square'></i></a>
-                <a href="#"><i class='bx bxl-gmail'></i></a>
+                <a href="https://api.whatsapp.com/send?phone=83056446&text=Hola,%20¿Cómo%20podemos%20ayudarte?"><i
+                        class='bx bxl-whatsapp'></i></a>
+                <a href="mailto:adilacartago@gmail.com"><i class='bx bx-envelope'></i></a>
             </div>
             <!-- <a href="" class="btn">Historia</a> -->
         </div>
@@ -41,26 +41,95 @@ require ("../includes/url.php");
         </div>
     </section>
 
-    <section class="explora container">
+    <section class="explora container" style="background:url(../public/build/assets/image/Background-olas.gif)">
         <h2>NUESTRO <span>PROPÓSITO</span></h2>
         <div class="explor-content">
             <div class="explor-1 bg-1">
                 <h3>Misión</h3>
                 <p>Conozca nuestra misión y el propósito que nos impulsa.</p>
-                <a class="btn" href="#">Saber más</a>
+                <a class="btn" href="#" id="openModalBtnMision">Saber más</a>
             </div>
             <div class="explor-1 bg-2">
-                <h3>Valores</h3>
+                <h3>Vision</h3>
                 <p>Conozca nuestros valores y los principios que nos guían.</p>
-                <a class="btn" href="#">Saber más</a>
+                <a class="btn" href="#" id="openModalBtnValores">Saber más</a>
             </div>
             <div class="explor-1 bg-3">
-                <h3>Objetivos</h3>
+                <h3>Valores</h3>
                 <p>Conozca nuestros objetivos y nuestras metas a futuro.</p>
-                <a class="btn" href="#">Saber más</a>
+                <a class="btn" href="#" id="openModalBtnObjetivos">Saber más</a>
             </div>
         </div>
+
+
+        <!-- Modales -->
+        <div id="MisionModal" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="MisionModal">&times;</span>
+                <h2>MISION DE LA ASOCIACION DE DESA<span>RROLLO INTEGRAL DE LOS ANGELES E INVU</span></h2>
+                <p>
+                    La asociación de Desarrollo Integral los Angeles e invu es un organismo comunitario con una
+                    circunscripción
+                    territorial determinada, que representa a las personas que viven en una misma comunidad y que, por
+                    lo tanto,
+                    están autorizadas para promover o realizar un conjunto de planes necesarios para desarrollar a la
+                    comunidad
+                    y para construir a la comunidad con lazos positivos y de respeto entre los vecinos.
+                </p>
+            </div>
+        </div>
+
+        <div id="ValoresModal" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="ValoresModal">&times;</span>
+                <h2>VISION DE LA ASOCIACION DE DESA<span>RROLLO INTEGRAL DE LOS ANGELES E INVU</span></h2>
+                <p>
+                    Ser una asociación modelo generadora de recursos que impulsa el desarrollo social,
+                    económico y ambiental para el beneficio de la comunidad.
+                </p>
+            </div>
+        </div>
+
+        <div id="ObjetivosModal" class="modal">
+            <div class="modal-content">
+                <span class="close" data-modal="ObjetivosModal">&times;</span>
+                <h2>Nuestros <span>Valores</span></h2>
+                <p>
+                    RESPETO Y CIVISMO: Cooperamos activamente en las iniciativas municipales a la vez que custodiamos el
+                    mantenimiento de las zonas que se encuentran de la comunidad dando información oportuna sobre
+                    riesgos y oportunidades para la comunidad. Somos conscientes de que al hacer comunidad, estamos
+                    construyendo la Costa Rica que queremos para nosotros y para nuestros hijos. <br>
+
+                    SOLIDARIDAD Enfocamos nuestros proyectos a todos los sectores de la comunidad. También en diferentes
+                    áreas: intelectual, física, emocional.<br>
+
+                    HONRADEZ Administramos los recursos adecuadamente.<br>
+
+                    SERVICIO Servimos a la comunidad incondicionalmente<br>
+
+                    TRANSPARENCIA Brindamos a la comunidad acceso oportuno a los informes de proyectos y estados
+                    financieros. Los libros de actas están a la disposición de los afiliados en caso de que necesiten
+                    evacuar dudas.<br>
+
+                    COMPROMISO Trabajamos para la comunidad de una forma desinteresada.<br>
+
+                    RESPONSABILIDAD Ejecutamos proyectos con responsabilidad social y ambiental.<br>
+
+                    CORRESPONSABILIDAD: Motivamos a la comunidad para que sea participativa y responsable de los retos,
+                    los desafíos y los proyectos que tenemos en marcha. Involucramos a miembros de la comunidad con la
+                    accesibilidad para que desempeñen trabajos comunitarios de embellecimiento.<br>
+
+                    HUMANISMO e INCLUSIÓN: Trabajamos en proyectos de bien social en la comunidad. También deseamos
+                    facilitar espacios de formación y capacitación.<br>
+
+                    TRABAJO EN EQUIPO: Todo lo que sea positivo para la comunidad y para la sociedad encuentra una
+                    posibilidad en este espacio: scouts, INAMU, Grupo de Adultos Mayores, Alcohólicos anónimos.<br>
+                </p>
+            </div>
+        </div>
+
     </section>
+
 
     <!-- <section class="gallery-content">
        

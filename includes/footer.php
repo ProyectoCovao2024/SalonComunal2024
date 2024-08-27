@@ -6,10 +6,10 @@
     <div class="wave" id="wave4"></div>
 </div>
 <ul class="social-icon">
-    <li class="social-icon__item"><a class="social-icon__link" href="#">
+    <li class="social-icon__item"><a class="social-icon__link" href="mailto:adilacartago@gmail.com">
             <ion-icon name="mail-outline"></ion-icon>
         </a></li>
-    <li class="social-icon__item"><a class="social-icon__link" href="#">
+    <li class="social-icon__item"><a class="social-icon__link" href="https://api.whatsapp.com/send?phone=83056446&text=Hola,%20¿Cómo%20podemos%20ayudarte?">
             <ion-icon name="logo-whatsapp"></ion-icon>
         </a></li>
 </ul>
