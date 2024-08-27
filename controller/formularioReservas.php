@@ -1,6 +1,6 @@
 <?php 
 
-require("../../../model/formularioReservas.php");
+require_once("../model/formularioReservas.php");
 
 /*
 $formularioReservas = new Reserva_model();
