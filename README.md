@@ -13,7 +13,7 @@ Permite administrar eventos, controlar disponibilidad de fechas y organizar las 
 
 ## 📸 Vista previa
 
-![Preview del proyecto](./preview.png)
+![Preview del proyecto](./preview.PNG)
 
 ---
 
@@ -56,12 +56,6 @@ Permite administrar eventos, controlar disponibilidad de fechas y organizar las 
 
 ---
 
-## ⚙️ Instalación y uso
-
-Clonar el repositorio:
-
-```bash
-git clone https://github.com/tuusuario/salon-comunal.git
 
 👨‍💻 Autor
 
@@ -79,5 +73,24 @@ Desarrollado por [Kendall Campos Ramírez, Kendall Orozco Gómez, William Herra 
 
 # 🖼️ Imagen preview
 
+![Preview del proyecto](./preview.PNG)
 
+---
 
+### 🧠 Lo que aprendiste
+
+```md
+## 📚 Aprendizajes
+
+- Implementación de CRUD completo
+- Programación en php
+- Conexión a MySQL Workbench
+- Arquitectura Modelo-Vista-Controlador
+- Herramienta Github
+
+## 🧩 Retos superados
+
+- Manejo de fechas disponibles
+- Sincronización entre frontend y backend
+- Organización del proyecto con arquitectura MVC
+- La gestión de la información es funcional
